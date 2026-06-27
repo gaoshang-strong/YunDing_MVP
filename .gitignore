@@ -1,0 +1,26 @@
+# 大文件 / 开发素材（不入库）
+# 实机录像（GB 级）
+video/
+# 抽帧、overlay 等开发产物
+assets/frames/
+# CDragon json 缓存（download_assets.py 可重生）
+assets/cache/
+
+# 下载素材：可由 scripts/download_assets.py 重生，不入库
+assets/set17/champions/
+assets/set17/items/
+assets/set17/traits/
+assets/set17/download_failures.txt
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+.ipynb_checkpoints/
+
+# 编辑器 / 系统
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

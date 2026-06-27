@@ -1,0 +1,21 @@
+# 云顶之弈 屏幕元素提取模块 —— 运行环境
+#
+# 重建（Windows / Linux 通用）：
+#   micromamba create -f environment.yml
+#   micromamba activate YunDing_MVP
+#
+# 注意：截图库是 python-mss（不是 conda-forge 上的 mss，那是航空气象工具 mslib）。
+# 仅列核心依赖；本环境曾误装的 matplotlib/flask/cartopy 等无关包未纳入。
+
+name: YunDing_MVP
+
+channels:
+  - conda-forge
+
+dependencies:
+  - python=3.11
+  - numpy=2.4
+  - opencv=5.0          # 图像处理 / 模板匹配（Linux 上为 headless 构建，处理逻辑通用）
+  - python-mss=10.2     # 实时抓屏（Windows 运行用；Linux 开发可用 FileCapture 读 PNG）
+  - pillow=12           # 图像读写
+  - requests=2.34       # 下载图标素材 / catalog
