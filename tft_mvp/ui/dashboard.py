@@ -61,14 +61,22 @@ class Dashboard:
         ]
         y = self._section(img, "CLOCK", rows, y)
 
-        # 时间轴 track：帧数 / 倒计时趋势 / 最近事件
+        # 时间轴 track：帧数 / 倒计时趋势 / 当前小阶段 / 最近事件
         trk = state.get("track", {})
         evs = trk.get("events", [])
         last_ev = evs[-1] if evs else None
         ev_txt = (f"{last_ev['type']} @{last_ev.get('at')}" if last_ev else "-")
+        # 当前回合的当前（active）小阶段
+        rounds = trk.get("rounds", [])
+        sub_txt = "-"
+        if rounds and rounds[-1].get("subphases"):
+            cur = rounds[-1]
+            sp = cur["subphases"][-1]
+            sub_txt = f"{cur['sr']}  {sp['label']} ({sp['span']}, {sp['cd_start']}->{sp['cd_end']})"
         trows = [
             ("Frames", str(trk.get("frame_count", 0))),
             ("Countdown trend", str(trk.get("cd_trend", "-"))),
+            ("Sub-phase", sub_txt),
             ("Events", str(len(evs))),
             ("Last event", ev_txt),
         ]

@@ -166,7 +166,7 @@ micromamba run -n YunDing_MVP python tools/live.py --game-monitor 1 --display-mo
 - **COUNTDOWN**：倒计时秒数（整备=备战剩余时间；战斗=战斗计时）。
 - 每个读数下方**色条**＝置信度：绿(高) / 黄(中) / 红(低)。
 - **CLOCK** 区：分辨率、读取状态、各项置信度。
-- **TRACK** 区：已记录帧数、倒计时趋势（falling/rising/flat）、事件数、最近一个事件。
+- **TRACK** 区：已记录帧数、倒计时趋势（falling/rising/flat）、**当前小阶段**（策划/转场/战斗，每回合 4 段）、事件数、最近一个事件。
 - 后续加的商店 / 装备 / 数值识别，会作为新区块往下追加。
 
 ---

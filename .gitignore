@@ -3,6 +3,8 @@
 video/
 # 抽帧、overlay 等开发产物
 assets/frames/
+# track 录制（--record 产物，开发数据）
+/track*.json
 # CDragon json 缓存（download_assets.py 可重生）
 assets/cache/
 

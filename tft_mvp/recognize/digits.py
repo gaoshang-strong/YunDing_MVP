@@ -86,6 +86,27 @@ class DigitReader:
         out.sort()
         return out
 
+    @staticmethod
+    def _rightmost_group(digits):
+        """按水平间隙把数字分簇，只返回最右一簇。
+
+        倒计时永远紧邻时钟图标、位于 ROI 最右；PVE 等界面在其左侧泄入的数字
+        （实测 3-7 的 `40`、4-7 的 `30`）与倒计时之间有明显间隙，据此甩掉。
+        簇内相邻数字间隙小，跨 UI 元素的间隙大 → 用「典型字宽」定阈值。
+        digits 已按 x 升序。
+        """
+        if len(digits) <= 1:
+            return digits
+        med_w = float(np.median([w for (_, _, w, _) in digits]))
+        gap_thr = med_w * 1.2  # 簇内间隙 << 此值；跨元素间隙 >> 此值
+        group = [digits[-1]]
+        for x, y, w, h in reversed(digits[:-1]):
+            if group[0][0] - (x + w) <= gap_thr:  # 与当前簇最左数字的间隙
+                group.insert(0, (x, y, w, h))
+            else:
+                break
+        return group
+
     # ---- 分类 ---------------------------------------------------------- #
     def _prep(self, glyph_gray: np.ndarray) -> np.ndarray:
         _, b = cv2.threshold(glyph_gray, 127, 255, cv2.THRESH_BINARY)
@@ -106,11 +127,19 @@ class DigitReader:
         return mask[y:y + h, x:x + w]
 
     # ---- 公开 API ------------------------------------------------------ #
-    def read_number(self, roi_bgr: np.ndarray):
-        """读倒计时整数（兼容奶白/金黄、随位置漂移、与分辨率无关）。返回 (value|None, conf)。"""
+    def read_number(self, roi_bgr: np.ndarray, max_value: int = 99):
+        """读倒计时整数（兼容奶白/金黄、随位置漂移、与分辨率无关）。返回 (value|None, conf)。
+
+        两道防线抗「旁边数字泄入」（如 PVE 回合 3-7/4-7 读出 4019/3049 的垃圾值）：
+        ① 只取最右侧数字簇（倒计时紧邻时钟图标、总在最右），甩掉左侧泄入的 40/30；
+        ② 范围校验：读出值 > max_value（默认 99，倒计时 ≤ 60）判无效返回 None。
+        """
         roi_bgr = self._norm_roi(roi_bgr)
         mask = self._mask_warm(roi_bgr)
         digits = self._comps(mask, hmin=24, hmax=42, wmin=8, wmax=28, amin=180)
+        if not digits:
+            return None, 0.0
+        digits = self._rightmost_group(digits)  # ① 只保留最右簇
         s, scores = "", []
         for b in digits:
             d, sc = self._classify(self._crop(mask, b))
@@ -118,7 +147,10 @@ class DigitReader:
             scores.append(sc)
         if not s or "?" in s:
             return None, 0.0
-        return int(s), float(np.mean(scores))
+        val = int(s)
+        if val > max_value:  # ② 越界判无效（兜底：万一簇切分没干净）
+            return None, 0.0
+        return val, float(np.mean(scores))
 
     def read_stage_round(self, roi_bgr: np.ndarray):
         """读 stage-round（D-D），破折号做锚点取左右最近数字 → 抗漂移、抗图标碎片。
