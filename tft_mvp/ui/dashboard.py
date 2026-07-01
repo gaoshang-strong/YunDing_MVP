@@ -61,6 +61,19 @@ class Dashboard:
         ]
         y = self._section(img, "CLOCK", rows, y)
 
+        # 时间轴 track：帧数 / 倒计时趋势 / 最近事件
+        trk = state.get("track", {})
+        evs = trk.get("events", [])
+        last_ev = evs[-1] if evs else None
+        ev_txt = (f"{last_ev['type']} @{last_ev.get('at')}" if last_ev else "-")
+        trows = [
+            ("Frames", str(trk.get("frame_count", 0))),
+            ("Countdown trend", str(trk.get("cd_trend", "-"))),
+            ("Events", str(len(evs))),
+            ("Last event", ev_txt),
+        ]
+        y = self._section(img, "TRACK", trows, y)
+
         # 预留：后续识别块（商店/装备/数值…）在此追加 self._section(...)
 
         # 页脚

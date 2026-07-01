@@ -13,7 +13,7 @@ import numpy as np
 
 from .layout import LayoutMapper
 from .recognize import DigitReader
-from .scene import TopBarClock
+from .scene import ClockTrack, TopBarClock
 
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
 DEFAULT_PROFILE = Path(__file__).resolve().parent / "layout" / "profiles" / "16_9.json"
@@ -29,17 +29,21 @@ class Pipeline:
         self.mapper = LayoutMapper(profile_path)
         self.reader = DigitReader(template_dir)
         self.clock = TopBarClock(self.mapper, self.reader)
+        self.track = ClockTrack()  # 时间轴 track：逐帧记时钟 + 派生事件
         # 后续：self.scene = SceneClassifier(...); self.shop = ShopRecognizer(...)
 
     def reset(self) -> None:
         """新一局（game_start）重置累积状态。"""
         self.clock.reset()
+        self.track.reset()
 
     def process(self, frame: np.ndarray) -> dict:
         h, w = frame.shape[:2]
+        ts = int(time.time() * 1000)
         clock = self.clock.read(frame)
+        self.track.update(clock, ts)
         return {
-            "timestamp": int(time.time() * 1000),
+            "timestamp": ts,
             "screen": {"width": int(w), "height": int(h)},
             "scene": None,  # 待 SceneClassifier
             "player_state": {
@@ -47,5 +51,6 @@ class Pipeline:
                 "round": clock["round"],
                 "countdown": clock["countdown"],
             },
+            "track": self.track.snapshot(),  # 时间轴 track（最近样本 + 事件 + 趋势）
             "_clock": clock,  # 原始（含置信度 / 状态），调试 / UI 用
         }

@@ -9,14 +9,18 @@
 抓 1 号屏、仪表盘放 2 号屏，每 0.5s 刷新：
   micromamba run -n YunDing_MVP python tools/live.py --game-monitor 1 --display-monitor 2
 
+开一把并把时间轴 track 录成 JSON（打完发回审查）：
+  micromamba run -n YunDing_MVP python tools/live.py --game-monitor 1 --record track.json
+
 调试（无第二屏 / 用一张图代替抓屏）：
   micromamba run -n YunDing_MVP python tools/live.py --image assets/frames/survey/s_00010.png
 
-窗口里按 q 或 Esc 退出。
+窗口里按 q 或 Esc 退出（退出时会把完整 track 落盘）。
 """
 from __future__ import annotations
 
 import argparse
+import json
 import sys
 import time
 from pathlib import Path
@@ -48,6 +52,8 @@ def main() -> None:
     ap.add_argument("--image", type=Path, default=None, help="调试：用静态图代替实时抓屏")
     ap.add_argument("--snapshot", type=Path, default=None,
                     help="抓一帧存成 PNG 后退出（用于核对分辨率 / ROI 标定）")
+    ap.add_argument("--record", type=Path, default=None,
+                    help="把整局时间轴 track 录成 JSON（退出时落盘，并每 40 帧增量保存）")
     args = ap.parse_args()
 
     if args.list:
@@ -81,8 +87,23 @@ def main() -> None:
         d = mons[args.display_monitor]
         cv2.moveWindow(WIN, d["left"] + 40, d["top"] + 40)
 
+    def dump_track() -> None:
+        """把整局 track 写成 JSON（含元信息）。"""
+        if not args.record:
+            return
+        payload = pipe.track.to_dict(meta={
+            "profile": "16_9",
+            "interval": args.interval,
+            "source": "image" if args.image else f"monitor{args.game_monitor}",
+        })
+        args.record.parent.mkdir(parents=True, exist_ok=True)
+        args.record.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
+
     last, fps = time.time(), 0.0
+    seen_events = 0  # 已打印到控制台的事件数，用于增量播报
     print(f"[live] 开始：game-monitor={args.game_monitor} interval={args.interval}s  (窗口内 q/Esc 退出)")
+    if args.record:
+        print(f"[live] 录制 track → {args.record}")
     try:
         while True:
             t0 = time.time()
@@ -90,6 +111,17 @@ def main() -> None:
             state = pipe.process(frame)
             panel = dash.render(state, fps=fps)
             cv2.imshow(WIN, panel)
+
+            # 新事件实时播报（round 前进 / 倒计时重置 / 归零）
+            evs = pipe.track.events
+            for ev in evs[seen_events:]:
+                print(f"[event] {ev['type']:<18} at={ev.get('at')}  {({k: v for k, v in ev.items() if k not in ('type', 'at', 'ts')})}")
+            if len(evs) != seen_events:
+                seen_events = len(evs)
+
+            # 增量落盘：每 40 帧存一次，防中途崩溃丢数据
+            if args.record and pipe.track.samples and len(pipe.track.samples) % 40 == 0:
+                dump_track()
 
             now = time.time()
             fps = 0.9 * fps + 0.1 * (1.0 / max(now - last, 1e-3))
@@ -103,6 +135,9 @@ def main() -> None:
                 break
     finally:
         cv2.destroyAllWindows()
+        dump_track()
+        if args.record:
+            print(f"[live] track 已保存：{args.record}（{len(pipe.track.samples)} 帧, {len(pipe.track.events)} 事件）")
         print("[live] 结束")
 
 
