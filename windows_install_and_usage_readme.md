@@ -18,19 +18,56 @@
 
 ---
 
-## 2. 安装 micromamba
+## 2. 安装 micromamba（**短路径装法，避开长路径坑**）
 
-PowerShell 里执行（官方一键脚本）：
+> **为什么不用官方一键脚本**：micromamba 默认把环境 / 包目录放在用户目录（`C:\Users\你的名字\...`，本身就长），而 conda 包内部文件层级又深，两者叠加极易超过 Windows 的 **260 字符路径上限（MAX_PATH）**，导致创建环境时解压失败、报 `path too long` 之类的错。解法：把 micromamba 的 root 和包目录放到 `C:\` 下的**短目录**。
+
+以**管理员身份**打开 PowerShell，整段贴进去执行：
 
 ```powershell
-Invoke-Expression ((Invoke-WebRequest -Uri https://micro.mamba.pm/install.ps1).Content)
+# 1. 允许当前用户跑 PowerShell 脚本（后面 shell init 需要）
+Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned -Force
+
+# 2. 建短路径目录（关键：避开 260 字符长路径限制）
+New-Item -ItemType Directory -Force "C:\micromamba_bin" | Out-Null
+New-Item -ItemType Directory -Force "C:\micromamba"     | Out-Null
+New-Item -ItemType Directory -Force "C:\mamba_pkgs"     | Out-Null
+
+# 3. 下载 micromamba.exe 到 C:\micromamba_bin
+Invoke-WebRequest `
+  -Uri "https://github.com/mamba-org/micromamba-releases/releases/latest/download/micromamba-win-64" `
+  -OutFile "C:\micromamba_bin\micromamba.exe"
+
+# 4. 本会话立即生效
+$env:Path = "C:\micromamba_bin;" + $env:Path
+$env:MAMBA_ROOT_PREFIX = "C:\micromamba"
+$env:MAMBA_PKGS_DIRS   = "C:\mamba_pkgs"
+
+# 5. 永久生效（用户级）
+#    注意：MAMBA_ROOT_PREFIX / MAMBA_PKGS_DIRS 值短，用 setx 没问题；
+#    但 PATH 不能用 `setx PATH`——setx 有 1024 字符上限会静默截断、把 PATH 写坏。
+#    故 PATH 改用 .NET API（无长度限制、只动用户 PATH）。
+setx MAMBA_ROOT_PREFIX "C:\micromamba" | Out-Null
+setx MAMBA_PKGS_DIRS   "C:\mamba_pkgs" | Out-Null
+$userPath = [Environment]::GetEnvironmentVariable("Path","User")
+[Environment]::SetEnvironmentVariable("Path", "C:\micromamba_bin;$userPath", "User")
+
+# 6. 验证 + 初始化 PowerShell 集成
+micromamba --version
+micromamba shell init -s powershell -p C:\micromamba
 ```
 
-装完**重开一个 PowerShell**，确认能用：
+执行完**关掉 PowerShell、重开一个**，确认能用：
 
 ```powershell
 micromamba --version
 ```
+
+> 若下载或建环境时报 **SSL / certificate / revocation** 类错误（部分网络对证书吊销检查会失败），再执行下面两句后重试即可：
+> ```powershell
+> $env:CURL_SSL_NO_REVOKE = "1"
+> setx CURL_SSL_NO_REVOKE "1" | Out-Null
+> ```
 
 ---
 
