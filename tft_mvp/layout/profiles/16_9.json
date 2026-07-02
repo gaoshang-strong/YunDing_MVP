@@ -10,7 +10,7 @@
   },
   "_markers_note": "选择类阶段 phase-marker（颜色区域检测，非精确 ROI）。augment_band=中间三面板横带（测紫色占比）；overlay_full=全屏（测蓝紫背景占比，判神明）。阈值见 PhaseMarker。",
   "markers": {
-    "augment_band": { "x": 0.20, "y": 0.20, "w": 0.60, "h": 0.55 },
+    "augment_band": { "x": 0.15, "y": 0.20, "w": 0.70, "h": 0.55 },
     "overlay_full": { "x": 0.0,  "y": 0.0,  "w": 1.0,  "h": 1.0 }
   }
 }

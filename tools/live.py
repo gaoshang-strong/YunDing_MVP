@@ -54,6 +54,10 @@ def main() -> None:
                     help="抓一帧存成 PNG 后退出（用于核对分辨率 / ROI 标定）")
     ap.add_argument("--record", type=Path, default=None,
                     help="把整局时间轴 track 录成 JSON（退出时落盘，并每 40 帧增量保存）")
+    ap.add_argument("--save-frames", type=Path, default=None,
+                    help="录制时存降采样关键帧到该目录（周期性 + 进海克斯/神明时），供离线标定/校准")
+    ap.add_argument("--frame-interval", type=float, default=4.0,
+                    help="--save-frames 的周期间隔秒，默认 4")
     args = ap.parse_args()
 
     if args.list:
@@ -99,11 +103,26 @@ def main() -> None:
         args.record.parent.mkdir(parents=True, exist_ok=True)
         args.record.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
 
+    def save_frame(frame, state, ts, tag):
+        """存一张降采样帧（宽 1280），文件名带 ts / 阶段 / scene，便于和 track.json 对齐。"""
+        d = args.save_frames
+        d.mkdir(parents=True, exist_ok=True)
+        h, w = frame.shape[:2]
+        small = cv2.resize(frame, (1280, int(1280 * h / w))) if w > 1280 else frame
+        ps = state.get("player_state", {})
+        sr = f"{ps.get('stage')}-{ps.get('round')}"
+        cv2.imwrite(str(d / f"f_{ts}_{sr}_{tag}.png"), small)
+
     last, fps = time.time(), 0.0
-    seen_events = 0  # 已打印到控制台的事件数，用于增量播报
+    seen_events = 0     # 已打印到控制台的事件数，用于增量播报
+    last_frame_t = 0.0  # 上次周期性存帧时刻
+    last_scene = None   # 上次的 scene（用于「进入选择界面即存」）
+    n_saved = 0
     print(f"[live] 开始：game-monitor={args.game_monitor} interval={args.interval}s  (窗口内 q/Esc 退出)")
     if args.record:
         print(f"[live] 录制 track → {args.record}")
+    if args.save_frames:
+        print(f"[live] 存关键帧 → {args.save_frames}（每 {args.frame_interval}s + 进海克斯/神明时）")
     try:
         while True:
             t0 = time.time()
@@ -111,6 +130,16 @@ def main() -> None:
             state = pipe.process(frame)
             panel = dash.render(state, fps=fps)
             cv2.imshow(WIN, panel)
+
+            # 存关键帧：周期性 + scene 变为选择界面时立刻存
+            if args.save_frames:
+                scene = state.get("scene")
+                if t0 - last_frame_t >= args.frame_interval:
+                    save_frame(frame, state, state["timestamp"], "tick"); n_saved += 1
+                    last_frame_t = t0
+                elif scene and scene != last_scene:
+                    save_frame(frame, state, state["timestamp"], scene); n_saved += 1
+                last_scene = scene
 
             # 新事件实时播报（round 前进 / 倒计时重置 / 归零）
             evs = pipe.track.events
@@ -138,6 +167,8 @@ def main() -> None:
         dump_track()
         if args.record:
             print(f"[live] track 已保存：{args.record}（{len(pipe.track.samples)} 帧, {len(pipe.track.events)} 事件）")
+        if args.save_frames:
+            print(f"[live] 关键帧已存：{args.save_frames}（{n_saved} 张）")
         print("[live] 结束")
 
 

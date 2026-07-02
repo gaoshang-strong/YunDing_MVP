@@ -42,8 +42,8 @@ class Pipeline:
         h, w = frame.shape[:2]
         ts = int(time.time() * 1000)
         clock = self.clock.read(frame)
-        marker = self.marker.detect(frame, stage=clock["stage"])
-        self.track.update(clock, ts, marker)  # marker 占比也逐帧记入 track，供校准
+        marker = self.marker.detect(frame, stage=clock["stage"], rnd=clock["round"])
+        self.track.update(clock, ts, marker)  # marker 结果也逐帧记入 track，供校准
         # scene：目前只判选择类浮层（海克斯 / 神明）；planning/combat 待 SceneClassifier
         return {
             "timestamp": ts,

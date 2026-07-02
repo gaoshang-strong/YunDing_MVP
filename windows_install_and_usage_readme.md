@@ -148,10 +148,12 @@ micromamba run -n YunDing_MVP python tools/live.py --image my_screen.png
 加 `--record`，开一把完整对局，程序会把**每一帧的回合/倒计时 + 派生事件**记进一个 JSON：
 
 ```powershell
-micromamba run -n YunDing_MVP python tools/live.py --game-monitor 1 --display-monitor 2 --record track.json
+micromamba run -n YunDing_MVP python tools/live.py --game-monitor 1 --display-monitor 2 --record track.json --save-frames frames_out
 ```
 
-- 从**进对局就开始跑**，尽量覆盖：开局 / 选神明 / 备战 / 战斗 / **海克斯选择** / 选秀。
+- `--record track.json`：数值 track（小，必开）。
+- `--save-frames frames_out`：顺手存降采样关键帧到 `frames_out\`（每 4s 一张 + 一进海克斯/神明就存），供离线标定备战席/棋盘、验证选秀不误判。一局约几百张、每张 ~1MB，打完把**整个 `frames_out` 文件夹**（可打包 zip）连同 `track.json` 一起发回。
+- 从**进对局就开始跑**，尽量覆盖：开局 / 选神明 / 备战 / 战斗 / **海克斯选择** / **选秀(x-4)** / **PVE(x-7)**。
 - 中途每 40 帧自动存一次，**按 q/Esc 正常退出**会写入完整数据（`track.json` 就在项目根目录）。
 - 控制台会实时打印事件，如 `[event] round_advance ...` / `[event] countdown_reset ...`，看到就说明在正常记。
 - 打完把 `track.json` 发回给我。我会核对：回合是否单调、倒计时归零/重置事件是否踩在真实转场上、海克斯期间时钟是否如预期变 `miss`（浮层会调暗顶栏，属已知现象）。

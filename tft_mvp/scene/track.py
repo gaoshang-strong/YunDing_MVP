@@ -66,7 +66,7 @@ class ClockTrack:
         }
         if marker is not None:
             sample["scene"] = marker.get("phase")
-            sample["purple"] = marker.get("purple_center")
+            sample["n_panels"] = marker.get("n_panels")
             sample["bluepurple"] = marker.get("bluepurple_full")
         self.samples.append(sample)
         self._detect(stage, rnd, cd, clock.get("sr_status"), ts)
