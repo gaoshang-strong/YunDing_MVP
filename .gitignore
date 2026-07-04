@@ -26,3 +26,6 @@ __pycache__/
 .idea/
 .DS_Store
 Thumbs.db
+
+# live 录制关键帧（--save-frames 产物，数百 MB）
+frames_out/
