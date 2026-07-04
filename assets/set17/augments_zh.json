@@ -1,0 +1,2824 @@
+{
+  "set": 17,
+  "count": 276,
+  "augments": {
+    "TFT10_Augment_CrashTestDummies": {
+      "name_zh": "碰撞测试假人",
+      "name_en": "Crash Test Dummies",
+      "desc_zh": "获得@Numdummies@个【训练假人】。战斗开始时：你的【目标假人】们会将自己发射向敌人最密集的位置并将其晕眩@stun@秒。 ",
+      "effects": {
+        "NumDummies": 2.0,
+        "SearchRange": 4.0,
+        "Stun": 1.0
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/crash-test-dummies-ii.png"
+    },
+    "TFT10_Augment_GoingLong": {
+      "name_zh": "遥遥领先",
+      "name_en": "Going Long",
+      "desc_zh": "你不再获得利息。即刻获得@Gold@金币。在你的回合开始时，获得@XP@经验。<br><br><rules>利息是你每储存10金币时获得的额外金币。</rules>",
+      "effects": {
+        "Gold": 13.0,
+        "XP": 4.0
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/going-long-iii.png"
+    },
+    "TFT10_Augment_GoodForSomethingSilver": {
+      "name_zh": "有用之材 I",
+      "name_en": "Good For Something I",
+      "desc_zh": "未携带装备的弈子们在阵亡时有@dropchance*100@%几率掉落@Gold@金币。",
+      "effects": {
+        "DropChance": 0.4000000059604645,
+        "Gold": 1.0
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/good-for-something-i.png"
+    },
+    "TFT10_Augment_HeroicGrabBag": {
+      "name_zh": "英勇福袋",
+      "name_en": "Heroic Grab Bag",
+      "desc_zh": "获得@LesserDuplicatorAmount@个【次级英雄复制器】和@Gold@金币。<br><br><rules>这个物品允许你能复制一个3费或以下的弈子。</rules>",
+      "effects": {
+        "Gold": 5.0,
+        "LesserDuplicatorAmount": 2.0
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/heroic-grab-bag-ii.png"
+    },
+    "TFT10_Augment_LittleBuddies": {
+      "name_zh": "小伙伴",
+      "name_en": "Little Buddies",
+      "desc_zh": "你的每个已登场的1费和2费弈子都会为你的4费和5费弈子们提供@health@生命值和@AttackSpeed*100@%攻击速度。<br><br>@TFTUnitProperty.item:TFT_Augment_LittleBuddies_Tooltip@",
+      "effects": {
+        "AttackSpeed": 0.07000000029802322,
+        "Health": 65.0,
+        "{0d14760d}": 4.0,
+        "{82aeb8a7}": 2.0
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/little-buddies-ii.png"
+    },
+    "TFT11_Augment_AtWhatCost": {
+      "name_zh": "不计代价",
+      "name_en": "At What Cost",
+      "desc_zh": "立即升到@Level@级并获得@XP@经验值。你无法选择之后的强化符文。",
+      "effects": {
+        "Gold": null,
+        "Level": 6.0,
+        "XP": 8.0
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/atwhatcost_iii.png"
+    },
+    "TFT11_Augment_BloodBank": {
+      "name_zh": "午餐钱",
+      "name_en": "Lunch Money",
+      "desc_zh": "你每对敌方小小英雄们造成@Damage@伤害，就会获得@Gold@金币。<br>奖金总和：@TFTUnitProperty.item:TFT11_BloodBankPayoutTotal@金币<br>",
+      "effects": {
+        "Damage": 8.0,
+        "Gold": 2
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/bloodbank_i.png"
+    },
+    "TFT11_Augment_Buildabud": {
+      "name_zh": "来个好伙计",
+      "name_en": "Build a Bud",
+      "desc_zh": "获得1个随机3星1费弈子。获得@Gold@金币。",
+      "effects": {
+        "Gold": 8.0
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/constructacompanion_iii.tft_set16.png"
+    },
+    "TFT11_Augment_Calltochaos": {
+      "name_zh": "混沌召唤",
+      "name_en": "Call to Chaos",
+      "desc_zh": "获得1个强大的随机奖励。<br><br>奖励：@TFTUnitProperty.item:TFT11_Augment_CallToChaos@",
+      "effects": {
+        "EggTurns": 11,
+        "Gold": 52.0,
+        "NumEmblems": 5.0,
+        "Rerolls": 36.0,
+        "ThreeStarGold": 20.0,
+        "XP": 58.0,
+        "numtg": 3.0,
+        "{4ffe8c09}": 0.20000000298023224,
+        "{8c58ac06}": 3.0,
+        "{8f15cad2}": 3.0,
+        "{917f9e2f}": 0.20000000298023224,
+        "{927f9fc2}": 50.0,
+        "{96847027}": 40.0,
+        "{96f12d22}": 3,
+        "{b0384f7a}": 8,
+        "{c35cc688}": 6
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/calltochaos_iii.png"
+    },
+    "TFT11_Augment_Epoch": {
+      "name_zh": "新纪元",
+      "name_en": "Epoch",
+      "desc_zh": "现在以及每个阶段开始时，获得@XP@经验值和@Rerolls@次免费刷新。",
+      "effects": {
+        "Rerolls": 2.0,
+        "XP": 4.0
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/epoch_ii.png"
+    },
+    "TFT11_Augment_EpochPlus": {
+      "name_zh": "新纪元+",
+      "name_en": "Epoch+",
+      "desc_zh": "现在以及每个阶段开始时，获得@XP@经验值和@Rerolls@次免费刷新。",
+      "effects": {
+        "Rerolls": 2.0,
+        "XP": 8.0
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/epoch_ii.png"
+    },
+    "TFT11_Augment_Prizefighter": {
+      "name_zh": "赏金战士",
+      "name_en": "Prizefighter",
+      "desc_zh": "获得@component@件基础装备。每赢得@WinsNeeded@场胜利，你就会获得1件基础装备。",
+      "effects": {
+        "WinsNeeded": 5.0,
+        "component": 2.0
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/prizefighter_ii.png"
+    },
+    "TFT11_Augment_Reinfourcement": {
+      "name_zh": "四费增援",
+      "name_en": "ReinFOURcement",
+      "desc_zh": "你用金币购买的下一个4费弈子将立刻升到2星。获得@Gold@金币。",
+      "effects": {
+        "Gold": 5.0
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/reinfourcement_ii.png"
+    },
+    "TFT11_Augment_Slammin": {
+      "name_zh": "物尽其用",
+      "name_en": "Slammin'",
+      "desc_zh": "获得@Gold@金币。每个玩家对战回合结束时，如果你的备战席没有任何装备(消耗品除外)，则获得@XP@经验值。",
+      "effects": {
+        "Gold": 3.0,
+        "XP": 2.0,
+        "XPNow": null,
+        "components": null
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/slammin_ii.png"
+    },
+    "TFT11_Augment_Slammin_Plus": {
+      "name_zh": "物尽其用+",
+      "name_en": "Slammin'+",
+      "desc_zh": "立刻获得@Gold@金币和@XPNow@经验值。每个玩家对战回合结束时，如果你的备战席没有任何装备(消耗品除外)，则获得@XP@经验值。",
+      "effects": {
+        "Gold": 4.0,
+        "XP": 2.0,
+        "XPNow": 10.0,
+        "components": null
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/slammin_ii.png"
+    },
+    "TFT11_Augment_TinyButDeadly": {
+      "name_zh": "小而致命",
+      "name_en": "Tiny, but Deadly",
+      "desc_zh": "你的队伍体型变小，获得@AttackSpeed*100@%攻击速度和移动速度。",
+      "effects": {
+        "AttackSpeed": 0.33000001311302185,
+        "MoveSpeed": 0.75,
+        "TooltipSizeScale": 0.5,
+        "{858a62b6}": 0.30000001192092896
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/tinybutdeadly_iii.png"
+    },
+    "TFT16_Augment_UltraRapidFire": {
+      "name_zh": "厨神阿福",
+      "name_en": "U.R.F",
+      "desc_zh": "获得1个【金铲铲】。携带了【金铲铲】或【金锅锅】的弈子们获得@AttackSpeed*100@%攻击速度和@ManaRegen@法力回复。",
+      "effects": {
+        "AttackSpeed": 0.20000000298023224,
+        "ManaRegen": 3.0
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/ultrarapidfire_ii.tft_set16.png"
+    },
+    "TFT17_Augment_AatroxCarry": {
+      "name_zh": "星界连招",
+      "name_en": "Stellar Combo",
+      "desc_zh": "获得1个【亚托克斯】。你最强大的那个【亚托克斯】成为一名物理战士，他的技能现在会在三种不同的攻击方式间切换。",
+      "effects": {},
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/aatroxhero_i.tft_set17.png"
+    },
+    "TFT17_Augment_AhriGodAugment": {
+      "name_zh": "阿狸的恩赐",
+      "name_en": "Ahri's Boon",
+      "desc_zh": "你的队伍获得@ADAPPerLevel@%x等级数的物理加成和法术加成。这局游戏接下来的时间里，每回合获得@XP@经验值。",
+      "effects": {
+        "ADAPPerLevel": 2,
+        "XP": 2
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/godaugmentahri_ii.tft_set17.png"
+    },
+    "TFT17_Augment_AnimaSquad_Commander": {
+      "name_zh": "幻灵指挥官",
+      "name_en": "Anima Commander",
+      "desc_zh": "获得1个【贝蕾亚】、1个【金克丝】和1个【俄洛伊】。使你的当前和最大玩家生命值都提升@PlayerHealth@。",
+      "effects": {
+        "PlayerHealth": 5
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/animacommander_ii.tft_set17.png"
+    },
+    "TFT17_Augment_ApotheoticForge": {
+      "name_zh": "神赐锻炉",
+      "name_en": "Apotheotic Forge",
+      "desc_zh": "从4件天赐神器中选出1件。<br><br><rules>神器是可以提供独特效果的强力装备。</rules>",
+      "effects": {},
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/job_s-done-ii.png"
+    },
+    "TFT17_Augment_Arbiter_DivineAmendment": {
+      "name_zh": "神律新令",
+      "name_en": "Divine Amendment",
+      "desc_zh": "【法官】们为他们的【律法】添加第二种效果。<br>获得1个【蕾欧娜】和【佐伊】。",
+      "effects": {},
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/divineamendment_ii.tft_set17_postlaunchaugments.png"
+    },
+    "TFT17_Augment_AurelionSolGodAugment": {
+      "name_zh": "奥瑞利安·索尔的恩赐",
+      "name_en": "Aurelion Sol's Boon",
+      "desc_zh": "在@NumQuestOptions_TOOLTIPONLY@个探险中选择1个，向【奥瑞利安·索尔】证明你自己。<br><br>已选择的探险：@TFTUnitProperty.item:TFT17_Augment_AurelionSolGodAugment@",
+      "effects": {
+        "LargeQuestRounds": 8,
+        "MedQuestGold": 22,
+        "MedQuestRounds": 3,
+        "NumQuestOptions_TOOLTIPONLY": 3,
+        "SmallQuestADAP": 15
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/godaugmentaurelionsol_ii.tft_set17.png"
+    },
+    "TFT17_Augment_AurelionSolGodAugment_BoonOfResurrection": {
+      "name_zh": "复活恩赐",
+      "name_en": "Boon of Resurrection",
+      "desc_zh": "在你第一次将被淘汰时，你会依然保持1生命值。",
+      "effects": {},
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/missing-t2.png"
+    },
+    "TFT17_Augment_AurelionSolGodAugment_LargeQuest": {
+      "name_zh": "在@LargeQuestRounds@场玩家对战回合后，使你的所有非单人羁绊+1。",
+      "name_en": "After @LargeQuestRounds@ player combats, gain +1 to all non-unique traits.",
+      "desc_zh": null,
+      "effects": {
+        "LargeQuestRounds": 8
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/choiceui/admin_armorery_icon.png"
+    },
+    "TFT17_Augment_AurelionSolGodAugment_MediumQuest": {
+      "name_zh": "在@MedQuestRounds@场玩家对战回合后，获得1个【成装锻造器】和@MedQuestGold@金币。",
+      "name_en": "After @MedQuestRounds@ player combats, gain a completed item anvil and @MedQuestGold@ gold.",
+      "desc_zh": null,
+      "effects": {
+        "MedQuestGold": 22,
+        "MedQuestRounds": 3,
+        "{7c96bf44}": 1
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/choiceui/admin_armorery_icon.png"
+    },
+    "TFT17_Augment_AurelionSolGodAugment_SmallQuest": {
+      "name_zh": "你的队伍获得@SmallQuestADAP@物理加成和法术加成。",
+      "name_en": "Your team gains @SmallQuestADAP@ Attack Damage and Ability Power.",
+      "desc_zh": "你的队伍获得@SmallQuestADAP@物理加成和法术加成。",
+      "effects": {
+        "SmallQuestADAP": 15
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/choiceui/admin_armorery_icon.png"
+    },
+    "TFT17_Augment_Concentration": {
+      "name_zh": "聚精会神",
+      "name_en": "Concentration",
+      "desc_zh": "【神谕】们的技能持续时长变久@PowerMin@%到@PowerMax@%，基于具体技能。获得1个【佐伊】和1个【莫德凯撒】。",
+      "effects": {
+        "{5ec99892}": 25.0,
+        "{68b48d98}": 50.0
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/concentration_ii.tft_17_3.png"
+    },
+    "TFT17_Augment_DarkStar_WhiteHole": {
+      "name_zh": "战利品奇点",
+      "name_en": "Loot Singularity",
+      "desc_zh": "当【黑洞】吞噬敌人时，它会将其转变成太空物质。在获取了足够数量之后，该【黑洞】会将它转变为战利品！获得1个【科加斯】和1个【丽桑卓】。<br><br><ShowIf.TFT17_Augment_DarkStar_WhiteHole_IsActive><rules>太空物质和战利品的品质每次都会提升。获得@TwoPiecePoints@/@FourPiecePoints@/@SixPiecePoints@太空物质，基于【暗星】的层级。</rules><br><br>太空物质：@TFTUnitProperty.item:TFT17_Augment_DarkStar_WhiteHole_CurrentStacks@ / @TFTUnitProperty.item:TFT17_Augment_DarkStar_WhiteHole_StacksToNextCashout@</ShowIf.TFT17_Augment_DarkStar_WhiteHole_IsActive>",
+      "effects": {
+        "{98d937e6}": 3,
+        "{b7d58b40}": 4,
+        "{de7067ca}": 2
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/whitehole_ii.tft_17_3.png"
+    },
+    "TFT17_Augment_EkkoGodAugment": {
+      "name_zh": "艾克的恩赐",
+      "name_en": "Ekko's Boon",
+      "desc_zh": "获得【突变】，一个基于单位的定位为其提供强力进化的装备。获得@NumRemovers_TOOLTIPONLY@个【装备拆卸器】。",
+      "effects": {
+        "NumRemovers_TOOLTIPONLY": 2
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/godaugmentekko_ii.tft_set17.png"
+    },
+    "TFT17_Augment_EvelynnGodAugment": {
+      "name_zh": "伊芙琳的恩赐",
+      "name_en": "Evelynn's Boon",
+      "desc_zh": "你的队伍获得@Durability*100@%伤害减免。在你输掉对战回合时，额外失去@HP@小小英雄生命值。",
+      "effects": {
+        "Durability": 0.10000000149011612,
+        "HP": 1
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/godaugmentevelynn_ii.tft_set17.png"
+    },
+    "TFT17_Augment_EvelynnGodAugment_BloodPrice": {
+      "name_zh": "猩红报偿",
+      "name_en": "Blood Price",
+      "desc_zh": "获得@Health@小小英雄生命值。你商店的最右侧栏位需要花费小小英雄生命值，而非金币。",
+      "effects": {
+        "Health": 25
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/missing-t2.png"
+    },
+    "TFT17_Augment_GragasCarry": {
+      "name_zh": "自我毁灭",
+      "name_en": "Self Destruct",
+      "desc_zh": "获得1个【古拉加斯】。你最强大的那个【古拉加斯】成为一名魔法战士，他可以引发巨大爆炸，但也会对其自身造成伤害。",
+      "effects": {},
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/selfdestruct_ii.tft_set17.png"
+    },
+    "TFT17_Augment_InvaderZed": {
+      "name_zh": "天煞灭影：劫",
+      "name_en": "Invader Zed",
+      "desc_zh": "获得1个【朔极之矛】。在回合@StageNum@-@RoundNum@时，获得1个【劫】。在获得【劫】后，他才会在你的商店中出现。<br><br>【劫】是一名5费物理战士，可以创造出他自己的分身。",
+      "effects": {
+        "RoundNum": 2.0,
+        "StageNum": 4.0
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/invaderzed_ii.tft_set17.png"
+    },
+    "TFT17_Augment_IvernMinionCarry": {
+      "name_zh": "宇宙大爆炸",
+      "name_en": "The Big Bang",
+      "desc_zh": "获得1个【小木灵】。你最强大的那个【小木灵】成为一个魔法战士，可以跳向一个附近的格子以在一个大范围内造成伤害。",
+      "effects": {},
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/meepspace9_ii.tft_set17.png"
+    },
+    "TFT17_Augment_JaxCarry": {
+      "name_zh": "摘星之志",
+      "name_en": "Reach for the Stars",
+      "desc_zh": "获得1个【贾克斯】。你最强大的那个【【贾克斯】成为一个魔法战士，可以在攻击时造成额外魔法伤害并且在施放技能时获得可叠加的攻击速度。",
+      "effects": {},
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/reachforthestars_ii.tft_set17.png"
+    },
+    "TFT17_Augment_KayleGodAugment": {
+      "name_zh": "凯尔的恩赐",
+      "name_en": "Kayle's Boon",
+      "desc_zh": "你的队伍每携带一件不同的成装，就会获得@Health@生命值、@AD*100@%物理加成和@AP@%法术加成。",
+      "effects": {
+        "AD": 0.009999999776482582,
+        "AP": 1.0,
+        "BaseHP": null,
+        "Health": 10,
+        "MaxCap": 99.0
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/godaugmentkayle_ii.tft_set17.png"
+    },
+    "TFT17_Augment_KayleGodAugment_Scrapper": {
+      "name_zh": "斗神的恩赐",
+      "name_en": "Boon of the Scrapper",
+      "desc_zh": "战斗开始时：最多@NumComponents@个基础装备暂时变为成装。获得@NumRemovers@个【装备拆卸器】和1个【分解器】。<br><br><rules>【分解器】允许你将成装拆分成基础装备</rules>",
+      "effects": {
+        "NumComponents": 3,
+        "NumRemovers": 3
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/missing-t2.png"
+    },
+    "TFT17_Augment_LeonaCarry": {
+      "name_zh": "盾女",
+      "name_en": "Shieldmaiden",
+      "desc_zh": "获得1个【蕾欧娜】。你最强大的那个【蕾欧娜】成为一个物理战士，可冲刺穿过敌人们以造成物理伤害并对命中的第一个目标造成晕眩。",
+      "effects": {},
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/leonahero_i.tft_set17_postlaunchaugments.png"
+    },
+    "TFT17_Augment_MordekaiserCarry": {
+      "name_zh": "热寂",
+      "name_en": "Heat Death",
+      "desc_zh": "获得1个【莫德凯撒】。你最强大的那个【莫德凯撒】成为一名魔法战士，他现在拥有一个缓慢成长的光环，能够持续造成伤害。",
+      "effects": {},
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/starconqueror_ii.tft_set17.png"
+    },
+    "TFT17_Augment_NasusCarry": {
+      "name_zh": "邦！",
+      "name_en": "Bonk!",
+      "desc_zh": "获得1个【内瑟斯】。你最强大的那个【内瑟斯】成为一名物理战士，他的技能现在是单体目标技能，每完成一次击杀都会变得更强。",
+      "effects": {},
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/bonk_i.tft_set17.png"
+    },
+    "TFT17_Augment_PoppyCarry": {
+      "name_zh": "飙速木灵",
+      "name_en": "Termeepnal Velocity",
+      "desc_zh": "获得1个【波比】。你最强大的那个【波比】成为一名远程物理术师，她会向她的目标发射1个高速木灵。",
+      "effects": {},
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/poppyhero_i.tft_set17.png"
+    },
+    "TFT17_Augment_PrimordianPrismaticAugment": {
+      "name_zh": "狂潮之心",
+      "name_en": "Heart of the Swarm",
+      "desc_zh": "所有3星弈子现在都会被计入【狂潮虫】的强度。在@LevelRequirement@级时，如果登场了@Num3StarUnits@个独特的3星弈子，那么【海魔人】们就会召唤【海魔至尊】。获得3个【海魔人】弈子和2个【微型复制器】。<br><br>已登场的独特3星弈子数量：@TFTUnitProperty.item:TFT17_Augment_PrimordianPrismaticAugment_TotalStarredUnits@ / @Num3StarUnits@<br><br>等级：@TFTUnitProperty.item:TFT17_Augment_PrimordianPrismaticAugment_TotalLevel@ / @LevelRequirement@",
+      "effects": {
+        "LevelRequirement": 9,
+        "Num3StarUnits": 6
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/heartoftheswarm_iii.tft_set17_postlaunchaugments.png"
+    },
+    "TFT17_Augment_PykeCarry": {
+      "name_zh": "职业杀手",
+      "name_en": "Contract Killer",
+      "desc_zh": "获得1个【派克】。你最强大的那个【派克】成为一名物理战士，在你的队伍参与击杀时产生金币，并且获得一个在击杀时重置的技能。",
+      "effects": {},
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/contractkiller_ii.tft_set17.png"
+    },
+    "TFT17_Augment_SorakaGodAugment": {
+      "name_zh": "索拉卡的恩赐",
+      "name_en": "Soraka's Boon",
+      "desc_zh": "你每损失1玩家生命值，你的队伍就会获得@HealthPerTacHealth@生命值。在每场玩家对战开始时，回复额外的@Heal@玩家生命值。",
+      "effects": {
+        "Heal": 1,
+        "HealthPerTacHealth": 2.5
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/godaugmentsoraka_ii.tft_set17.png"
+    },
+    "TFT17_Augment_ThreshGodAugment": {
+      "name_zh": "锤石的恩赐",
+      "name_en": "Thresh's Boon",
+      "desc_zh": "每回合，投掷一个骰子。基于该次投掷，获得一个加成。<br><br><rules><br>生命值：@TFTUnitProperty.item:TFT17_ThreshGodAugment_Health@<br>攻击速度：@TFTUnitProperty.item:TFT17_ThreshGodAugment_AttackSpeed@%<br></rules>",
+      "effects": {
+        "{11153eb3}": null,
+        "{27026e4c}": 3,
+        "{61f56708}": 2,
+        "{6a4e6902}": 3,
+        "{7eafa4c6}": 0.05999999865889549,
+        "{a7d750a4}": 6,
+        "{b386f143}": 75
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/godaugmentthresh_ii.tft_set17.png"
+    },
+    "TFT17_Augment_Timebreaker_Timestream": {
+      "name_zh": "时间流",
+      "name_en": "Timestream",
+      "desc_zh": "【未来战士】们在你每次刷新(包括免费刷新)时获得@Health@生命值和@AttackSpeed@%攻击速度。获得1个【伊泽瑞尔】和1个【潘森】。<br><br>(生命值：@TFTUnitProperty.:TFT17_Augment_Timebreaker_Timestream_HP@，攻击速度：@TFTUnitProperty.:TFT17_Augment_Timebreaker_Timestream_AS*100@%)",
+      "effects": {
+        "AttackSpeed": 0.25,
+        "Health": 7
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/timestream_ii.tft_set17_postlaunchaugments.png"
+    },
+    "TFT17_Augment_TourOfTheGalaxy": {
+      "name_zh": "银河巡旅",
+      "name_en": "Tour of the Galaxy",
+      "desc_zh": "【旅人】们获得@HP@生命值、@AD*100@%物理加成和@AP@%法术加成，此加成会在你每次对战一个新的玩家时提升@IncPercent*100@%。你会倾向于对战那些近期未与你对战过的玩家们。获得1个【派克】和1个【小木灵】。",
+      "effects": {
+        "AD": 0.12999999523162842,
+        "AP": 13.0,
+        "HP": 130.0,
+        "IncPercent": 0.10000000149011612
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/tourofthegalaxy_ii.tft_set17_postlaunchaugments.png"
+    },
+    "TFT17_Augment_VarusGodAugment_BoonOfStars": {
+      "name_zh": "韦鲁斯的恩赐",
+      "name_en": "Varus's Boon",
+      "desc_zh": "你的弈子们获得@Health@x己方队伍总星级的生命值，并且你的5费概率提升@PercentIncrease@%。",
+      "effects": {
+        "Health": 15,
+        "PercentIncrease": 2
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/godaugmentvarus_ii.tft_set17.png"
+    },
+    "TFT17_Augment_YasuoGodAugment_GoldenHex": {
+      "name_zh": "亚索的黄金格",
+      "name_en": "Yasuo's Golden Hex",
+      "desc_zh": "绘制1个【黄金格】。格内的单位获得@BonusHealth@生命值、@AttackSpeed*100@%攻击速度，并在击杀敌人时掉落@Gold@金币。",
+      "effects": {
+        "AttackSpeed": 0.25,
+        "BonusHealth": 250.0,
+        "Gold": 1
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/findyourcenter_i.tft_set12.png"
+    },
+    "TFT17_Augment_YasuoGodAugment_MoreHexes": {
+      "name_zh": "亚索的共享聚光灯",
+      "name_en": "Yasuo's Share The Spotlight",
+      "desc_zh": "【亚索】的绘制格也会影响邻格的单位，效能为@Effectiveness*100@%。",
+      "effects": {
+        "Effectiveness": 1.0
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/sharespotlight2.png"
+    },
+    "TFT17_Augment_YasuoGodAugment_PaintedPower": {
+      "name_zh": "亚索的恩赐",
+      "name_en": "Yasuo's Boon",
+      "desc_zh": "提高@Effectiveness*100@%【亚索】的绘制格的效果。如果你只有2个绘制格，获得@GoldIfTwo@金币。",
+      "effects": {
+        "Effectiveness": 0.5,
+        "GoldIfTwo": 8
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/godaugmentyasuo_ii.tft_set17.png"
+    },
+    "TFT6_Augment_BandOfThieves2": {
+      "name_zh": "窃贼帮派 II",
+      "name_en": "Band of Thieves II",
+      "desc_zh": "获得@NumGloves@个【窃贼手套】。在@DelayTurns@场玩家对战回合后，获得另一个。",
+      "effects": {
+        "DelayTurns": 8.0,
+        "NumGloves": 2.0
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/bandthieves3.png"
+    },
+    "TFT6_Augment_BandOfThieves2Plus": {
+      "name_zh": "窃贼帮派 II+",
+      "name_en": "Band of Thieves II+",
+      "desc_zh": "获得@NumGloves@个【窃贼手套】。在@DelayTurns@场玩家对战回合后，获得另一个。",
+      "effects": {
+        "DelayTurns": 6.0,
+        "NumGloves": 2.0
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/bandthieves3.png"
+    },
+    "TFT6_Augment_BandOfThieves2PlusPlus": {
+      "name_zh": "窃贼帮派 II++",
+      "name_en": "Band of Thieves II++",
+      "desc_zh": "获得@NumGloves@个【窃贼手套】。在@DelayTurns@场玩家对战回合后，获得另一个。",
+      "effects": {
+        "DelayTurns": 3.0,
+        "NumGloves": 2.0
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/bandthieves3.png"
+    },
+    "TFT6_Augment_CalculatedLoss": {
+      "name_zh": "存心失利",
+      "name_en": "Calculated Loss",
+      "desc_zh": "在你输掉战斗之后，获得@Gold@金币和1次免费的商店刷新。",
+      "effects": {
+        "Gold": 2.0
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/calculatedloss2.png"
+    },
+    "TFT6_Augment_ClearMind": {
+      "name_zh": "清晰头脑",
+      "name_en": "Clear Mind",
+      "desc_zh": "如果在一个玩家对战回合结束时你的备战席没有任何英雄，则获得@XP@经验。",
+      "effects": {
+        "XP": 3.0
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/clearmind2.png"
+    },
+    "TFT6_Augment_CyberneticImplants2": {
+      "name_zh": "源计划植入",
+      "name_en": "Cybernetic Implants",
+      "desc_zh": "那些携带1件装备的友军获得@HP@生命值和@AD*100@%物理加成。获得1个【暴风大剑】。",
+      "effects": {
+        "AD": 0.15000000596046448,
+        "HP": 100.0
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/cybernetic2.png"
+    },
+    "TFT6_Augment_CyberneticUplink2": {
+      "name_zh": "源计划上行链路",
+      "name_en": "Cybernetic Uplink",
+      "desc_zh": "那些携带1件装备的友军获得@Health@生命值和@ManaRegen@法力回复。获得1个【女神之泪】。",
+      "effects": {
+        "Health": 100.0,
+        "ManaRegen": 2.0
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/cybernetic-uplink-ii.png"
+    },
+    "TFT6_Augment_Distancing": {
+      "name_zh": "浪人 I",
+      "name_en": "Exiles I",
+      "desc_zh": "战斗开始时，你的邻格内没有弈子的单位获得相当于其@MaxHealthShield@%最大生命值的护盾值，持续@ShieldDuration@秒。",
+      "effects": {
+        "MaxHealthShield": 20.0,
+        "ShieldDuration": 10.0
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/exiles1.png"
+    },
+    "TFT6_Augment_Distancing2": {
+      "name_zh": "浪人 II",
+      "name_en": "Exiles II",
+      "desc_zh": "战斗开始时，你的邻格内没有弈子的单位获得相当于其@MaxHealthShield@%最大生命值的护盾值，持续@ShieldDuration@秒。",
+      "effects": {
+        "MaxHealthShield": 30.0,
+        "ShieldDuration": 10.0
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/exiles2.png"
+    },
+    "TFT6_Augment_Diversify1": {
+      "name_zh": "联合作战",
+      "name_en": "Stand United",
+      "desc_zh": "在你的队伍之中，每有一个已激活的非单人羁绊，你的弈子就会获得@AD*100@%物理加成和@AP@%法术加成。<br><br>当前加成：@TFTUnitProperty.item:TFT_Augment_Diversify_ADCounter@% %i:scaleAD%  @TFTUnitProperty.item:TFT_Augment_Diversify_APCounter@% %i:scaleAP%<br>",
+      "effects": {
+        "AD": 0.014999999664723873,
+        "AP": 1.5
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/standunited1.png"
+    },
+    "TFT6_Augment_Electrocharge1": {
+      "name_zh": "电火花 I",
+      "name_en": "Electrocharge I",
+      "desc_zh": "友军每受到@AttacksToProc@次攻击，会对附近的敌人造成@Damage1@~@Damage4@(基于当前阶段)魔法伤害(@ICD@秒冷却)。",
+      "effects": {
+        "AttacksToProc": 4.0,
+        "Damage1": 30.0,
+        "Damage2": 50.0,
+        "Damage3": 70.0,
+        "Damage4": 90.0,
+        "ICD": 1.0
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/electrocharge-i.png"
+    },
+    "TFT6_Augment_Electrocharge2": {
+      "name_zh": "电火花 II",
+      "name_en": "Electrocharge II",
+      "desc_zh": "友军每受到@AttacksToProc@次攻击，会对附近的敌人造成@Damage1@~@Damage4@(基于当前阶段)魔法伤害(@ICD@秒冷却)。",
+      "effects": {
+        "AttacksToProc": 4.0,
+        "Damage1": 50.0,
+        "Damage2": 80.0,
+        "Damage3": 110.0,
+        "Damage4": 140.0,
+        "ICD": 1.0
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/electrocharge-ii.png"
+    },
+    "TFT6_Augment_ForceOfNature": {
+      "name_zh": "新人入队",
+      "name_en": "New Recruit",
+      "desc_zh": "获得+@MaxArmySizeIncrease@最大队伍规模和@NumUnits@个4费弈子。",
+      "effects": {
+        "MaxArmySizeIncrease": 1.0,
+        "NumUnits": 1,
+        "{4a99a5b2}": null
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/newrecruit3.png"
+    },
+    "TFT6_Augment_ForceOfNaturePlus": {
+      "name_zh": "新人入队+",
+      "name_en": "New Recruit+",
+      "desc_zh": "获得+@MaxArmySizeIncrease@最大队伍规模和@NumUnits@个4费弈子。",
+      "effects": {
+        "MaxArmySizeIncrease": 1.0,
+        "NumUnits": 2,
+        "{4a99a5b2}": null
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/newrecruit3.png"
+    },
+    "TFT6_Augment_GachaAddict": {
+      "name_zh": "棱彩门票",
+      "name_en": "Prismatic Ticket",
+      "desc_zh": "每当你的商店刷新时，你都有@RerollPercent@%几率获得1次免费刷新。",
+      "effects": {
+        "RerollPercent": 45.0
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/goldenticket3.png"
+    },
+    "TFT6_Augment_HyperRoll": {
+      "name_zh": "花到上头",
+      "name_en": "Hustler",
+      "desc_zh": "你不再获得利息，但会在每个玩家对战回合开始时获得@Gold@金币。立刻获得@InitialGold@金币。<br><br><rules>利息是你每储存10金币时获得的额外金币。</rules>",
+      "effects": {
+        "Gold": 3,
+        "InitialGold": 3,
+        "XP": null
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/hyperroll2.png"
+    },
+    "TFT6_Augment_ItemGrabBag1": {
+      "name_zh": "装备百宝袋",
+      "name_en": "Item Grab Bag",
+      "desc_zh": "提供@NumItems@件随机成装。",
+      "effects": {
+        "NumItems": 1.0
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/itemgrabbag1.png"
+    },
+    "TFT6_Augment_MakeshiftArmor1": {
+      "name_zh": "应急护甲 I",
+      "name_en": "Makeshift Armor I",
+      "desc_zh": "己方没有携带任何装备的弈子们，都会获得@Resists@护甲和魔抗。",
+      "effects": {
+        "Resists": 30.0
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/makeshift1.png"
+    },
+    "TFT6_Augment_MakeshiftArmor2": {
+      "name_zh": "应急护甲 II",
+      "name_en": "Makeshift Armor II",
+      "desc_zh": "己方没有携带任何装备的弈子们，都会获得@Resists@护甲和魔抗。",
+      "effects": {
+        "Resists": 50.0
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/makeshift2.png"
+    },
+    "TFT6_Augment_MaxLevel10": {
+      "name_zh": "升级咯！",
+      "name_en": "Level Up!",
+      "desc_zh": "在你购买经验值的时候，获得额外的@XP@经验值。立刻获得@InitialXP@经验值。",
+      "effects": {
+        "InitialXP": 6.0,
+        "XP": 2.0
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/levelup3.png"
+    },
+    "TFT6_Augment_OneTwoFive": {
+      "name_zh": "一，二，五！",
+      "name_en": "One, Two, Five!",
+      "desc_zh": "获得@NumComponents@个随机的基础装备、@Gold@金币、和@NumChamps@个随机的5费弈子。",
+      "effects": {
+        "Gold": 2.0,
+        "NumChamps": 1.0,
+        "NumComponents": 1.0
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/one-two-five-i.png"
+    },
+    "TFT6_Augment_PandorasItems": {
+      "name_zh": "潘朵拉的装备",
+      "name_en": "Pandora's Items",
+      "desc_zh": "回合开始时：你备战席上的装备会随机变化。<br><br>获得@NumComponents@件随机基础装备。",
+      "effects": {
+        "NumComponents": 1.0
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/pandora1.png"
+    },
+    "TFT6_Augment_PortableForge": {
+      "name_zh": "便携锻炉",
+      "name_en": "Portable Forge",
+      "desc_zh": "从@ArmoryChoiceCount@件神器中选出1件。<br><br><rules>神器是可以提供独特效果的强力装备。</rules>",
+      "effects": {
+        "ArmoryChoiceCount": 4.0
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/portableforge2.png"
+    },
+    "TFT6_Augment_Recombobulator": {
+      "name_zh": "变形重组器",
+      "name_en": "Recombobulator",
+      "desc_zh": "你棋盘上的弈子们会永久变形为一个比自身高1费的随机弈子(最大5费)。获得@NumRemovers@个【装备拆卸器】。",
+      "effects": {
+        "NumRemovers": 2.0
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/recombobulator-i.png"
+    },
+    "TFT6_Augment_SalvageBin": {
+      "name_zh": "打捞桶",
+      "name_en": "Salvage Bin",
+      "desc_zh": "立刻获得1件随机成装，并在@NumRounds@个玩家对战回合之后提供1个基础装备。出售弈子会将其携带的成装拆分成基础装备(冠冕系装备和纹章除外)。",
+      "effects": {
+        "NumRounds": 8.0
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/salvage2.png"
+    },
+    "TFT6_Augment_SecondWind1": {
+      "name_zh": "复苏之风",
+      "name_en": "Second Wind",
+      "desc_zh": "在战斗环节开始@Delay@秒后，你的弈子们回复其@HealPercent@%已损失生命值。",
+      "effects": {
+        "Delay": 10.0,
+        "HealPercent": 40.0
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/second--wind-i.png"
+    },
+    "TFT6_Augment_SecondWind2": {
+      "name_zh": "复苏之风 II",
+      "name_en": "Second Wind II",
+      "desc_zh": "在战斗环节开始@Delay@秒后，你的弈子们回复其@HealPercent@%已损失生命值。",
+      "effects": {
+        "Delay": 10.0,
+        "HealPercent": 60.0
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/second--wind-ii.png"
+    },
+    "TFT6_Augment_SunfireBoard": {
+      "name_zh": "日炎棋盘",
+      "name_en": "Sunfire Board",
+      "desc_zh": "战斗开始时：在@Duration@秒里持续灼烧所有敌人@TotalBurnPercent@%最大生命值并使其受到的治疗效果降低@GrievousWoundsPercent@%。",
+      "effects": {
+        "Duration": 18.0,
+        "GrievousWoundsPercent": 33.0,
+        "TotalBurnPercent": 18.0
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/sunfireboard2.png"
+    },
+    "TFT6_Augment_TheGoldenEgg": {
+      "name_zh": "金蛋",
+      "name_en": "The Golden Egg",
+      "desc_zh": "获得1个大金蛋，需要@EggTurns@个回合来孵化，在孵化时提供大量战利品。赢下玩家对战回合后会使孵化倒计时加快1个额外的回合。",
+      "effects": {
+        "EggTurns": 11.0,
+        "{ecb4463d}": null
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/the-golden-egg-iii.png"
+    },
+    "TFT6_Augment_ThriftShop": {
+      "name_zh": "明智消费",
+      "name_en": "Wise Spending",
+      "desc_zh": "你不能再购买经验值。每次花费金币刷新商店时，获得@XP@经验值。立刻获得@Gold@金币。",
+      "effects": {
+        "Gold": 3,
+        "Numrolls": 1,
+        "XP": 2.0
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/wisespending3.png"
+    },
+    "TFT6_Augment_TinyTitans": {
+      "name_zh": "小巨人",
+      "name_en": "Tiny Titans",
+      "desc_zh": "使你的当前玩家生命值和最大玩家生命值都提升@heal@。",
+      "effects": {
+        "Heal": 20.0
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/tiny-titans-i.png"
+    },
+    "TFT6_Augment_TradeSector": {
+      "name_zh": "DD街区",
+      "name_en": "Trade Sector",
+      "desc_zh": "每回合获得1次免费的商店刷新。获得@Gold@金币。",
+      "effects": {
+        "Gold": 2.0,
+        "RerollCount": 1.0,
+        "RerollsNow": 1.0
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/trade2.png"
+    },
+    "TFT6_Augment_TradeSector2": {
+      "name_zh": "贸易中心",
+      "name_en": "Commerce Core",
+      "desc_zh": "立刻获得@RerollsNow@次免费商店刷新，并在剩余游戏时间内每回合获得@RerollCount@次免费商店刷新。",
+      "effects": {
+        "Gold": null,
+        "RerollCount": 3.0,
+        "RerollsNow": 16.0
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/trade3.png"
+    },
+    "TFT7_Augment_AFK": {
+      "name_zh": "开摆",
+      "name_en": "AFK",
+      "desc_zh": "你在接下来的@RoundsToSkip@回合里无法采取任何行动。在此之后，获得@Gold@金币。",
+      "effects": {
+        "Gold": 17.0,
+        "RoundsToSkip": 3.0
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/afk-i.png"
+    },
+    "TFT7_Augment_BandOfThieves1": {
+      "name_zh": "窃贼帮派",
+      "name_en": "Band of Thieves",
+      "desc_zh": "提供@NumGloves@个【窃贼手套】。",
+      "effects": {
+        "NumGloves": 1.0
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/bandthieves1.png"
+    },
+    "TFT7_Augment_BestFriends1": {
+      "name_zh": "最佳好友 I",
+      "name_en": "Best Friends I",
+      "desc_zh": "在战斗环节开始时，你独立成对的弈子获得@AS*100@%攻击速度和@Armor@护甲。",
+      "effects": {
+        "AS": 0.10000000149011612,
+        "Armor": 13.0
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/best-friends-i.png"
+    },
+    "TFT7_Augment_BestFriends2": {
+      "name_zh": "最佳好友 II",
+      "name_en": "Best Friends II",
+      "desc_zh": "在战斗环节开始时，你独立成对的弈子获得@AS*100@%攻击速度和@Armor@护甲。",
+      "effects": {
+        "AS": 0.15000000596046448,
+        "Armor": 22.0
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/best-friends-ii.png"
+    },
+    "TFT7_Augment_BirthdayPresents": {
+      "name_zh": "生日礼物",
+      "name_en": "Birthday Present",
+      "desc_zh": "在你每次升级时提供1个2星弈子和@Gold@金币。这个弈子的费用位阶是你的等级减4(最大值：5费)。",
+      "effects": {
+        "Gold": 1.0
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/golden-gifts-iii.png"
+    },
+    "TFT7_Augment_ClutteredMind": {
+      "name_zh": "纷乱头脑",
+      "name_en": "Cluttered Mind",
+      "desc_zh": "即刻获得@Units@个随机的1费弈子。如果玩家对战回合结束时你的备战席已满，提供@XP@经验。 ",
+      "effects": {
+        "Units": 4.0,
+        "XP": 3.0
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/dizzy-ii.png"
+    },
+    "TFT7_Augment_CursedCrown": {
+      "name_zh": "诅咒冠冕",
+      "name_en": "Cursed Crown",
+      "desc_zh": "提供+@MaxArmySizeIncrease@最大队伍规模，并且你的队伍获得@DurabilityBonus*100@%伤害减免，但你在输掉一场玩家对战回合后会承受2倍的玩家伤害。",
+      "effects": {
+        "DurabilityBonus": 0.03999999910593033,
+        "MaxArmySizeIncrease": 2.0,
+        "PlayerCombatDamageIncrease": 100.0
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/cursedcrown-iii.png"
+    },
+    "TFT7_Augment_LategameSpecialist": {
+      "name_zh": "后期专家",
+      "name_en": "Late Game Specialist",
+      "desc_zh": "在你到达@LevelReq@级时，提供@Gold@金币。",
+      "effects": {
+        "Gold": 30.0,
+        "LevelReq": 9.0
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/late-game-specialist-i.png"
+    },
+    "TFT7_Augment_LivingForge": {
+      "name_zh": "活体锻炉",
+      "name_en": "Living Forge",
+      "desc_zh": "立刻以及之后的每@NumberOfCombats@个玩家对战回合后获得1个【神器锻造器】。<br><br><rules>神器是可以提供独特效果的强力装备。</rules>",
+      "effects": {
+        "Numberofcombats": 8.0
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/living-forge-iii.png"
+    },
+    "TFT7_Augment_LuckyGloves": {
+      "name_zh": "幸运手套",
+      "name_en": "Lucky Gloves",
+      "desc_zh": "【窃贼手套】总会为你的弈子们提供理想的装备。提供@NumGloves@个【拳套】。",
+      "effects": {
+        "NumGloves": 2.0,
+        "NumRounds": 9999.0
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/lucky-gloves-iii.png"
+    },
+    "TFT7_Augment_LuckyGlovesPlus": {
+      "name_zh": "幸运手套+",
+      "name_en": "Lucky Gloves+",
+      "desc_zh": "【窃贼手套】总会为你的弈子们提供推荐装备。即刻获得@NumGloves@个【拳套】，然后在@DelayTurns@场玩家对战后获得另一个。",
+      "effects": {
+        "DelayTurns": 4.0,
+        "NumGloves": 2.0
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/lucky-gloves-iii.png"
+    },
+    "TFT7_Augment_UrfsGrabBag2": {
+      "name_zh": "阿福的百宝袋",
+      "name_en": "Urf's Grab Bag",
+      "desc_zh": "获得@NumSpatulas@个【金铲铲】、@NumComponents@个随机基础装备、以及@NumGold@金币。",
+      "effects": {
+        "NumComponents": 3.0,
+        "NumGold": 5.0,
+        "NumSpatulas": 1.0
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/urfs-grab-bag-iii.png"
+    },
+    "TFT8_Augment_SalvageBinPlus": {
+      "name_zh": "打捞桶+",
+      "name_en": "Salvage Bin+",
+      "desc_zh": "立刻获得1件随机成装，并在@NumRounds@个玩家对战回合之后提供1个基础装备。出售弈子会将其携带的成装拆分成基础装备(冠冕系装备和纹章除外)。",
+      "effects": {
+        "NumRounds": 4.0
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/salvage2.png"
+    },
+    "TFT9_Augment_ArmyBuilding": {
+      "name_zh": "团队建设",
+      "name_en": "Team Building",
+      "desc_zh": "获得1个【次级英雄复制器】。在@PlayerCombatNum@个玩家对战回合后获得另一个。<br><br><rules>这个物品允许你能复制一个3费或以下的弈子。</rules>",
+      "effects": {
+        "PlayerCombatNum": 5.0
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/building-an-army-i.png"
+    },
+    "TFT9_Augment_BardPlaybook1": {
+      "name_zh": "游神的盟友",
+      "name_en": "Caretaker's Ally",
+      "desc_zh": "即刻获得1个随机的@UnitTier@费英雄。在你每次升级时，再次获得一个相同弈子。<br><br>弈子：@TFTUnitProperty.item:TFT_Augment_WorthTheWait@",
+      "effects": {
+        "UnitTier": 2.0
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/caretaker_s-chosen-i.png"
+    },
+    "TFT9_Augment_BigGrabBag": {
+      "name_zh": "大百宝袋",
+      "name_en": "Big Grab Bag",
+      "desc_zh": "获得@NumItems@件随机基础装备、@Gold@金币和1个【装备重铸器】。<br><br><rules>【装备重铸器】允许你将任一装备随机成另一件装备。</rules>",
+      "effects": {
+        "Gold": 2.0,
+        "NumItems": 3.0,
+        "NumReforgers": 1.0
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/grab-bag-ii.png"
+    },
+    "TFT9_Augment_BuildingACollectionPlusPlus": {
+      "name_zh": "珍藏财宝",
+      "name_en": "Buried Treasures",
+      "desc_zh": "立刻以及接下来的@roundsofbonusitems@个回合开始时，获得1个随机基础装备。",
+      "effects": {
+        "Gold": null,
+        "UpfrontItems": 1.0,
+        "roundsofbonusitems": 5.0
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/buried-treasures-iii.png"
+    },
+    "TFT9_Augment_Commander_Ascension": {
+      "name_zh": "飞升",
+      "name_en": "Ascension",
+      "desc_zh": "在战斗开始@Delay@秒后，你的队伍获得@DamageAmp@%伤害增幅。",
+      "effects": {
+        "DamageAmp": 35.0,
+        "Delay": 12.0
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/ascension2.png"
+    },
+    "TFT9_Augment_Commander_PartialAscension": {
+      "name_zh": "部分飞升",
+      "name_en": "Partial Ascension",
+      "desc_zh": "在战斗开始@Delay@秒后，你的队伍获得@DamageAmp@%伤害增幅。",
+      "effects": {
+        "DamageAmp": 20.0,
+        "Delay": 12.0
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/ascension1.png"
+    },
+    "TFT9_Augment_Commander_RollingForDays": {
+      "name_zh": "D个痛快！ I",
+      "name_en": "Rolling For Days I",
+      "desc_zh": "获得@Numrolls@次免费刷新。",
+      "effects": {
+        "Numrolls": 10.0
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/rolling-for-days-i.png"
+    },
+    "TFT9_Augment_Commander_TeamingUp1": {
+      "name_zh": "集结战队",
+      "name_en": "Teaming Up",
+      "desc_zh": "获得@NumComponents@个随机的基础装备和@NumChamps@个随机的3费弈子。",
+      "effects": {
+        "NumChamps": 2.0,
+        "NumComponents": 1.0
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/teaming-up-i.png"
+    },
+    "TFT9_Augment_GreaterJeweledLotus": {
+      "name_zh": "珠光莲花 II",
+      "name_en": "Jeweled Lotus II",
+      "desc_zh": "己方获得@CritChance@%暴击几率、@CritDamage*100@%暴击伤害和<TFTKeyword>【技能暴击】</TFTKeyword>。<br><br>{{TFT_Keyword_Precision}}",
+      "effects": {
+        "CritChance": 25.0,
+        "CritDamage": 0.10000000149011612
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/jeweled-lotus-iii.png"
+    },
+    "TFT9_Augment_HealingOrbsI": {
+      "name_zh": "治疗法球 I",
+      "name_en": "Healing Orbs I",
+      "desc_zh": "在一名敌人阵亡时，相距最近的那个己方弈子获得@Heal@治疗效果。",
+      "effects": {
+        "Heal": 250.0
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/healing-orbs-i.png"
+    },
+    "TFT9_Augment_HealingOrbsII": {
+      "name_zh": "治疗法球 II",
+      "name_en": "Healing Orbs II",
+      "desc_zh": "在一名敌人阵亡时，相距最近的那个己方弈子获得@Heal@治疗效果。",
+      "effects": {
+        "Heal": 575.0
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/healing-orbs-ii.png"
+    },
+    "TFT9_Augment_HedgeFund": {
+      "name_zh": "对冲基金",
+      "name_en": "Hedge Fund",
+      "desc_zh": "获得@Gold@金币。你的最大利息提升至@InterestCap@金币。<br><br><rules>利息是你每储存10金币时获得的额外金币。</rules>",
+      "effects": {
+        "Gold": 22.0,
+        "InterestCap": 10.0
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/richgetricher3.png"
+    },
+    "TFT9_Augment_HedgeFundPlus": {
+      "name_zh": "对冲基金+",
+      "name_en": "Hedge Fund+",
+      "desc_zh": "获得@Gold@金币。你的最大利息提升至@InterestCap@金币。<br><br><rules>利息是你每储存10金币时获得的额外金币。</rules>",
+      "effects": {
+        "Gold": 30.0,
+        "InterestCap": 10.0
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/richgetricher3.png"
+    },
+    "TFT9_Augment_IronAssets": {
+      "name_zh": "黑铁资产",
+      "name_en": "Iron Assets",
+      "desc_zh": "获得1个【基础装备锻造器】和@Gold@金币。",
+      "effects": {
+        "Gold": 3.0
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/iron-assets-i.png"
+    },
+    "TFT9_Augment_JeweledLotus": {
+      "name_zh": "珠光莲花 I",
+      "name_en": "Jeweled Lotus I",
+      "desc_zh": "己方获得@CritChance@%暴击几率和<TFTKeyword>【技能暴击】</TFTKeyword>。<br><br>{{TFT_Keyword_Precision}}",
+      "effects": {
+        "CritChance": 10.0,
+        "CritDamage": null
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/jeweled-lotus-ii.png"
+    },
+    "TFT9_Augment_LearningFromExperience2": {
+      "name_zh": "耐心学习",
+      "name_en": "Patient Study",
+      "desc_zh": "在与玩家的战斗后，如果你赢了则获得@winxp@经验，如果你输了则获得@lossxp@经验。",
+      "effects": {
+        "lossxp": 3.0,
+        "winxp": 2.0
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/learning-from-experience-ii.png"
+    },
+    "TFT9_Augment_Legend_HighEndSector": {
+      "name_zh": "大买特买",
+      "name_en": "Shopping Spree",
+      "desc_zh": "在你升级时，获得相当于你等级数+@BonusRollPerLevel@的免费商店刷新次数。获得@Gold@金币。",
+      "effects": {
+        "BonusRollPerLevel": 1,
+        "Gold": 2.0,
+        "{a9ad6d1b}": 8.0
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/silver-ticket-iii.png"
+    },
+    "TFT9_Augment_LongTimeCrafting": {
+      "name_zh": "休眠锻炉",
+      "name_en": "Latent Forge",
+      "desc_zh": "在@NumberOfCombats@个玩家对战后，获得1个【神器锻造器】。<br><br><rules>这个锻造器提供4个选项。神器是可以提供独特效果的强力装备。</rules>",
+      "effects": {
+        "Numberofcombats": 8.0
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/long-time-crafting-i.png"
+    },
+    "TFT9_Augment_MissedConnections": {
+      "name_zh": "别再错过",
+      "name_en": "Missed Connections",
+      "desc_zh": "获得每个1费弈子各1个。",
+      "effects": {},
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/missed-connections-i.png"
+    },
+    "TFT9_Augment_OneTwosThree": {
+      "name_zh": "一，二，三",
+      "name_en": "One Two Three",
+      "desc_zh": "获得@tier1champs@个1费弈子、@numchamps@个2费弈子和1个3费弈子。",
+      "effects": {
+        "NumChamps": 1.0,
+        "tier1champs": 2.0
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/threes-company-i.png"
+    },
+    "TFT9_Augment_PandorasItems2": {
+      "name_zh": "潘朵拉的装备 II",
+      "name_en": "Pandora's Items II",
+      "desc_zh": "回合开始时：你备战席上的装备会随机变化。<br><br>获得@NumComponents@件随机基础装备。",
+      "effects": {
+        "NumCompletedItems": null,
+        "NumComponents": 2.0
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/pandora2.png"
+    },
+    "TFT9_Augment_PandorasRadiantBox": {
+      "name_zh": "潘朵拉的装备 III",
+      "name_en": "Pandora's Items III",
+      "desc_zh": "回合开始时：你备战席上的装备会随机变化。<br><br>获得1件随机光明武器。",
+      "effects": {},
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/pandora3.png"
+    },
+    "TFT9_Augment_RiskyMoves": {
+      "name_zh": "冒险举动",
+      "name_en": "Risky Moves",
+      "desc_zh": "你的小小英雄损失@Health@生命值，但在@PlayerCombatNum@个与玩家的战斗回合后，获得@Gold@金币。",
+      "effects": {
+        "Gold": 26.0,
+        "Health": 20.0,
+        "PlayerCombatNum": 7.0
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/risky-moves-i.png"
+    },
+    "TFT9_Augment_RollTheDice": {
+      "name_zh": "光明无赖",
+      "name_en": "Radiant Rascal",
+      "desc_zh": "获得1个【光明窃贼手套】。每回合装备2件随机的临时光明武器。<br><br><rules>光明武器是各个成装的超级加强版。</rules>",
+      "effects": {},
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/roll-the-dice-iii.png"
+    },
+    "TFT9_Augment_SilverSpoon": {
+      "name_zh": "银汤匙",
+      "name_en": "Silver Spoon",
+      "desc_zh": "获得@Experience@经验值。<br>",
+      "effects": {
+        "Experience": 10.0
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/silver-spoon-i.png"
+    },
+    "TFT9_Augment_TiniestTitanPlus": {
+      "name_zh": "最小巨人",
+      "name_en": "Tiniest Titan",
+      "desc_zh": "在每场玩家对战回合后获得@Heal@玩家生命值和@Gold@金币。你的小小英雄还会移动得更快。立刻获得@InitialGold@金币。",
+      "effects": {
+        "Gold": 2.0,
+        "Heal": 2.0,
+        "InitialGold": 10.0
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/tiniest-titaniii.png"
+    },
+    "TFT9_Augment_TonsOfStats": {
+      "name_zh": "成吨的属性！",
+      "name_en": "Tons of Stats!",
+      "desc_zh": "你的弈子们获得@Health@生命值、@AttackDamage@%物理加成、@AbilityPower@%法术加成、@Armor@护甲、@MR@魔抗、@AttackSpeed@%攻击速度和@Mana@法力值。",
+      "effects": {
+        "AbilityPower": 4.0,
+        "Armor": 4.0,
+        "AttackDamage": 4.0,
+        "AttackSpeed": 4.0,
+        "Health": 44.0,
+        "MR": 4.0,
+        "Mana": 4.0
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/tons-of-stats-ii.png"
+    },
+    "TFT9_Augment_YouHaveMyBow": {
+      "name_zh": "吾弓听命于您",
+      "name_en": "You Have My Bow",
+      "desc_zh": "获得1个【反曲之弓】。你的队伍获得@AS@%攻击速度。 ",
+      "effects": {
+        "AS": 12.0
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/you-have-my-bow-ii.png"
+    },
+    "TFT_Augment_AdvancedLoan": {
+      "name_zh": "高级贷款",
+      "name_en": "Advanced Loan",
+      "desc_zh": "获得@Gold@金币。你的下一个强化符文阶位降低一级。",
+      "effects": {
+        "Gold": 20
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/advancedloan_ii.tft_set16.png"
+    },
+    "TFT_Augment_AdvancedLoanPlus": {
+      "name_zh": "高级贷款+",
+      "name_en": "Advanced Loan+",
+      "desc_zh": "获得@Gold@金币。你的下一个强化符文阶位降低一级。",
+      "effects": {
+        "Gold": 33
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/advancedloan_ii.tft_set16.png"
+    },
+    "TFT_Augment_AnExaltedAdventure": {
+      "name_zh": "崇高冒险",
+      "name_en": "An Exalted Adventure",
+      "desc_zh": "获得3名2费弈子。如果你将他们当中的两个升为3星，将获得一个充满战利品的法球。在接下来的@NumStages@个阶段开始时会获得1个【次级英雄复制器】。<br><br>弈子：@TFTUnitProperty.item:TFT_Augment_ExaltedAdventure_Champs@，@TFTUnitProperty.item:TFT_Augment_ExaltedAdventure_Champs2@，@TFTUnitProperty.item:TFT_Augment_ExaltedAdventure_Champs3@",
+      "effects": {
+        "NumStages": 2,
+        "NumUnits": 3.0
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/exaltedadventure_iii.tft_set13.png"
+    },
+    "TFT_Augment_ArcaneViktory": {
+      "name_zh": "双城赢家",
+      "name_en": "Arcane Viktor-y",
+      "desc_zh": "在战斗环节开始@FirstStunSeconds@秒后，晕眩所有敌方弈子@StunDuration@秒。在战斗@SecondStunSeconds@秒后，重复该效果。<br><br><tftitemrules>2024云顶之弈澳门公开赛</tftitemrules>",
+      "effects": {
+        "FirstStunSeconds": 8.0,
+        "SecondStunSeconds": 18.0,
+        "StunDuration": 1.5
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/arcaneviktory_ii.png"
+    },
+    "TFT_Augment_AuraFarming": {
+      "name_zh": "低调炫耀",
+      "name_en": "Aura Farming",
+      "desc_zh": "获得1个携带着一件推荐装备的@StarLevel@星5费弈子。你需要等到阶段@UnlockStage@-@UnlockRound@才能将它登场。",
+      "effects": {
+        "NumItems": 1.0,
+        "UnlockRound": 3,
+        "UnlockStage": 4,
+        "starLevel": 2.0
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/aurafarming_ii.tft_set15.png"
+    },
+    "TFT_Augment_AwakenedSoul": {
+      "name_zh": "灵魂唤醒",
+      "name_en": "Soul Awakening",
+      "desc_zh": "战斗开始时：你的队伍每秒获得@StatsPerSecond@%物理加成和法术加成，持续@MaxStacks@秒。在最大层数时，造成 @BonusTrueDamage*100@%额外真实伤害。",
+      "effects": {
+        "BonusTrueDamage": 0.11999999731779099,
+        "MaxStacks": 10.0,
+        "StatsPerSecond": 1.5
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/awakenedsoul_iii.tft_set16.png"
+    },
+    "TFT_Augment_BacklineBlueprint": {
+      "name_zh": "后排蓝图",
+      "name_en": "Backline Blueprint",
+      "desc_zh": "获得1个3费非坦克弈子，以及一个与其最后列出羁绊相匹配的纹章。",
+      "effects": {},
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/backlineblueprint_ii.tft_set17.png"
+    },
+    "TFT_Augment_BeltOverflow": {
+      "name_zh": "腰带溢流",
+      "name_en": "Belt Overflow",
+      "desc_zh": "获得@NumItems@个【巨人腰带】。你的【巨人腰带】提供+@BonusHealth@额外生命值。",
+      "effects": {
+        "BonusHealth": 85.0,
+        "NumItems": 4.0
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/beltoverflow_iii.tft_set13.png"
+    },
+    "TFT_Augment_BirthdayReunion": {
+      "name_zh": "生日聚会",
+      "name_en": "Birthday Reunion",
+      "desc_zh": "获得1个随机2星2费弈子。在你到达@FirstLevelBreakpoint@级时，获得一个【窃贼手套】。在你到达@SecondLevelBreakpoint@级时，获得1个随机2星5费弈子。<br><br><tftitemrules>2024【画中灵】全球总决赛</tftitemrules>",
+      "effects": {
+        "FirstLevelBreakpoint": 7,
+        "SecondLevelBreakpoint": 9
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/birthdayreunion_ii.png"
+    },
+    "TFT_Augment_BodyguardTraining": {
+      "name_zh": "利落保镖",
+      "name_en": "Bodyguard Training",
+      "desc_zh": "己方弈子们获得@BaseResistGained@护甲和魔法抗性，每次玩家升级会提升该加成@ResistsPerLevel@。<br><br><tftitemrules>2022【双城之战】全球总决赛</tftitemrules>",
+      "effects": {
+        "BaseResistGained": 10,
+        "ResistsPerLevel": 2
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/bodyguardstraining_ii.png"
+    },
+    "TFT_Augment_BoosterPack": {
+      "name_zh": "扩展包",
+      "name_en": "Booster Pack",
+      "desc_zh": "获得价值@TotalValue@金币的随机弈子。(保证至少一个@GuaranteedCost@费弈子！)<br><br><rules>(每个弈子都有小几率拥有全息效果！)</rules>",
+      "effects": {
+        "GuaranteedCost": 3.0,
+        "TotalValue": 12.0
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/boosterpack1_ii.tft_set17.png"
+    },
+    "TFT_Augment_BoosterPackPlus": {
+      "name_zh": "扩展包+",
+      "name_en": "Booster Pack+",
+      "desc_zh": "获得价值@TotalValue@金币的随机弈子。(保证至少一个@GuaranteedCost@费弈子！)<br><br><rules>(每个弈子都有小几率拥有全息效果！)</rules>",
+      "effects": {
+        "GuaranteedCost": 4.0,
+        "TotalValue": 18.0
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/boosterpack1_ii.tft_set17.png"
+    },
+    "TFT_Augment_BoosterPackPlusPlus": {
+      "name_zh": "扩展包++",
+      "name_en": "Booster Pack++",
+      "desc_zh": "获得价值@TotalValue@金币的随机弈子。(保证至少一个@GuaranteedCost@费弈子！)<br><br><rules>(每个弈子都有小几率拥有全息效果！)</rules>",
+      "effects": {
+        "GuaranteedCost": 5.0,
+        "TotalValue": 26.0
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/choiceui/boosterpack1_ii.tft_set17.png"
+    },
+    "TFT_Augment_BoxingLessons": {
+      "name_zh": "拳击课程",
+      "name_en": "Boxing Lessons",
+      "desc_zh": "战斗开始时，前排每有1个己方弈子，你的队伍获得@Health@生命值。",
+      "effects": {
+        "Health": 30.0
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/boxinglessons_i.tft_set16.png"
+    },
+    "TFT_Augment_BranchingOut": {
+      "name_zh": "节外生枝",
+      "name_en": "Branching Out",
+      "desc_zh": "获得1个随机纹章。",
+      "effects": {
+        "NumReforgers": null,
+        "Numberofcombats": null
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/branching-out-i.png"
+    },
+    "TFT_Augment_BranchingOutPlus": {
+      "name_zh": "节外生枝+",
+      "name_en": "Branching Out+",
+      "desc_zh": "提供1个随机【纹章】和1个【装备重铸器】。<br><br><rules>【装备重铸器】允许你将任一装备随机成另一件装备。</rules>",
+      "effects": {
+        "NumReforgers": 1,
+        "Numberofcombats": null
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/branching-out-i.png"
+    },
+    "TFT_Augment_BronzeForLife2": {
+      "name_zh": "终身黄铜 II",
+      "name_en": "Bronze For Life II",
+      "desc_zh": "每拥有一个黄铜级羁绊，己方获得@DamageAmpBonus*100@%伤害增幅和@Resists@护甲与魔抗。<br><br>伤害增幅：@TFTUnitProperty.item:TFT_Augment_BronzeForLife_CurrentDamageAmp@%<br>护甲与魔抗：@TFTUnitProperty.item:TFT_Augment_BronzeForLife_CurrentDurability@",
+      "effects": {
+        "DamageAmpBonus": 0.019999999552965164,
+        "Resists": 4.0
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/bronzeforlife_iii.tft_set13.png"
+    },
+    "TFT_Augment_BronzeForLifeI": {
+      "name_zh": "终身黄铜 I",
+      "name_en": "Bronze For Life I",
+      "desc_zh": "每拥有一个黄铜级羁绊，己方弈子们就会获得@DamageAmpBonus*100@%伤害增幅。<br><br>伤害增幅加成：@TFTUnitProperty.item:TFT_Augment_BronzeForLife_CurrentDamageAmp@%",
+      "effects": {
+        "DamageAmpBonus": 0.019999999552965164,
+        "DurabilityBonus": null
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/bronzeforlife_ii.tft_set13.png"
+    },
+    "TFT_Augment_ChargeTransfer1": {
+      "name_zh": "充能转移 I",
+      "name_en": "Charge Transfer I",
+      "desc_zh": "己方获得@DamageAmp@%伤害增幅。对距离最近的敌人造成相当于溢出伤害@OverkillPercent*100@%的魔法伤害。",
+      "effects": {
+        "DamageAmp": 7.0,
+        "OverkillPercent": 0.5
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/chargetransfer1_i.tft_set17.png"
+    },
+    "TFT_Augment_ChargeTransfer2": {
+      "name_zh": "充能转移 II",
+      "name_en": "Charge Transfer II",
+      "desc_zh": "己方获得@DamageAmp@%伤害增幅。对距离最近的敌人造成相当于溢出伤害@OverkillPercent*100@%的魔法伤害。",
+      "effects": {
+        "DamageAmp": 10.0,
+        "OverkillPercent": 0.800000011920929
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/chargetransfer2_ii.tft_set17.png"
+    },
+    "TFT_Augment_ClimbTheLadder1": {
+      "name_zh": "攀登天梯 I",
+      "name_en": "Climb The Ladder I",
+      "desc_zh": "每当一名友军阵亡，至少与其共享一个羁绊的友军会获得@BonusAP@%法术加成、@BonusAD*100@%物理加成、@BonusArmor@护甲和@BonusMR@魔法抗性。",
+      "effects": {
+        "BonusAD": 0.03500000014901161,
+        "BonusAP": 3.5,
+        "BonusArmor": 3.5,
+        "BonusMR": 3.5
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/climbtheladder_i.tft_set13.png"
+    },
+    "TFT_Augment_ClimbTheLadder2": {
+      "name_zh": "攀登天梯 II",
+      "name_en": "Climb The Ladder II",
+      "desc_zh": "每当一名友军阵亡，至少与其共享一个羁绊的友军会获得@BonusAP@%法术加成、@BonusAD*100@%物理加成、@BonusArmor@护甲和@BonusMR@魔法抗性。",
+      "effects": {
+        "BonusAD": 0.07000000029802322,
+        "BonusAP": 7.0,
+        "BonusArmor": 6.0,
+        "BonusMR": 6.0
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/climbtheladder_ii.tft_set13.png"
+    },
+    "TFT_Augment_ClockworkAccelerator": {
+      "name_zh": "发条增速器",
+      "name_en": "Clockwork Accelerator",
+      "desc_zh": "你的弈子们在战斗中每过@frequency@秒就会获得@attackspeed*100@%攻击速度。",
+      "effects": {
+        "AttackSpeed": 0.10000000149011612,
+        "Frequency": 3.0
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/clockworkaccelerator_ii.tft_set12.png"
+    },
+    "TFT_Augment_CognitiveOverload": {
+      "name_zh": "认知过载",
+      "name_en": "Cognitive Overload",
+      "desc_zh": "获得@Gold@金币、@OneCostCount@个2星1费弈子、@TwoCostCount@个2费弈子、@ThreeCostCount@个3费弈子、@XP@经验值和@FreeRolls@次商店刷新次数。",
+      "effects": {
+        "FreeRolls": 1.0,
+        "Gold": 7.0,
+        "OneCostCount": 1.0,
+        "ThreeCostCount": 2.0,
+        "TwoCostCount": 1.0,
+        "XP": 1.0
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/cognitiveoverload_ii.tft_set17.png"
+    },
+    "TFT_Augment_CognitiveTax": {
+      "name_zh": "认知税",
+      "name_en": "Cognitive Tax",
+      "desc_zh": "获得@Gold@金币和@XP@经验值。",
+      "effects": {
+        "Gold": 8.0,
+        "XP": 1.0
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/cognitivetax_i.tft_set17.png"
+    },
+    "TFT_Augment_CognitiveTaxPlus": {
+      "name_zh": "认知税+",
+      "name_en": "Cognitive Tax+",
+      "desc_zh": "获得@Gold@金币和@XP@经验值。",
+      "effects": {
+        "Gold": 12.0,
+        "XP": 3.0
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/cognitivetax_i.tft_set17.png"
+    },
+    "TFT_Augment_ComebackStory": {
+      "name_zh": "绝境反击",
+      "name_en": "Comeback Story",
+      "desc_zh": "每损失1玩家生命值，你的队伍获得@HPPerMissingHP@生命值和@ASPerMissingHP@%攻击速度。<br><br>@TFTUnitProperty.item:TFT_Augment_ComebackStory_Tooltip@",
+      "effects": {
+        "ASPerMissingHP": 0.4000000059604645,
+        "HPPerMissingHP": 4.0
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/comebackstory_iii.tft_set16.png"
+    },
+    "TFT_Augment_ComponentQuestBow": {
+      "name_zh": "战时补给：反曲之弓",
+      "name_en": "Backup Bows",
+      "desc_zh": "获得1个【反曲之弓】。在你的队伍攻击@StacksForReward@次后，额外获得@NumDelayed@个。<br><br><tftitemrules>攻击次数：@TFTUnitProperty.item:TFT_Augment_ComponentQuest_Tracker@</tftitemrules>",
+      "effects": {
+        "NumDelayed": 2,
+        "StacksForReward": 1000,
+        "{1ed24481}": 1
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/recurvewrecker_i.tft_set16.png"
+    },
+    "TFT_Augment_ComponentQuestGlove": {
+      "name_zh": "战时补给：拳套",
+      "name_en": "Critical Success",
+      "desc_zh": "获得1个【拳套】。在你的队伍攻击暴击@StacksForReward@次后，额外获得@NumDelayed@个。<br><br><tftitemrules>暴击次数：@TFTUnitProperty.item:TFT_Augment_ComponentQuest_Tracker@</tftitemrules>",
+      "effects": {
+        "NumDelayed": 2,
+        "StacksForReward": 320,
+        "{1ed24481}": 1
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/criticalsuccess_i.tft_set16.png"
+    },
+    "TFT_Augment_ComponentQuestRod": {
+      "name_zh": "战时补给：无用大棒",
+      "name_en": "Continuous Conjuration",
+      "desc_zh": "获得1个【无用大棒】。在你的队伍造成@StacksForReward@魔法伤害后，额外获得@NumDelayed@个。<br><br><tftitemrules>已造成的伤害：@TFTUnitProperty.item:TFT_Augment_ComponentQuest_Tracker@</tftitemrules>",
+      "effects": {
+        "NumDelayed": 2,
+        "StacksForReward": 42000,
+        "{1ed24481}": 1
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/hyperbolicrodextender_i.tft_set16.png"
+    },
+    "TFT_Augment_ComponentQuestSword": {
+      "name_zh": "战时补给：暴风大剑",
+      "name_en": "Carve a Path",
+      "desc_zh": "获得1个【暴风大剑】。在你的队伍造成@StacksForReward@物理伤害后，额外获得@NumDelayed@个。<br><br><tftitemrules>已造成的伤害：@TFTUnitProperty.item:TFT_Augment_ComponentQuest_Tracker@</tftitemrules>",
+      "effects": {
+        "NumDelayed": 2,
+        "StacksForReward": 65000,
+        "{1ed24481}": 1
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/carveapath_i.tft_set16.png"
+    },
+    "TFT_Augment_ComponentQuestTear": {
+      "name_zh": "战时补给：女神之泪",
+      "name_en": "Flowing Tears",
+      "desc_zh": "获得1个【女神之泪】。在你的队伍消耗@StacksForReward@法力值后，额外获得@NumDelayed@个。<br><br><tftitemrules>已消耗的法力值：@TFTUnitProperty.item:TFT_Augment_ComponentQuest_Tracker@</tftitemrules>",
+      "effects": {
+        "NumDelayed": 2,
+        "StacksForReward": 6500,
+        "{1ed24481}": 1
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/griefofthegreatgoddess_i.tft_set16.png"
+    },
+    "TFT_Augment_ConstructACompanion": {
+      "name_zh": "挑个好伙计！",
+      "name_en": "Construct a Companion",
+      "desc_zh": "你购买的下个1费弈子变为3星。获得@Gold@金币。",
+      "effects": {
+        "Gold": 2.0
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/constructacompanion_iii.tft_set16.png"
+    },
+    "TFT_Augment_Corrosion": {
+      "name_zh": "腐蚀",
+      "name_en": "Corrosion",
+      "desc_zh": "前两排的敌人每@Time@秒损失@ResistLoss@护甲和魔抗。",
+      "effects": {
+        "ResistLoss": 4.0,
+        "Time": 2.0
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/corrosion_i.tft_set13.png"
+    },
+    "TFT_Augment_CosmicRestart": {
+      "name_zh": "星界重启",
+      "name_en": "Cosmic Restart",
+      "desc_zh": "召唤众神，出售你棋盘和备战区上的所有弈子！获得@Emblems@个随机纹章和@Rerolls@免费商店刷新机会。",
+      "effects": {
+        "Emblems": 2.0,
+        "Rerolls": 8.0
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/cosmicrestart_ii.tft_set17.png"
+    },
+    "TFT_Augment_CraftedCrafting": {
+      "name_zh": "精心打造",
+      "name_en": "Crafted Crafting",
+      "desc_zh": "每当你合成一件成装时，获得@Rerolls@次刷新。",
+      "effects": {
+        "Rerolls": 2.0
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/craftedcrafting_i.tft_set13.png"
+    },
+    "TFT_Augment_CryMeARiver": {
+      "name_zh": "泪流成河",
+      "name_en": "Cry Me A River",
+      "desc_zh": "获得1个【女神之泪】。你的队伍获得@RegenBonus@法力回复。对战开始@DelayTime@秒后，该数值提升至@UpgradedRegenBonus@。",
+      "effects": {
+        "DelayTime": 12,
+        "RegenBonus": 1.0,
+        "UpgradedRegenBonus": 4.0,
+        "{45ca499e}": null
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/crymeariver_ii.tft_set15.png"
+    },
+    "TFT_Augment_DeadlierCaps": {
+      "name_zh": "更要命的帽子",
+      "name_en": "Deadlier Caps",
+      "desc_zh": "获得1个【灭世者的死亡之帽】。【灭世者的死亡之帽】的携带者每参与击杀一次，【灭世者的死亡之帽】就会永久获得@AP@%法术加成。",
+      "effects": {
+        "AP": null,
+        "TakeDowns": null
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/deadliercaps_ii.tft_set15.png"
+    },
+    "TFT_Augment_Dhampyr1": {
+      "name_zh": "吸血生命力 I",
+      "name_en": "Vampiric Vitality I",
+      "desc_zh": "为自己回复生命值，治疗值相当于你对敌方小小英雄造成伤害的@Omnivamp*100@%。己方获得@OmnivampStatBonus*100@%全能吸血。",
+      "effects": {
+        "Omnivamp": 0.11999999731779099,
+        "OmnivampStatBonus": 0.10000000149011612
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/dhampyr_ii.tft_set13.png"
+    },
+    "TFT_Augment_Dummify": {
+      "name_zh": "假人化",
+      "name_en": "Dummify",
+      "desc_zh": "失去你场上和备战席上的所有弈子。获得1个【训练假人】，其生命值为失去所有弈子总生命值的@HealthPercent@%。这个【训练假人】每阶段获得@HPPerStage@生命值。获得1个非坦克的2星@ChampCost@费弈子。",
+      "effects": {
+        "ChampCost": 2,
+        "HPPerStage": 1000,
+        "HealthPercent": 60.0
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/dummify_i.tft_set13.png"
+    },
+    "TFT_Augment_DuoQueue": {
+      "name_zh": "双排",
+      "name_en": "Duo Queue",
+      "desc_zh": "获得@NumUnits@个随机的5费弈子和@NumComponents@件相同的随机基础装备。",
+      "effects": {
+        "NumComponents": 2.0,
+        "NumUnits": 2.0
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/duoqueue_ii.tft_set12.png"
+    },
+    "TFT_Augment_EarlyLearning": {
+      "name_zh": "宝宝学院",
+      "name_en": "Early Learnings",
+      "desc_zh": "你的队伍获得@NumADAP@%物理加成和法术加成。每场玩家对战回合结束后，该加成提升@IncPerPlayerCombat@%。1费弈子们获得双倍该加成。<br>@TFTUnitProperty.item:TFT_Augment_EarlyLearning_TRAKey@<br><tftitemrules>2023云顶之弈拉斯维加斯公开赛</tftitemrules>",
+      "effects": {
+        "IncPerPlayerCombat": 1.0,
+        "NumADAP": 8.0
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/earlylearning_ii.png"
+    },
+    "TFT_Augment_EpicRolldown": {
+      "name_zh": "8级D干的传说",
+      "name_en": "Epic Rolldown",
+      "desc_zh": "在你到达8级时，获得@NumRerolls@次商店刷新。<br><br><tftitemrules>2023【符文大陆传说】全球总决赛</tftitemrules>",
+      "effects": {
+        "NumRerolls": 20
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/epicrolldown_ii.png"
+    },
+    "TFT_Augment_ExclusiveCustomization": {
+      "name_zh": "专属定制",
+      "name_en": "Exclusive Customization",
+      "desc_zh": "获得1个【幸运装备宝箱】、1个【装备拆卸器】和@Gold@金币。<br><br><rules>对一个英雄使用【幸运装备宝箱】，即可从一个推荐装备武器库中进行选择！</rules>",
+      "effects": {
+        "Gold": 7,
+        "NumRemovers": 1
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/exclusivecustomization_ii.tft_set15.png"
+    },
+    "TFT_Augment_ExclusiveCustomization2": {
+      "name_zh": "专属定制 II",
+      "name_en": "Exclusive Customization II",
+      "desc_zh": "获得@ItemCount@个【幸运装备宝箱】、1个【装备拆卸器】和@Gold@金币。<br><br><rules>对一个英雄使用【幸运装备宝箱】，即可从一个推荐装备武器库中进行选择！</rules>",
+      "effects": {
+        "Gold": 7,
+        "ItemCount": 2,
+        "NumRemovers": 1
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/exclusivecustomization_ii.tft_set15.png"
+    },
+    "TFT_Augment_ExpectedUnexpectedness": {
+      "name_zh": "意料之中的意外",
+      "name_en": "Expected Unexpectedness",
+      "desc_zh": "现在以及下@NumStages@个阶段开始时，投掷3个骰子。根据总点数获得各种奖励。",
+      "effects": {
+        "NumReforgers": 3,
+        "NumStages": 2.0,
+        "{144f18ac}": 5,
+        "{36f24d98}": 9.0,
+        "{dae07608}": 18.0,
+        "{fcb8577b}": 12.0
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/addicted-to-rolling-iii.png"
+    },
+    "TFT_Augment_Expedition": {
+      "name_zh": "远征",
+      "name_en": "Expedition",
+      "desc_zh": "每个回合开始时，损失备战席最右侧栏位的弈子。当你通过这种方式损失的弈子总价值达到@CashoutCost@金币时，获得强力奖励。立刻获得1个3费弈子。@TFTUnitProperty.item:TFT_Augment_Expedition_Tooltip@",
+      "effects": {
+        "CashoutCost": 33.0,
+        "{b763af5c}": 1.0
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/expedition_i.tft_set17.png"
+    },
+    "TFT_Augment_ExplosiveGrowth": {
+      "name_zh": "爆炸式增长",
+      "name_en": "Explosive Growth",
+      "desc_zh": "立刻以及接下来的@Rounds@个回合开始时，获得@XP@经验值。",
+      "effects": {
+        "XP": 7.0,
+        "rounds": 3.0
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/explosivegrowth_ii.tft_set12.png"
+    },
+    "TFT_Augment_ExplosiveGrowthPlus": {
+      "name_zh": "爆炸式增长+",
+      "name_en": "Explosive Growth+",
+      "desc_zh": "立刻以及接下来的@Rounds@个回合开始时，获得@XP@经验值。",
+      "effects": {
+        "XP": 10.0,
+        "rounds": 3.0
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/explosivegrowth_ii.tft_set12.png"
+    },
+    "TFT_Augment_FeedTheFlames": {
+      "name_zh": "火上浇油",
+      "name_en": "Feed the Flames",
+      "desc_zh": "获得1个【日炎斗篷】。你的队伍在攻击受到灼烧效果的敌人时获得@Omnivamp*100@%全能吸血。",
+      "effects": {
+        "Omnivamp": 0.11999999731779099
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/feedtheflames_ii.tft_set16.png"
+    },
+    "TFT_Augment_FeelingLucky": {
+      "name_zh": "手气不错",
+      "name_en": "Feeling Lucky",
+      "desc_zh": "获得@BaseGold@金币，然后抛硬币。如果硬币正面朝上，另外获得@GoldForHeads@金币。<br><br>@TFTUnitProperty.item:TFT_Augment_FeelingLucky_Tooltip@",
+      "effects": {
+        "BaseGold": 12.0,
+        "GoldForHeads": 4.0
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/feelinglucky_i.tft_set17.png"
+    },
+    "TFT_Augment_FindYourCenter": {
+      "name_zh": "C位的觉悟",
+      "name_en": "Find Your Center",
+      "desc_zh": "在战斗开始时处在最前排中心的那个己方弈子获得@BonusDamage*100@%伤害增幅和@BonusHealth*100@%最大生命值。",
+      "effects": {
+        "BonusDamage": 0.15000000596046448,
+        "BonusHealth": 0.25
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/findyourcenter_i.tft_set12.png"
+    },
+    "TFT_Augment_FiresalePlus": {
+      "name_zh": "火爆甩卖",
+      "name_en": "Firesale",
+      "desc_zh": "每回合从商店偷取一个随机的@CostLimit@费或更低费的弈子。获得@Gold@金币。",
+      "effects": {
+        "CostLimit": 3,
+        "Gold": 1.0
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/firesale_i.tft_set13.png"
+    },
+    "TFT_Augment_Flexible": {
+      "name_zh": "灵活摇摆",
+      "name_en": "Flexible",
+      "desc_zh": "获得@StartingEmblems@个随机纹章。在每个阶段开始时，获得1个随机纹章。你的队伍每携带一个纹章，就会获得@HPPerEmblem@生命值。",
+      "effects": {
+        "BonusStages": 99.0,
+        "HPPerEmblem": 30.0,
+        "StartingEmblems": 1.0
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/flexible_ii.tft_set12.png"
+    },
+    "TFT_Augment_ForgeAFriend": {
+      "name_zh": "锻造挚友",
+      "name_en": "Forge a Friend",
+      "desc_zh": "你购买的下个1费弈子变为3星。获得@Gold@金币。",
+      "effects": {
+        "Gold": 5.0
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/constructacompanion_iii.tft_set16.png"
+    },
+    "TFT_Augment_ForgeRod": {
+      "name_zh": "杖之工匠",
+      "name_en": "Staffsmith",
+      "desc_zh": "获得@NumItems@个由【无用大棒】合成的随机成装。",
+      "effects": {
+        "NumItems": 2
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/rodsmith_ii.tft_set16.png"
+    },
+    "TFT_Augment_ForgeSword": {
+      "name_zh": "剑之工匠",
+      "name_en": "Swordsmith",
+      "desc_zh": "获得@NumItems@个由【暴风大剑】合成的随机成装。",
+      "effects": {
+        "NumItems": 2
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/swordsmith_ii.tft_set16.png"
+    },
+    "TFT_Augment_ForgedInStrength": {
+      "name_zh": "神力天铸",
+      "name_en": "Forged in Strength",
+      "desc_zh": "获得@NumArtifacts@个随机神器。当你降至@HealthThreshold@生命值时，额外获得@NumMoreArtifacts@个随机神器。<br><br><tftitemrules>2023【强音争霸】全球总决赛</tftitemrules>",
+      "effects": {
+        "HealthThreshold": 35,
+        "NumArtifacts": 1,
+        "NumMoreArtifacts": 3
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/forgedinstrength_iii.png"
+    },
+    "TFT_Augment_ForwardThinking": {
+      "name_zh": "前瞻思维",
+      "name_en": "Forward Thinking",
+      "desc_zh": "失去你所有的金币。在@Rounds@轮玩家对战回合后，收回原来的金币和另外的@BaseGold@金币。<br><br>即将收到的金币：@TFTUnitProperty.item:TFT_Augment_ForwardThinkingGold@",
+      "effects": {
+        "BaseGold": 70.0,
+        "rounds": 5.0,
+        "{8f9a1368}": 1.0
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/forwardthinking_ii.tft_set13.png"
+    },
+    "TFT_Augment_FrontlineFoundation": {
+      "name_zh": "前线地基",
+      "name_en": "Frontline Foundation",
+      "desc_zh": "获得1个2星1费坦克弈子，以及一个与其最后列出羁绊相匹配的纹章。",
+      "effects": {},
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/frontlinefoundation_ii.tft_set17.png"
+    },
+    "TFT_Augment_FuriousBlows": {
+      "name_zh": "秘传奥义",
+      "name_en": "Kahunahuna",
+      "desc_zh": "每第@NumAttacks@次攻击会造成相当于@PercentAD*100@%攻击力的额外真实伤害。 ",
+      "effects": {
+        "NumAttacks": 5.0,
+        "PercentAD": 1.0
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/furiousblows_ii.tft_set16.png"
+    },
+    "TFT_Augment_GainGold": {
+      "name_zh": "获得@Gold@金币",
+      "name_en": "Gain @Gold@ Gold",
+      "desc_zh": "获得@Gold@金币。",
+      "effects": {
+        "Gold": 21.0
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/windfall2.png"
+    },
+    "TFT_Augment_GiantAndMighty": {
+      "name_zh": "大而有力",
+      "name_en": "Giant and Mighty",
+      "desc_zh": "你的队伍体型变大，获得@FlatHealth@生命值和@PercentHealth*100@%最大生命值。",
+      "effects": {
+        "FlatHealth": 200.0,
+        "PercentHealth": 0.10000000149011612,
+        "{858a62b6}": 0.11999999731779099
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/giantandmighty_iii.tft_set12.png"
+    },
+    "TFT_Augment_GildedSteel": {
+      "name_zh": "镀金钢铁",
+      "name_en": "Gilded Steel",
+      "desc_zh": "获得@NumUnits@个非坦克的5费弈子。如果你登场了至少一个5费弈子，你的1至4费弈子们获得@Durability*100@%伤害减免。<br><br><tftitemrules>2025【天下无双格斗大赛】全球总决赛</tftitemrules>",
+      "effects": {
+        "Durability": 0.07999999821186066,
+        "NumUnits": 2.0
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/gildedsteel_ii.tft_16_4.png"
+    },
+    "TFT_Augment_GlassCannonI": {
+      "name_zh": "玻璃大炮 I",
+      "name_en": "Glass Cannon I",
+      "desc_zh": "在后排开始战斗的己方弈子，在战斗开始时的生命值为@Health*100@%，但会获得@DamageAmp*100@%的伤害增幅。",
+      "effects": {
+        "DamageAmp": 0.1599999964237213,
+        "Health": 0.800000011920929
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/glasscannon_i.tft_set13.png"
+    },
+    "TFT_Augment_GlassCannonII": {
+      "name_zh": "玻璃大炮 II",
+      "name_en": "Glass Cannon II",
+      "desc_zh": "在后排开始战斗的己方弈子，在战斗开始时的生命值为@Health*100@%，但会获得@DamageAmp*100@%的伤害增幅。",
+      "effects": {
+        "DamageAmp": 0.25,
+        "Health": 0.800000011920929
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/glasscannon_ii.tft_set13.png"
+    },
+    "TFT_Augment_GoldenGamble": {
+      "name_zh": "黄金赌约",
+      "name_en": "Golden Gamble",
+      "desc_zh": "获得@gold@金币，并抛一枚硬币。如果硬币正面朝上，获得1个光明版幸运装备宝箱。如果硬币反面朝上，获得@CompletedAnvils@个成装锻造器。<br><br>@TFTUnitProperty.item:TFT_Augment_GoldenGamble_Tooltip@",
+      "effects": {
+        "CompletedAnvils": 2.0,
+        "Gold": 1.0
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/goldengamble_iii.tft_set17.png"
+    },
+    "TFT_Augment_GoldenGamblePlus": {
+      "name_zh": "黄金赌约+",
+      "name_en": "Golden Gamble+",
+      "desc_zh": "获得@gold@金币，并抛一枚硬币。如果硬币正面朝上，获得1个光明版幸运装备宝箱。如果硬币反面朝上，获得@CompletedAnvils@个成装锻造器。<br><br>@TFTUnitProperty.item:TFT_Augment_GoldenGamble_Tooltip@",
+      "effects": {
+        "CompletedAnvils": 2.0,
+        "Gold": 2.0
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/goldengamble_iii.tft_set17.png"
+    },
+    "TFT_Augment_GoldenGamblePlusPlus": {
+      "name_zh": "黄金赌约++",
+      "name_en": "Golden Gamble++",
+      "desc_zh": "获得@gold@金币，并抛一枚硬币。如果硬币正面朝上，获得1个光明版幸运装备宝箱。如果硬币反面朝上，获得@CompletedAnvils@个成装锻造器。<br><br>@TFTUnitProperty.item:TFT_Augment_GoldenGamble_Tooltip@",
+      "effects": {
+        "CompletedAnvils": 2.0,
+        "Gold": 6.0
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/goldengamble_iii.tft_set17.png"
+    },
+    "TFT_Augment_GroupHug1": {
+      "name_zh": "拥抱 I",
+      "name_en": "Group Hug I",
+      "desc_zh": "战斗开始时：友军为其他邻格友军提供@Resists@护甲和魔法抗性。此效果可叠加。",
+      "effects": {
+        "Resists": 6.0
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/grouphug1_i.tft_set17.png"
+    },
+    "TFT_Augment_GroupHug2": {
+      "name_zh": "拥抱 II",
+      "name_en": "Group Hug II",
+      "desc_zh": "战斗开始时：友军为其他邻格友军提供@Resists@护甲和魔法抗性。此效果可叠加。",
+      "effects": {
+        "Resists": 9.0
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/grouphug2_ii.tft_set17.png"
+    },
+    "TFT_Augment_GuardbreakerSpirit": {
+      "name_zh": "权杖意志",
+      "name_en": "Mace's Will",
+      "desc_zh": "获得1个【拳套]。你的队伍获得@CritChance*100@%暴击几率。",
+      "effects": {
+        "AS": null,
+        "CritChance": 0.25
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/will-of-the-flail-ii.png"
+    },
+    "TFT_Augment_HardCommit": {
+      "name_zh": "硬性承诺",
+      "name_en": "Hard Commit",
+      "desc_zh": "获得1个随机纹章。现在以及每个阶段开始时，获得该羁绊的一个1星弈子，且该弈子的费用相当于当前阶段数(最多为5)，并获得@GoldPerStage@金币。",
+      "effects": {
+        "GoldPerStage": 3.0
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/hardcommit_iii.tft_set12.png"
+    },
+    "TFT_Augment_HeavyIsTheCrown": {
+      "name_zh": "王冠之重",
+      "name_en": "Heavy Is the Crown",
+      "desc_zh": "获得一个【德玛西亚王冠】，它会对携带者提供各种显著加成。如果携带者阵亡，就会输掉该回合。",
+      "effects": {},
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/heavyisthecrown_ii.tft_set15.png"
+    },
+    "TFT_Augment_HeroicGrabBagPlus": {
+      "name_zh": "英勇福袋+",
+      "name_en": "Heroic Grab Bag+",
+      "desc_zh": "获得@LesserDuplicatorAmount@个【次级英雄复制器】和@Gold@金币。<br><br><rules>这个物品允许你能复制一个3费或以下的弈子。</rules>",
+      "effects": {
+        "Gold": 8.0,
+        "LesserDuplicatorAmount": 2.0
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/heroic-grab-bag-ii.png"
+    },
+    "TFT_Augment_HeroicGrabBagPlusPlus": {
+      "name_zh": "英勇福袋++",
+      "name_en": "Heroic Grab Bag++",
+      "desc_zh": "获得@LesserDuplicatorAmount@个【次级英雄复制器】和@Gold@金币。<br><br><rules>这个物品允许你能复制一个3费或以下的弈子。</rules>",
+      "effects": {
+        "Gold": 14.0,
+        "LesserDuplicatorAmount": 2.0
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/heroic-grab-bag-ii.png"
+    },
+    "TFT_Augment_HighVoltage": {
+      "name_zh": "高压电",
+      "name_en": "High Voltage",
+      "desc_zh": "获得1个【离子火花】。你的【离子火花】拥有+@hexincreasetooltip@格半径并且造成@effectincrease*100@%额外伤害。",
+      "effects": {
+        "effectincrease": 0.20000000298023224,
+        "hexincreasetooltip": 3.0,
+        "{f5a91c3a}": 680.0
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/highvoltage_ii.tft_set12.png"
+    },
+    "TFT_Augment_HoldTheLine": {
+      "name_zh": "坚守防线",
+      "name_en": "Hold the Line",
+      "desc_zh": "战斗开始时，你的前排每有一名己方弈子，后两排的己方弈子就会获得@AP@%法术加成和@AD*100@%物理加成。",
+      "effects": {
+        "AD": 0.07999999821186066,
+        "AP": 9.0
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/holdtheline_iii.tft_set15.png"
+    },
+    "TFT_Augment_HomeCooking": {
+      "name_zh": "关爱包裹",
+      "name_en": "Care Package",
+      "desc_zh": "现在以及接下来的@NumStages@个阶段开始时，收到一个【关爱包裹】，内含战利品和@Gold@金币。",
+      "effects": {
+        "Gold": 1,
+        "Health": 4,
+        "NumStages": 2,
+        "component": 1
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/carepackage_ii.tft_set15.png"
+    },
+    "TFT_Augment_InfinityProtection": {
+      "name_zh": "三相庇护",
+      "name_en": "Infinity Protection",
+      "desc_zh": "立刻获得@GoldAmount@金币。在阶段3-7，获得1个【三相之力】。【三相之力】为同一排的己方弈子们提供一个@HealthPercent@%生命值护盾。<br><br><tftitemrules>2023【怪兽来袭】全球总决赛</tftitemrules>",
+      "effects": {
+        "GoldAmount": 3.0,
+        "HealthPercent": 12.0
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/infinityprotection_ii.png"
+    },
+    "TFT_Augment_InvestedPlus": {
+      "name_zh": "投资+",
+      "name_en": "Invested+",
+      "desc_zh": "获得@Gold@金币。在每场战斗之后，在@GoldThreshold@金币之上，每拥有@GoldPerReroll@金币就会获得1次商店刷新(最多@MaxGold@金币)。",
+      "effects": {
+        "Gold": 26.0,
+        "GoldPerReroll": 10.0,
+        "GoldThreshold": 50.0,
+        "MaxGold": 80.0
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/invested-iii.png"
+    },
+    "TFT_Augment_InvestedPlusPlus": {
+      "name_zh": "投资++",
+      "name_en": "Invested++",
+      "desc_zh": "获得@Gold@金币。在每场战斗之后，在@GoldThreshold@金币之上，每拥有@GoldPerReroll@金币就会获得1次商店刷新(最多@MaxGold@金币)。",
+      "effects": {
+        "Gold": 40.0,
+        "GoldPerReroll": 10.0,
+        "GoldThreshold": 50.0,
+        "MaxGold": 80.0
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/invested-iii.png"
+    },
+    "TFT_Augment_ItemGargoyleStoneplate": {
+      "name_zh": "单身板甲",
+      "name_en": "Solo Plate",
+      "desc_zh": "获得1个【石像鬼石板甲】。战斗开始时：携带了【石像鬼石板甲】并且独自站一排的那些己方弈子获得@HealthIncrease*100@%最大生命值。",
+      "effects": {
+        "HealthIncrease": 0.17000000178813934
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/soloplate_ii.tft_set16.png"
+    },
+    "TFT_Augment_ItemSpiritVisage": {
+      "name_zh": "救赎盔甲",
+      "name_en": "Spirit of Redemption",
+      "desc_zh": "获得1个【振奋盔甲】。每@Frequency@秒，【振奋盔甲】会治疗@HexRadius@格内的己方弈子@MissingHealth@%已损失生命值。",
+      "effects": {
+        "Frequency": 5.0,
+        "HexRadius": 1,
+        "Missinghealth": 7.5
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/spiritofredemption_ii.tft_set16.png"
+    },
+    "TFT_Augment_JustSlayer": {
+      "name_zh": "无差别攻击",
+      "name_en": "Indiscriminate Killer",
+      "desc_zh": "获得1个【巨人杀手】。【巨人杀手】的伤害增幅现在对所有敌人生效，而不是仅对【坦克】。",
+      "effects": {},
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/indiscriminateslayer_ii.tft_set16.png"
+    },
+    "TFT_Augment_KickStart": {
+      "name_zh": "博弈开启",
+      "name_en": "Kick Start",
+      "desc_zh": "获得1个随机2星2费弈子和@Gold@金币。",
+      "effects": {
+        "Gold": 1
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/kickstart_i.tft_set17.png"
+    },
+    "TFT_Augment_LateGameScaling": {
+      "name_zh": "后期收益",
+      "name_en": "Late Game Scaling",
+      "desc_zh": "每个玩家战斗回合开始时，获得@XPGain@经验值。你的5费弈子们获得@BonusHealth*100@%生命值和@AttackSpeed*100@%攻击速度。<br><br><tftitemrules>2025【赛博之城】全球总决赛</tftitemrules>",
+      "effects": {
+        "AttackSpeed": 0.11999999731779099,
+        "BonusHealth": 0.11999999731779099,
+        "XPGain": 2
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/lategamescaling_ii.png"
+    },
+    "TFT_Augment_LegionOfThrees": {
+      "name_zh": "三幻神",
+      "name_en": "Legion of Threes",
+      "desc_zh": "获得1个随机纹章。你的3费弈子们和携带着纹章的已方弈子们获得@HealthAmount@生命值和@AS*100@%攻击速度。<br><br><tftitemrules>2021【光明与黑暗】全球总决赛</tftitemrules>",
+      "effects": {
+        "AS": 0.11999999731779099,
+        "HealthAmount": 150.0
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/legionofthrees_ii.png"
+    },
+    "TFT_Augment_Lineup": {
+      "name_zh": "列队",
+      "name_en": "Lineup",
+      "desc_zh": "战斗开始时，前两排每有一个己方弈子，你的队伍获得@Resistances@护甲和魔法抗性。",
+      "effects": {
+        "Resistances": 2.0
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/lineup-i.png"
+    },
+    "TFT_Augment_LuxurySubscription": {
+      "name_zh": "奢侈品订购",
+      "name_en": "Luxury Subscription",
+      "desc_zh": "获得1个包裹，包含1个5费弈子、1个2星1费弈子和@Gold@金币。<br><br>在接下来的@FutureChampionCount@个阶段开始时，再次获得该包裹。",
+      "effects": {
+        "FutureChampionCount": 2.0,
+        "Gold": 7.0
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/luxurysubscription_iii.tft_set16.png"
+    },
+    "TFT_Augment_MagicRoll": {
+      "name_zh": "魔法投掷",
+      "name_en": "A Magic Roll",
+      "desc_zh": "投掷3个骰子，根据总点数获得奖励。<br><br>奖励：@TFTUnitProperty.item:TFT_Augment_MagicRoll@",
+      "effects": {
+        "EggTurns": 3.0,
+        "NumComponents": 2.0,
+        "{3b0ef232}": 250.0,
+        "{95ed8271}": 3,
+        "{9a58ced6}": 4.0,
+        "{b0892e64}": 1.0,
+        "{c726cd82}": 2.0
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/a-magical-roll-ii.png"
+    },
+    "TFT_Augment_MagicRollMinus": {
+      "name_zh": "轻量魔法投掷",
+      "name_en": "Slightly Magic Roll",
+      "desc_zh": "投掷一个骰子。根据总点数获得奖励。<br><br>奖励：@TFTUnitProperty.item:TFT_Augment_MagicRoll@",
+      "effects": {
+        "Gold": 8.0,
+        "NumRerolls": 6,
+        "{3b0ef232}": 160.0,
+        "{88f01f60}": 1,
+        "{f3bceefa}": 3
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/slightlymagicroll_i.tft_set16.png"
+    },
+    "TFT_Augment_MarksMan": {
+      "name_zh": "集中火力",
+      "name_en": "Focused Fire",
+      "desc_zh": "你的队伍获得@BaselineAD*100@%物理加成。每@ProcDelay@秒，额外获得@ADPerProc*100@%。",
+      "effects": {
+        "ADPerProc": 0.05000000074505806,
+        "BaselineAD": 0.10000000149011612,
+        "ProcDelay": 5.0
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/marksman_i.tft_set16.png"
+    },
+    "TFT_Augment_MayTheFoursBeWithYou": {
+      "name_zh": "愿四费与你同在",
+      "name_en": "May the Fours Be With You",
+      "desc_zh": "你的4费弈子和烬获得@Health@生命值和@AttackSpeed*100@%攻击速度。获得1个【烬】。",
+      "effects": {
+        "AttackSpeed": 0.14000000059604645,
+        "Health": 144.0
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/maythefoursbewithyou_ii.tft_set17.png"
+    },
+    "TFT_Augment_MinMaxer": {
+      "name_zh": "可大可小",
+      "name_en": "Min-Max",
+      "desc_zh": "获得1个【金制拆卸器】和@NumItems@个随机基础装备。<br><br><rules>【金制拆卸器】是一个拥有无限使用次数的【装备拆卸器】。</rules>",
+      "effects": {
+        "NumItems": 4.0
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/minmax_iii.tft_set16.png"
+    },
+    "TFT_Augment_MirroredMonetization": {
+      "name_zh": "恶意货币化",
+      "name_en": "Malicious Monetization",
+      "desc_zh": "获得@GoldContained@金币。接下来@Rounds@个回合，敌方弈子在被击杀时会掉落@PercCost@金币。<br><br>@TFTUnitProperty.item:TFT_Augment_MirroredMonetization_TotalGoldTooltip@",
+      "effects": {
+        "GoldContained": 4,
+        "PercCost": 2.0,
+        "rounds": 2.0
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/mirroredmonetization_ii.tft_set13.png"
+    },
+    "TFT_Augment_Misfits": {
+      "name_zh": "异类",
+      "name_en": "Misfits",
+      "desc_zh": "己方获得@Health@x已激活单人羁绊数量的生命值。获得1个【拉亚斯特】和1个【厄运小姐】。<br><br>@TFTUnitProperty.item:TFT_Augment_Misfits_TotalHealthTooltip@<br><br><rules>单人羁绊只属于一个弈子并且会显示为橙色。</rules>",
+      "effects": {
+        "Health": 55.0
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/misfits_ii.tft_set17.png"
+    },
+    "TFT_Augment_MoneyHungry": {
+      "name_zh": "贪财",
+      "name_en": "Money Hungry",
+      "desc_zh": "立刻获得@InstantGold@金币，然后在每个阶段开始时获得@StageGold@金币。拾取金币会令你的小小英雄变大。",
+      "effects": {
+        "InstantGold": 7.0,
+        "StageGold": 7.0
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/moneyhungry1_ii.tft_set17.png"
+    },
+    "TFT_Augment_MoneyMonsoon": {
+      "name_zh": "摇钱树",
+      "name_en": "Money Monsoon",
+      "desc_zh": "立刻并在剩余游戏时间内每回合获得@RoundGold@金币。",
+      "effects": {
+        "RoundGold": 7.0
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/moneymonsoon_iii.tft_set16.png"
+    },
+    "TFT_Augment_MuseumHeist": {
+      "name_zh": "散件丰收日",
+      "name_en": "Component Heist",
+      "desc_zh": "在@NumberOfCombats@场玩家对战回合后，获得所有的基础装备各一件。 即刻获得一件随机的基础装备。<br><br>@TFTUnitProperty.item:TFT_Augment_MuseumHeist_TooltipTRAKey@ @TFTUnitProperty.item:TFT_Augment_MuseumHeist_CompleteTRAKey@",
+      "effects": {
+        "Numberofcombats": 6
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/museumheist_iii.tft_set16.png"
+    },
+    "TFT_Augment_NoScoutNoPivot": {
+      "name_zh": "不侦察，不变阵",
+      "name_en": "NO SCOUT NO PIVOT",
+      "desc_zh": "参与玩家对战回合后，弈子无法再回到备战席或出售。在玩家对战回合后，你的队伍获得@HPScale*100@%生命值、@APScale@%物理加成和法术加成。<br><br>@TFTUnitProperty.item:TFT_Augment_NoScoutNoPivot_TrackerTRAKEY_Holder@",
+      "effects": {
+        "ADScale": 0.009999999776482582,
+        "APScale": 1.0,
+        "HPScale": 0.009999999776482582,
+        "MaxUnits": 99.0,
+        "{eba92878}": null
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/noscoutnopivot_ii.tft_set13.png"
+    },
+    "TFT_Augment_OneBuffTwoBuff": {
+      "name_zh": "1个霸符，2个霸符",
+      "name_en": "One Buff, Two Buff",
+      "desc_zh": "获得1个【红霸符】、1个【蓝霸符】和1个【英雄复制器】。",
+      "effects": {},
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/onebufftwobuff_iii.tft_set13.png"
+    },
+    "TFT_Augment_PatienceIsAVirtue": {
+      "name_zh": "耐心是一种美德",
+      "name_en": "Patience is a Virtue",
+      "desc_zh": "立刻获得@InitialRerolls@次刷新。每回合，如果你在上一回合未购买任何弈子，则会获得@FreeRerolls@次免费刷新。",
+      "effects": {
+        "FreeRerolls": 1.0,
+        "{4293de94}": null,
+        "{a4a3332a}": 4
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/patienceisavirtue_i.tft_set12.png"
+    },
+    "TFT_Augment_Pilfer": {
+      "name_zh": "挖角",
+      "name_en": "Pilfer",
+      "desc_zh": "每回合，获得你在上一场战斗中首先击杀的那个弈子的一个1星版本。当你通过这种方式首次获得的弈子总价值达到@GoldRequired@金币时，获得1个【窃贼手套】。@TFTUnitProperty.item:TFT_Augment_Pilfer_Tooltip@",
+      "effects": {
+        "Gold": null,
+        "goldrequired": 21.0
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/pilfer_ii.tft_set12.png"
+    },
+    "TFT_Augment_PlotArmor": {
+      "name_zh": "应急护盾",
+      "name_en": "Plot Armor",
+      "desc_zh": "你的队伍获得@BaseResists@护甲和魔法抗性。在生命值降至@HealthThreshold*100@%以下时，这个加成提升至@EnhancedTotalResists@，持续到战斗结束。",
+      "effects": {
+        "BaseResists": 8.0,
+        "EnhancedTotalResists": 40.0,
+        "HealthThreshold": 0.5
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/plotarmor_ii.tft_set15.png"
+    },
+    "TFT_Augment_PowerUp": {
+      "name_zh": "强化之能量",
+      "name_en": "Augmented Power",
+      "desc_zh": "你的下一个强化符文的位阶提高一阶。",
+      "effects": {},
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/powerup_i.tft_set13.png"
+    },
+    "TFT_Augment_Replication": {
+      "name_zh": "反响",
+      "name_en": "Replication",
+      "desc_zh": "在3件基础装备中选择1件。在接下来的@RoundsOfBonusItems@回合，获得1件该基础装备。",
+      "effects": {
+        "Gold": null,
+        "roundsofbonusitems": 2.0
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/replication-ii.png"
+    },
+    "TFT_Augment_RestartMission": {
+      "name_zh": "重启任务",
+      "name_en": "Restart Mission",
+      "desc_zh": "移除你场上和备战席上的所有弈子。获得@3Cost@个随机的2星3费弈子、@2Cost@个2星2费弈子和@1Cost@个2星1费弈子。",
+      "effects": {
+        "1Cost": 1.0,
+        "2Cost": 3.0,
+        "3Cost": 2.0,
+        "NumUnits": 2.0
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/restartmission_i.tft_set12.png"
+    },
+    "TFT_Augment_Retribution": {
+      "name_zh": "正义报复",
+      "name_en": "Retribution",
+      "desc_zh": "获得@ItemCount@个【正义之手】。装备【正义之手】的友方获得<TFTKeyword>技能暴击</TFTKeyword>和@CritChance*100@%暴击几率。<br><br>{{TFT_Keyword_Precision}}",
+      "effects": {
+        "CritChance": 0.15000000596046448,
+        "ItemCount": 2.0
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/retribution_iii.tft_set16.png"
+    },
+    "TFT_Augment_SavingsAccount": {
+      "name_zh": "储蓄账户",
+      "name_en": "Savings Account",
+      "desc_zh": "在你通过利息赚取@GoldRequired@金币后，获得@GoldToGain@金币。你的最大利息提升至@InterestCap@金币。立刻获得@GoldNow@金币。<br><br><tftitemrules>已赚取的金币：@TFTUnitProperty.item:TFT_Augment_SavingsAccount_Tracker@</tftitemrules>",
+      "effects": {
+        "GoldNow": 2.0,
+        "GoldToGain": 25,
+        "InterestCap": 7.0,
+        "goldrequired": 50.0
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/savingsaccount_ii.tft_set16.png"
+    },
+    "TFT_Augment_SeraphimsStaff": {
+      "name_zh": "炽天使之拥",
+      "name_en": "Seraphim's Staff",
+      "desc_zh": "获得1个【大天使之杖】。如果【大天使之杖】的携带者拥有@APThreshold@%或以上的法术加成，【大天使之杖】还会为其额外提供@IncreasedMana@法力回复。",
+      "effects": {
+        "APThreshold": 90.0,
+        "IncreasedMana": 2.0,
+        "{abceeef7}": null
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/seraphimsstaff_ii.tft_set16.png"
+    },
+    "TFT_Augment_ShimmerscaleEssence": {
+      "name_zh": "金鳞精粹",
+      "name_en": "Shimmerscale Essence",
+      "desc_zh": "获得1个【大亨之铠】。在@combatnum@回合内，获得1个【投机者之刃】。<br><br><rules>这些装备会在提供战斗力的同时给予金币。</rules>",
+      "effects": {
+        "CombatNum": 6.0
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/shimmerscaleessence_iii.tft_set12.png"
+    },
+    "TFT_Augment_SideEffects": {
+      "name_zh": "副作用",
+      "name_en": "Side Effects",
+      "desc_zh": "友军受到治疗时，对目标造成相当于治疗值@HealConversionPct*100@%的魔法伤害。每@HealInterval@秒，友军回复@HealPct*100@%最大生命值。",
+      "effects": {
+        "HealConversionPct": 0.5,
+        "HealInterval": 5.0,
+        "HealPct": 0.03999999910593033
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/sideeffects_ii.tft_set17.png"
+    },
+    "TFT_Augment_SizeMatters": {
+      "name_zh": "尺寸至上",
+      "name_en": "Size Matters",
+      "desc_zh": "获得1个【巨人腰带】。一个弈子在开始战斗之后拥有的最大生命值高于@HealthRequired@，获得1个【狂徒铠甲】。",
+      "effects": {
+        "HealthRequired": null
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/sizematters_i.tft_set17.png"
+    },
+    "TFT_Augment_SliceOfLife": {
+      "name_zh": "人生切片",
+      "name_en": "Slice of Life",
+      "desc_zh": "每个阶段两次，获得一个随机弈子。它的费用会在每个阶段提升。这个效果会在收到@Max5Costs@个5费弈子后结束。",
+      "effects": {
+        "Max5Costs": 1,
+        "{5ca21683}": 4,
+        "{8422d0b8}": 3,
+        "{8c017039}": 2,
+        "{a562cde4}": 1,
+        "{ab8c0482}": 5,
+        "{b0e84f56}": 1,
+        "{d867370f}": 1,
+        "{e46f7955}": 1
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/slice_of_life_i.tft_set15.png"
+    },
+    "TFT_Augment_SmallGrabBag": {
+      "name_zh": "小小福袋",
+      "name_en": "Small Grab Bag",
+      "desc_zh": "提供@NumComponents@件随机基础装备。",
+      "effects": {
+        "NumComponents": 2.0
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/smallgrabbag_i.tft_set16.png"
+    },
+    "TFT_Augment_SoloLeveling": {
+      "name_zh": "独自升级",
+      "name_en": "Solo Leveling",
+      "desc_zh": "在接下来的@NumCombats@个战斗回合，你的小队规模为1，但你登场的那个弈子拥有巨幅提升过的各属性。该弈子的每次击杀都会使你获得@XPPerKill@经验。在此之后，获得@NumComponents@件基础装备。",
+      "effects": {
+        "ADBonus": 0.5,
+        "APBonus": 50.0,
+        "ASBonus": 0.5,
+        "DamageAmpBonus": 0.30000001192092896,
+        "DurabilityBonus": 0.20000000298023224,
+        "FlatHealthBonus": 525.0,
+        "NumCombats": 5,
+        "NumComponents": 2,
+        "OmnivampBonus": 0.20000000298023224,
+        "XPPerKill": 1
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/sololeveling_ii.tft_set15.png"
+    },
+    "TFT_Augment_SpeedyDoubleKill": {
+      "name_zh": "一波带走俩",
+      "name_en": "Speedy Double Kill",
+      "desc_zh": "获得1个【鬼索的狂暴之刃】。当2名玩家淘汰后，获得@GoldAmount@金币。<br><br><tftitemrules>2021【命运之轮】全球总决赛</tftitemrules>",
+      "effects": {
+        "GoldAmount": 40
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/speedydoublekill_ii.png"
+    },
+    "TFT_Augment_SpreadingRoots": {
+      "name_zh": "蔓延之根",
+      "name_en": "Spreading Roots",
+      "desc_zh": "获得@NumOfEmblems@个随机纹章和@Gold@金币。",
+      "effects": {
+        "Gold": 1.0,
+        "NumOfEmblems": 2.0,
+        "NumReforgers": null
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/spreadingroots_ii.tft_set16.png"
+    },
+    "TFT_Augment_SpreadingRootsPlus": {
+      "name_zh": "蔓延之根+",
+      "name_en": "Spreading Roots+",
+      "desc_zh": "获得@NumOfEmblems@个随机纹章、一个【装备重铸器】和@Gold@金币。",
+      "effects": {
+        "Gold": 2.0,
+        "NumOfEmblems": 2.0,
+        "NumReforgers": 1.0
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/spreadingroots_ii.tft_set16.png"
+    },
+    "TFT_Augment_SubscriptionService": {
+      "name_zh": "订阅服务",
+      "name_en": "Subscription Service",
+      "desc_zh": "现在以及每个阶段开始时，开启一个由4个独特4费弈子组成的商店，并获得@GoldPerStage@金币。",
+      "effects": {
+        "ChampionTier": 4.0,
+        "GoldPerStage": 6.0
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/subscriptionservice_iii.tft_set12.png"
+    },
+    "TFT_Augment_Survivor": {
+      "name_zh": "幸存者",
+      "name_en": "Survivor",
+      "desc_zh": "获得@InitialGold@金币。在@PlayersDead@名玩家被淘汰后，获得@Gold@额外金币。",
+      "effects": {
+        "Gold": 100.0,
+        "InitialGold": 4.0,
+        "PlayersDead": 3.0
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/survivor_i.tft_set13.png"
+    },
+    "TFT_Augment_SweetTreats": {
+      "name_zh": "甜点",
+      "name_en": "Sweet Treats",
+      "desc_zh": "获得1个【神器锻造器】。弈子每携带1个装备，你的队伍就获得@HealthPerItem@生命值。<br><br>已获得的生命值：@TFTUnitProperty.item:TFT_Augment_SweetTreats_TeamHealth@<br><br><tftitemrules>2024【魔法大乱斗】全球总决赛</tftitemrules>",
+      "effects": {
+        "HealthPerItem": 16.0
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/sweettreats_iii.png"
+    },
+    "TFT_Augment_SwordOverflow": {
+      "name_zh": "大剑溢流",
+      "name_en": "Sword Overflow",
+      "desc_zh": "获得 @NumItems@个【暴风大剑】。你的【暴风大剑】提供+@BonusStat*100@%攻击速度。",
+      "effects": {
+        "BonusStat": 0.03999999910593033,
+        "NumItems": 4.0
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/bladeoverflow_iii.tft_set13.png"
+    },
+    "TFT_Augment_TacticiansKitchen": {
+      "name_zh": "锅铲厨房",
+      "name_en": "Tactician's Kitchen",
+      "desc_zh": "获得1个随机纹章。在@TurnDelay@个回合后，获得1个【金锅铲冠冕】。",
+      "effects": {
+        "NumFryingPan": 1.0,
+        "NumItemAnvils": 1.0,
+        "NumSpatula": 1.0,
+        "TurnDelay": 3
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/tacticianskitchen_iii.tft_set13.png"
+    },
+    "TFT_Augment_TheBaronsLair": {
+      "name_zh": "男爵幻域",
+      "name_en": "Baron's Lair",
+      "desc_zh": "获得一件随机坦克装备。在战斗开始@StartSeconds@秒后，你的弈子们会在战斗环节的剩余时间里每秒获得@Stats@%额外物理加成和法术加成。<br><br><tftitemrules>2025云顶之弈巴黎公开赛</tftitemrules>",
+      "effects": {
+        "IntervalSeconds": 1.0,
+        "StartSeconds": 8.0,
+        "Stats": 5.0
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/thebaronslair_iii.tft_16_4.png"
+    },
+    "TFT_Augment_TheDarkinBlade": {
+      "name_zh": "鲜血祭品",
+      "name_en": "Blood Offering",
+      "desc_zh": "获得1个【饮血剑】。战斗开始时：携带【饮血剑】的己方弈子失去@HPLossPercent*100@%生命值，但是获得一个@HPShieldPercent*100@%生命值的护盾和@BonusAD*100@%物理加成。",
+      "effects": {
+        "BonusAD": 0.10000000149011612,
+        "HPLossPercent": 0.20000000298023224,
+        "HPShieldPercent": 0.30000001192092896,
+        "ShieldDuration": 60.0
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/trailofblood_ii.tft_set16.png"
+    },
+    "TFT_Augment_TheGoldenDragon": {
+      "name_zh": "金霖龙",
+      "name_en": "The Golden Dragon",
+      "desc_zh": "获得1个【大亨之铠】。携带【大亨之铠】的弈子占用2个弈子栏位，但获得@BonusHealth@生命值和@DurabilityPct*100@%伤害减免。<br><br><rules>【大亨之铠】提供金币，以及战斗力。</rules><br><tftitemrules>2022【巨龙之境】全球总决赛</tftitemrules>",
+      "effects": {
+        "BonusHealth": 700.0,
+        "DurabilityPct": 0.20000000298023224
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/thegoldendragon_ii.png"
+    },
+    "TFT_Augment_TheTower": {
+      "name_zh": "高塔",
+      "name_en": "The Tower",
+      "desc_zh": "获得1个拥有额外生命值(随阶段提升)的巨大训练假人。每@ZapInterval@秒，电击距离最近的@ZapCount@个敌人，造成@MaxHealthPct*100@%最大生命值的真实伤害。",
+      "effects": {
+        "MaxHealthPct": 0.05000000074505806,
+        "ZapCount": 3.0,
+        "ZapInterval": 4.0
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/thetower_i.tft_set17.png"
+    },
+    "TFT_Augment_TheVidalion": {
+      "name_zh": "纺织魔法",
+      "name_en": "Woven Magic",
+      "desc_zh": "获得1件随机基础装备。你的小队每消耗@ManaPerComponent@法力值，就会提供1个额外基础装备(装备获得进度@TFTUnitProperty.trait:TFT_Augment_TheVidalion_NumComponents@/@ComponentMax@)。<br><br><rules>已消耗的法力值：@TFTUnitProperty.trait:TFT_Augment_TheVidalion_TrackedMana@/@ManaPerComponent@</rules>",
+      "effects": {
+        "ComponentMax": 3,
+        "ManaPerComponent": 2200.0
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/wovenmagic_iii.tft_set16.png"
+    },
+    "TFT_Augment_TragicalBlade": {
+      "name_zh": "更要命的战刃",
+      "name_en": "Deadlier Blades",
+      "desc_zh": "获得1个【死亡之刃】。【死亡之刃】的携带者每参与击杀一次，【死亡之刃】就会永久获得@AD*100@%物理加成。",
+      "effects": {
+        "AD": null,
+        "TakeDowns": null
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/deadlierblades_ii.tft_set15.png"
+    },
+    "TFT_Augment_TraitTree": {
+      "name_zh": "羁绊树",
+      "name_en": "The Trait Tree",
+      "desc_zh": "获得@NumOfEmblems@个随机纹章、一个【装备重铸器】和@Gold@金币。",
+      "effects": {
+        "Gold": 2.0,
+        "NumOfEmblems": 3.0,
+        "NumReforgers": 1.0
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/thetraittree_iii.tft_set16.png"
+    },
+    "TFT_Augment_TraitTreePlus": {
+      "name_zh": "羁绊树+",
+      "name_en": "The Trait Tree+",
+      "desc_zh": "获得@NumOfEmblems@个随机纹章、一个【装备重铸器】和@Gold@金币。",
+      "effects": {
+        "Gold": 4.0,
+        "NumOfEmblems": 3.0,
+        "NumReforgers": 1.0
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/thetraittree_iii.tft_set16.png"
+    },
+    "TFT_Augment_TreasureHunt": {
+      "name_zh": "寻宝",
+      "name_en": "Treasure Hunt",
+      "desc_zh": "在现在和第@MaxNumChests@阶段之间的每个阶段获得一个上锁的宝箱。当你在商店刷新上花费@GoldNeededPerChest@金币时，即可解锁一个宝箱。这些宝箱会存留至被打开为止。",
+      "effects": {
+        "GoldNeededPerChest": null,
+        "MaxNumChests": null
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/treasurehunt_ii.tft_set15.png"
+    },
+    "TFT_Augment_Trifecta1": {
+      "name_zh": "三项赛 I",
+      "name_en": "Trifecta I",
+      "desc_zh": "获得@numunits@个@Tier@费弈子。<br>战斗开始时：@BuffedNumber@个随机@Tier@费英雄获得@Health@生命值和@AttackSpeed*100@%攻击速度。",
+      "effects": {
+        "AttackSpeed": 0.20000000298023224,
+        "BuffedNumber": 3.0,
+        "Health": 220.0,
+        "NumUnits": 2.0,
+        "TeamAttackSpeed": null,
+        "Tier": 3.0
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/trifecta-ii.png"
+    },
+    "TFT_Augment_Trifecta2": {
+      "name_zh": "三项赛 II",
+      "name_en": "Trifecta II",
+      "desc_zh": "获得@numunits@个@Tier@费弈子。己方弈子获得@TeamAttackSpeed*100@%攻击速度。<br>战斗开始时：@BuffedNumber@个随机@Tier@费英雄获得@Health@生命值和@AttackSpeed*100@%攻击速度。",
+      "effects": {
+        "AttackSpeed": 0.25,
+        "BuffedNumber": 3.0,
+        "Health": 300.0,
+        "NumUnits": 3.0,
+        "TeamAttackSpeed": 0.05000000074505806,
+        "Tier": 3.0
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/trifecta-iii.png"
+    },
+    "TFT_Augment_TwinGuardians": {
+      "name_zh": "双子守护神",
+      "name_en": "Twin Guardians",
+      "desc_zh": "如果你的第一排有且只有@NumUnits@个弈子，为他们提供@BonusHealth@额外生命值、@BonusAR@护甲和@BonusMR@魔抗。",
+      "effects": {
+        "BonusAR": 35.0,
+        "BonusHealth": 100.0,
+        "BonusMR": 35.0,
+        "NumUnits": 2,
+        "{2b04af7e}": 1
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/twinguardians_i.tft_set16.png"
+    },
+    "TFT_Augment_TwoMuchValue": {
+      "name_zh": "由二生D",
+      "name_en": "Two Much Value",
+      "desc_zh": "上一场玩家对战中每登场过@UnitCount@个独特的2费弈子，就获得@FreeRerolls@次商店刷新。获得@NumChampsToGrant@个2费弈子。",
+      "effects": {
+        "FreeRerolls": 1.0,
+        "NumChampsToGrant": 1.0,
+        "UnitCost": 2.0,
+        "UnitCount": 2.0,
+        "augmentselectbonusgold": null,
+        "{10307c7b}": null,
+        "{d5279bbe}": 2.0,
+        "{e0965628}": 2.0
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/twomuchvalue_ii.tft_set13.png"
+    },
+    "TFT_Augment_TwoTanky": {
+      "name_zh": "坦度成双",
+      "name_en": "Two Tanky",
+      "desc_zh": "如果你恰好登场了相同英雄的2个弈子，那么他们都会获得@BonusHealth@生命值。在其中一个弈子阵亡时，另一个获得持续@HealDuration@秒的相当于@OnDeathPercHeal*100@%最大生命值的护盾值。当你将弈子升到3星时，获得该英雄的1个2星弈子。",
+      "effects": {
+        "BonusHealth": 450.0,
+        "HealDuration": 12.0,
+        "OnDeathPercHeal": 0.4000000059604645
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/two-tanky-ii.png"
+    },
+    "TFT_Augment_Unforgotten": {
+      "name_zh": "猛将的荣耀",
+      "name_en": "Warlord's Honor",
+      "desc_zh": "每回合，你的队伍获得@Stats@%物理加成和法术加成。英雄们初始拥有@StartingStacks@层此效果，并且至多可叠加至@MaxStacks@层。",
+      "effects": {
+        "MaxStacks": 4.0,
+        "StartingStacks": 1.0,
+        "Stats": 5.0
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/unforgotten_ii.tft_set16.png"
+    },
+    "TFT_Augment_UpwardMobility": {
+      "name_zh": "上进心",
+      "name_en": "Upward Mobility",
+      "desc_zh": "购买经验的费用降低1。每当你升级时，获得@Health@生命值和@Rerolls@次免费刷新。",
+      "effects": {
+        "Health": 2.0,
+        "Rerolls": 1.0
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/upwardmobility_iii.tft_set12.png"
+    },
+    "TFT_Augment_UrfsGambit": {
+      "name_zh": "海牛阿福的锅铲战术",
+      "name_en": "Urf's Gambit",
+      "desc_zh": "如果你赢了你的下一个玩家对战回合，获得1个【金铲铲】。如果你输了，获得1个【金锅锅】。立刻获得1个【基础装备锻造器】和@Gold@金币。",
+      "effects": {
+        "Gold": 6.0
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/urfsgambit_ii.tft_set16.png"
+    },
+    "TFT_Augment_WandOverflow": {
+      "name_zh": "法杖溢流",
+      "name_en": "Wand Overflow",
+      "desc_zh": "获得@NumItems@个【无用大棒】。你的【无用大棒】提供+@BonusStat*100@%攻击速度。",
+      "effects": {
+        "BonusStat": 0.05000000074505806,
+        "NumItems": 4.0
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/wandoverflow_iii.tft_set13.png"
+    },
+    "TFT_Augment_WarmogsBuckle": {
+      "name_zh": "心之钢",
+      "name_en": "Heart of Steel",
+      "desc_zh": "获得1个【坚定之心】。【坚定之心】的携带者每存活@SecondsPerGain@秒，【坚定之心】就会额外获得@Health@永久最大生命值。",
+      "effects": {
+        "Health": null,
+        "SecondsPerGain": 10
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/healthygains_ii.tft_set16.png"
+    },
+    "TFT_Augment_Warpath": {
+      "name_zh": "征战之路",
+      "name_en": "Warpath",
+      "desc_zh": "获得一个2星2费弈子。造成@PlayerDamage@玩家伤害后，获得一个装有高费弈子和装备的宝箱。<br>（当前：@TFTUnitProperty.item:TFT_Augment_Warpath_DamageCount@）",
+      "effects": {
+        "PlayerDamage": 80.0,
+        "{16253d09}": null,
+        "{3dc22ab3}": 3.0,
+        "{68c537b7}": null,
+        "{6cf88c79}": 1.0,
+        "{7c96bf44}": 2
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/warpath_ii.tft_set13.png"
+    },
+    "TFT_Augment_Waverider": {
+      "name_zh": "升星之运",
+      "name_en": "On a Roll",
+      "desc_zh": "每当你将1个在上一场战斗中登场的弈子升星时，获得@NumRolls@次免费商店刷新。获得@Gold@金币。",
+      "effects": {
+        "Gold": 6,
+        "Numrolls": 1.0
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/onaroll_i.tft_set16.png"
+    },
+    "TFT_Augment_WeStickTogether": {
+      "name_zh": "水乳交融",
+      "name_en": "We Stick Together",
+      "desc_zh": "获得1个随机纹章和1个【成装锻造器】。与该纹章有同一羁绊的己方弈子们获得@ASPercent@%攻击速度。@TFTUnitProperty.item:TFT_Augment_WeStickTogether_Tooltip@<br><br><tftitemrules>2025【双城之战2】全球总决赛</tftitemrules>",
+      "effects": {
+        "ASPercent": 30.0
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/westicktogether_iii.png"
+    },
+    "TFT_Augment_WinOut": {
+      "name_zh": "登上最高峰",
+      "name_en": "Win Out",
+      "desc_zh": "当你到达9级时，立刻升至10级并获得@RerollCount@次商店刷新。立刻获得@InstantXP@经验值。",
+      "effects": {
+        "InstantXP": 10.0,
+        "LevelReq": 9.0,
+        "RerollCount": 8.0
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/winout_iii.tft_set16.png"
+    },
+    "TFT_Augment_WorthTheWaitGold": {
+      "name_zh": "值得等待",
+      "name_en": "Worth the Wait",
+      "desc_zh": "获得1个随机的@UnitTier@费弈子。每回合开始时都会获得该弈子的又一个1星版本，持续至本局游戏结束。<br><br>弈子：@TFTUnitProperty.item:TFT_Augment_WorthTheWait@",
+      "effects": {
+        "AdditionalCopies": 99.0,
+        "Delay": null,
+        "InitialCopies": 1.0,
+        "UnitTier": 1.0
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/worththewait_ii.tft_set12.png"
+    },
+    "TFT_Augment_WorthTheWaitPrismatic": {
+      "name_zh": "值得等待 II",
+      "name_en": "Worth the Wait II",
+      "desc_zh": "获得一个随机@unittier@费弈子的@InitialCopies@个1星版本。每回合开始时都会获得该弈子的又一个1星版本，持续至本局游戏结束。<br><br>弈子：@TFTUnitProperty.item:TFT_Augment_WorthTheWait@",
+      "effects": {
+        "AdditionalCopies": 99.0,
+        "Delay": null,
+        "InitialCopies": 2.0,
+        "UnitTier": 2.0
+      },
+      "icon_url": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/worththewait_iii.tft_set12.png"
+    }
+  }
+}

@@ -16,6 +16,8 @@
   items/<apiName>.png
   traits/<apiName>.png
   manifest.json
+  augments_zh.json   海克斯中英文名+中文描述+effects（文字通道识别语料，含神明恩赐）
+  gods_zh.json       神明目录（名字/称号/各stage offering，Blitz gods-v2 zh_cn 原样）
 """
 from __future__ import annotations
 
@@ -29,6 +31,8 @@ import requests
 
 CDRAGON_META = "https://raw.communitydragon.org/latest/cdragon/tft/{lang}.json"
 CDRAGON_GAME = "https://raw.communitydragon.org/latest/game/"
+# Blitz.gg 的静态数据目录：9 位神明 + 各 stage offering，中文 locale（无 UA 会 403）
+GODS_ZH_URL = "https://utils.iesdev.com/static/json/tftTest/set{n}/zh_cn/gods-v2"
 
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
 DEFAULT_OUT = PROJECT_ROOT / "assets"
@@ -51,6 +55,25 @@ def fetch_meta(lang: str, refresh: bool) -> dict:
     r.raise_for_status()
     cache.write_text(r.text, encoding="utf-8")
     return r.json()
+
+
+def fetch_gods(set_number: int, refresh: bool) -> list | None:
+    """下载（带本地缓存）Blitz gods-v2 中文神明目录；失败返回 None 不中断主流程。"""
+    CACHE_DIR.mkdir(parents=True, exist_ok=True)
+    cache = CACHE_DIR / f"gods_zh_set{set_number}.json"
+    if cache.exists() and not refresh:
+        print(f"[gods] 使用缓存 {cache.name}")
+        return json.loads(cache.read_text(encoding="utf-8"))
+    url = GODS_ZH_URL.format(n=set_number)
+    print(f"[gods] 下载 {url}")
+    try:
+        r = requests.get(url, timeout=30, headers={"User-Agent": "Mozilla/5.0"})
+        r.raise_for_status()
+        cache.write_text(r.text, encoding="utf-8")
+        return r.json()
+    except Exception as e:  # noqa: BLE001
+        print(f"[warn] gods-v2 下载失败（{e}），跳过 gods_zh.json")
+        return None
 
 
 def pick_set(data: dict, set_number: int | None) -> dict:
@@ -152,6 +175,33 @@ def build_catalog(en_set: dict, en_items: list, zh: dict, zh_set: dict) -> dict:
     return {"champions": champions, "items": items, "traits": traits}
 
 
+def build_augments(en_set: dict, en_items: list, zh_set: dict, zh_items: list) -> dict:
+    """构建海克斯语料表：apiName → 中英文名 + 中文描述 + effects + 图标 url。
+
+    赛季 augments 字段只是 apiName 列表（含跨赛季复用的 TFT10_/TFT11_ 等），
+    详情统一在顶层 items 里查。desc 带 @Var@ 模板变量，数值在 effects 里，
+    文字通道匹配用 CJK-only 归一化时可直接忽略。
+    """
+    zh_by_api = {i.get("apiName"): i for i in zh_items}
+    en_by_api = {i.get("apiName"): i for i in en_items}
+
+    augments = {}
+    for api in zh_set.get("augments", []):
+        zh_it = zh_by_api.get(api)
+        if not zh_it:
+            continue
+        en_it = en_by_api.get(api, {})
+        augments[api] = {
+            "name_zh": zh_it.get("name") or "",
+            "name_en": en_it.get("name") or "",
+            "desc_zh": zh_it.get("desc") or "",  # 个别条目 desc 为 null
+
+            "effects": zh_it.get("effects", {}),
+            "icon_url": tex_to_url(zh_it.get("icon", "")),
+        }
+    return augments
+
+
 # --------------------------------------------------------------------------- #
 # 图片下载
 # --------------------------------------------------------------------------- #
@@ -219,6 +269,25 @@ def main() -> None:
 
     out_dir = args.out / f"set{set_number}"
     out_dir.mkdir(parents=True, exist_ok=True)
+
+    # --- 海克斯语料（文字通道识别用，含神明恩赐 GodAugment）---
+    augments = build_augments(en_set, en.get("items", []), zh_set, zh.get("items", []))
+    god_augs = sum(1 for a in augments if "GodAugment" in a)
+    aug_path = out_dir / "augments_zh.json"
+    aug_path.write_text(
+        json.dumps({"set": set_number, "count": len(augments), "augments": augments},
+                   ensure_ascii=False, indent=2), encoding="utf-8")
+    print(f"[augments] {len(augments)} 个（含神明恩赐 {god_augs}）→ {aug_path.name}")
+
+    # --- 神明目录（1-1 横幅 + x-4 offering 识别用）---
+    gods = fetch_gods(set_number, args.refresh)
+    if gods is not None:
+        gods_path = out_dir / "gods_zh.json"
+        gods_path.write_text(
+            json.dumps({"set": set_number, "source": "blitz-gods-v2", "gods": gods},
+                       ensure_ascii=False, indent=2), encoding="utf-8")
+        offering_n = sum(len(v) for g in gods for v in g.get("offerings", {}).values())
+        print(f"[gods] {len(gods)} 位神明 / {offering_n} 个 offering → {gods_path.name}")
 
     failures = []
     if not args.no_images:

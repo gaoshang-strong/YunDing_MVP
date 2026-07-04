@@ -1,0 +1,20 @@
+{
+  "_meta": {
+    "what": "国服客户端屏幕显示名 ≠ CDragon zh_cn 官方名的覆盖表（Set 17 对大量海克斯做了主题化改名）",
+    "how": "自举流程：OCR 屏幕卡片 → 描述通道锚定身份（desc 高分命中）→ 人工核对语料描述与屏幕描述一致 → 记录屏幕标题",
+    "source": "完整局实录 frames_out/ 15 帧 augment_select（2-1 / 3-2 / 4-2），2026-07-03",
+    "note": "识别时作为名字通道的附加变体使用；官方名保留（新语料版本可能改回）"
+  },
+  "names": {
+    "TFT_Augment_Warpath": "刃马合一",
+    "TFT7_Augment_ClutteredMind": "思绪杂乱",
+    "TFT_Augment_Unforgotten": "战神的荣耀",
+    "TFT_Augment_SizeMatters": "尺有所短、寸有所长",
+    "TFT_Augment_FindYourCenter": "C位觉悟",
+    "TFT6_Augment_PandorasItems": "潘多拉的道具",
+    "TFT6_Augment_Recombobulator": "重整装置",
+    "TFT_Augment_BeltOverflow": "腰带过载",
+    "TFT11_Augment_Calltochaos": "混乱的呼唤",
+    "TFT_Augment_GoldenGamble": "黄金豪赌"
+  }
+}

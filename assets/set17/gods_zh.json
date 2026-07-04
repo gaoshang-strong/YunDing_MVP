@@ -1,0 +1,900 @@
+{
+  "set": 17,
+  "source": "blitz-gods-v2",
+  "gods": [
+    {
+      "name": "阿狸",
+      "subtitle": "财富之神",
+      "image": "ahriFace",
+      "offerings": {
+        "2": [
+          {
+            "key": "TFT17_Benefit_Gold_Major_Stage2",
+            "name": "6金币",
+            "description": "<rules>下场金币雨！</rules>",
+            "icon": "AssistGiveGold"
+          },
+          {
+            "key": "TFT17_Benefit_XP_Small",
+            "name": "6经验值。",
+            "description": "<rules>学习并成长</rules>",
+            "icon": "TFT17_CarouselMarket_XP.TFT_Set17"
+          },
+          {
+            "key": "TFT17_Benefit_SharedWealth_Stage2",
+            "name": "联手致富",
+            "description": "获得6金币。如果至少5个玩家选择此选项，则获得额外的1金币。",
+            "icon": "TFT17_CarouselMarket_SharedWealth.TFT_Set17"
+          },
+          {
+            "key": "TFT17_Benefit_Rerolls_Small_Stage2",
+            "name": "4次免费刷新",
+            "description": "<rules>继续开D</rules>",
+            "icon": "TFT17_CarouselMarket_Rerolls.TFT_Set17"
+          },
+          {
+            "key": "TFT17_Benefit_MaxInterest_Stage2",
+            "name": "神圣投资",
+            "description": "你的最大利息提升1。获得4金币。",
+            "icon": "TFT17_CarouselMarket_MaxInterest.TFT_17_2"
+          }
+        ],
+        "3": [
+          {
+            "key": "TFT17_Benefit_Gold_Major_Stage3",
+            "name": "8金币",
+            "description": "<rules>下场金币雨！</rules>",
+            "icon": "AssistGiveGold"
+          },
+          {
+            "key": "TFT17_Benefit_Rerolls_Small",
+            "name": "5次免费刷新",
+            "description": "<rules>继续开D</rules>",
+            "icon": "TFT17_CarouselMarket_Rerolls.TFT_Set17"
+          },
+          {
+            "key": "TFT17_Benefit_SharedWealth_Stage3",
+            "name": "联手致富+",
+            "description": "获得8金币。如果至少5个玩家选择此选项，则获得额外的2金币。",
+            "icon": "TFT17_CarouselMarket_SharedWealth.TFT_Set17"
+          },
+          {
+            "key": "TFT17_Benefit_XP_Medium_Stage3",
+            "name": "8经验值。",
+            "description": "<rules>学习并成长</rules>",
+            "icon": "TFT17_CarouselMarket_XP.TFT_Set17"
+          },
+          {
+            "key": "TFT17_Benefit_GoldPerTurn_Stage3",
+            "name": "每回合金币",
+            "description": "在剩余游戏时间内，每回合获得1金币。",
+            "icon": "AssistGiveGold"
+          },
+          {
+            "key": "TFT17_Benefit_MaxInterest_Stage3",
+            "name": "神圣投资",
+            "description": "你的最大利息提升1。获得6金币。",
+            "icon": "TFT17_CarouselMarket_MaxInterest.TFT_17_2"
+          },
+          {
+            "key": "TFT17_Benefit_BlessingWealth",
+            "name": "赐福：财富",
+            "description": "永久为一个弈子提供8%物理加成和法术加成，并且在参与击杀后有12%几率生成1金币。",
+            "icon": "TFT17_CarouselMarket_BlessingWealth.TFT_17_3"
+          }
+        ],
+        "4": [
+          {
+            "key": "TFT17_Benefit_Gold_Major_Stage4",
+            "name": "10金币",
+            "description": "<rules>下场金币雨！</rules>",
+            "icon": "AssistGiveGold"
+          },
+          {
+            "key": "TFT17_Benefit_SharedWealth_Stage4",
+            "name": "联手致富+",
+            "description": "获得10金币。如果至少5个玩家选择此选项，则获得额外的2金币。",
+            "icon": "TFT17_CarouselMarket_SharedWealth.TFT_Set17"
+          },
+          {
+            "key": "TFT17_Benefit_Rerolls_Large_Stage4",
+            "name": "7次免费刷新",
+            "description": "<rules>继续开D</rules>",
+            "icon": "TFT17_CarouselMarket_Rerolls.TFT_Set17"
+          }
+        ]
+      },
+      "boon": "TFT17_Augment_AhriGodAugment"
+    },
+    {
+      "name": "艾克",
+      "subtitle": "时间之神",
+      "image": "ekkoFace",
+      "offerings": {
+        "2": [
+          {
+            "key": "TFT17_Benefit_NextPVEScuttle",
+            "name": "迅捷蟹派对",
+            "description": "你的下一个PVE回合会被替换为带有额外战利品的迅捷蟹回合！",
+            "icon": "TFT9_SLIME_Crab_Square"
+          },
+          {
+            "key": "TFT17_Benefit_DelayedRandomArtifact",
+            "name": "神器装备",
+            "description": "在8个回合后，获得1个随机神器。",
+            "icon": "DoubleUp_AssistArmory_RandomItem_Ornn"
+          },
+          {
+            "key": "TFT17_Benefit_Delayed4Cost",
+            "name": "4费弈子",
+            "description": "在3个回合后，获得1个4费弈子。",
+            "icon": "DoubleUp_AssistArmory_Champ_4c"
+          },
+          {
+            "key": "TFT17_Benefit_Stimmy",
+            "name": "神圣干预",
+            "description": "在跌至30玩家生命值之后，获得一个特殊的战利品法球。",
+            "icon": "TFT17_CarouselMarket_Stimmy.TFT_Set17"
+          }
+        ],
+        "3": [
+          {
+            "key": "TFT17_Benefit_ShrinkConsumable",
+            "name": "赐福：速度",
+            "description": "永久使一个弈子的攻击速度提升20并使其体型缩小20%。<br><br><tftitemrules>[消耗品 - 这个装备会在使用后消失。]</tftitemrules>",
+            "icon": "TFT14_Consumable_SpeedUp"
+          },
+          {
+            "key": "TFT17_Benefit_NextPVEScuttle",
+            "name": "迅捷蟹派对",
+            "description": "你的下一个PVE回合会被替换为带有额外战利品的迅捷蟹回合！",
+            "icon": "TFT9_SLIME_Crab_Square"
+          },
+          {
+            "key": "TFT17_Benefit_Delayed5Cost",
+            "name": "2个5费弈子",
+            "description": "在4个回合后，获得2个5费弈子。",
+            "icon": "DoubleUp_AssistArmory_Champ_5c"
+          },
+          {
+            "key": "TFT17_Benefit_DelayedComponentAnvil",
+            "name": "基础装备锻造器",
+            "description": "将此物拖拽至商店，即可打开一个满是基础装备的武器库！你将有30秒时间来进行选择。",
+            "icon": "TFT_ArmoryKeyComponent_Square"
+          }
+        ],
+        "4": [
+          {
+            "key": "TFT17_Benefit_ShrinkConsumable",
+            "name": "赐福：速度",
+            "description": "永久使一个弈子的攻击速度提升20并使其体型缩小20%。<br><br><tftitemrules>[消耗品 - 这个装备会在使用后消失。]</tftitemrules>",
+            "icon": "TFT14_Consumable_SpeedUp"
+          },
+          {
+            "key": "TFT17_Benefit_DelayedRandomArtifact_Stage4",
+            "name": "神器装备",
+            "description": "在5个回合后，获得1个随机神器。",
+            "icon": "DoubleUp_AssistArmory_RandomItem_Ornn"
+          },
+          {
+            "key": "TFT17_Benefit_Delayed5CostShop",
+            "name": "5费商店",
+            "description": "在3回合后，获得一次免费商店刷新并且你的下一次商店包含所有5费弈子。",
+            "icon": "TFT17_CarouselMarket_Delayed5CostShop.TFT_Set17"
+          },
+          {
+            "key": "TFT17_Benefit_Cashflow",
+            "name": "现金流",
+            "description": "每个回合都会获得2金币。",
+            "icon": "AssistGiveGold"
+          },
+          {
+            "key": "TFT17_Benefit_DelayedCompletedAnvil",
+            "name": "成装锻造器",
+            "description": "在5回合内，获得1个【成装锻造器】。",
+            "icon": "TFT_ArmoryKeyCompleted_Square"
+          }
+        ]
+      },
+      "boon": "TFT17_Augment_EkkoGodAugment"
+    },
+    {
+      "name": "凯尔",
+      "subtitle": "秩序之神",
+      "image": "kayleFace",
+      "offerings": {
+        "2": [
+          {
+            "key": "TFT17_Benefit_RandomComponent_Kayle",
+            "name": "随机基础装备",
+            "description": "获得1件随机基础装备",
+            "icon": "AssistRandomComponent"
+          },
+          {
+            "key": "TFT17_Benefit_Component_Glove_Kayle",
+            "name": "拳套",
+            "description": "获得1个【拳套]。",
+            "icon": "TFT_Item_SparringGloves.TFT_Set13"
+          },
+          {
+            "key": "TFT17_Benefit_Component_Bow_Kayle",
+            "name": "反曲之弓",
+            "description": "获得1个【反曲之弓】。",
+            "icon": "TFT_Item_RecurveBow.TFT_Set13"
+          },
+          {
+            "key": "TFT17_Benefit_Component_Tear_Kayle",
+            "name": "女神之泪",
+            "description": "获得1个【女神之泪】。",
+            "icon": "TFT_Item_TearOfTheGoddess.TFT_Set13"
+          },
+          {
+            "key": "TFT17_Benefit_Craftsmanship_Kayle",
+            "name": "精工细作",
+            "description": "立刻获得1个【装备重铸器】，并且在每个阶段开始时再获得一个。每当你使用一个【装备重铸器】时，获得2金币。",
+            "icon": "TFT17_CarouselMarket_Craftsmanship.TFT_17_2"
+          },
+          {
+            "key": "TFT17_Benefit_AnvilTransformation_Kayle",
+            "name": "锻造器转变",
+            "description": "每当你将要获得一个基础装备时，转而获得1个【基础装备锻造器】。获得2金币。",
+            "icon": "TFT17_CarouselMarket_AnvilTransformation.TFT_17_2"
+          }
+        ],
+        "3": [
+          {
+            "key": "TFT17_Benefit_RandomComponent_Kayle",
+            "name": "随机基础装备",
+            "description": "获得1件随机基础装备",
+            "icon": "AssistRandomComponent"
+          },
+          {
+            "key": "TFT17_Benefit_Component_Sword_Kayle",
+            "name": "暴风之剑",
+            "description": "获得1个【暴风大剑】。",
+            "icon": "TFT_Item_BFSword.TFT_Set13"
+          },
+          {
+            "key": "TFT17_Benefit_Component_Rod_Kayle",
+            "name": "无用大棒",
+            "description": "获得1个【无用大棒】。",
+            "icon": "TFT_Item_NeedlesslyLargeRod.TFT_Set13"
+          },
+          {
+            "key": "TFT17_Benefit_Component_Chain_Kayle",
+            "name": "锁子甲",
+            "description": "获得1个【锁子甲】。",
+            "icon": "TFT_Item_ChainVest.TFT_Set13"
+          },
+          {
+            "key": "TFT17_Benefit_Component_Cloak_Kayle",
+            "name": "负极斗篷",
+            "description": "获得1个【负极斗篷】。",
+            "icon": "TFT_Item_NegatronCloak.TFT_Set13"
+          },
+          {
+            "key": "TFT17_Benefit_DivineRefund_Kayle",
+            "name": "神圣返还",
+            "description": "获得2金币。你下次制造一件装备时，随机获得其基础装备之一的一个复制品。",
+            "icon": "TFT17_CarouselMarket_DivineRefund.TFT_17_2"
+          }
+        ],
+        "4": [
+          {
+            "key": "TFT17_Benefit_RandomComponent_Kayle",
+            "name": "随机基础装备",
+            "description": "获得1件随机基础装备",
+            "icon": "AssistRandomComponent"
+          },
+          {
+            "key": "TFT17_Benefit_Component_Glove_Kayle",
+            "name": "拳套",
+            "description": "获得1个【拳套]。",
+            "icon": "TFT_Item_SparringGloves.TFT_Set13"
+          },
+          {
+            "key": "TFT17_Benefit_Component_Bow_Kayle",
+            "name": "反曲之弓",
+            "description": "获得1个【反曲之弓】。",
+            "icon": "TFT_Item_RecurveBow.TFT_Set13"
+          },
+          {
+            "key": "TFT17_Benefit_Component_Tear_Kayle",
+            "name": "女神之泪",
+            "description": "获得1个【女神之泪】。",
+            "icon": "TFT_Item_TearOfTheGoddess.TFT_Set13"
+          },
+          {
+            "key": "TFT17_Benefit_Component_Sword_Kayle",
+            "name": "暴风之剑",
+            "description": "获得1个【暴风大剑】。",
+            "icon": "TFT_Item_BFSword.TFT_Set13"
+          },
+          {
+            "key": "TFT17_Benefit_Component_Rod_Kayle",
+            "name": "无用大棒",
+            "description": "获得1个【无用大棒】。",
+            "icon": "TFT_Item_NeedlesslyLargeRod.TFT_Set13"
+          },
+          {
+            "key": "TFT17_Benefit_Component_Chain_Kayle",
+            "name": "锁子甲",
+            "description": "获得1个【锁子甲】。",
+            "icon": "TFT_Item_ChainVest.TFT_Set13"
+          },
+          {
+            "key": "TFT17_Benefit_Component_Cloak_Kayle",
+            "name": "负极斗篷",
+            "description": "获得1个【负极斗篷】。",
+            "icon": "TFT_Item_NegatronCloak.TFT_Set13"
+          }
+        ]
+      },
+      "boon": "TFT17_Augment_KayleGodAugment"
+    },
+    {
+      "name": "亚索",
+      "subtitle": "深渊之神",
+      "image": "yasuoFace",
+      "offerings": {
+        "2": [
+          {
+            "key": "TFT17_Benefit_EmpoweredHex_Fire",
+            "name": "烈阳格",
+            "description": "将这个格子放在一个弈子上。这个格子中的友方弈子会在5秒里持续造成15%额外魔法伤害。这个伤害会在持续期间施加<TFTKeyword>重伤</TFTKeyword>和灼烧。",
+            "icon": "TFT17_CarouselMarket_HexPaintbrush.TFT_Set17"
+          },
+          {
+            "key": "TFT17_Benefit_EmpoweredHex_Ice",
+            "name": "冰晶格",
+            "description": "将这个格子放在一个弈子上。这个格子中的友方弈子在首次跌下40%生命值时，会被冻结1秒并治疗自身30%最大生命值。",
+            "icon": "TFT17_CarouselMarket_HexPaintbrush.TFT_Set17"
+          },
+          {
+            "key": "TFT17_Benefit_EmpoweredHex_Socialite",
+            "name": "星光格",
+            "description": "将这个格子放在一个弈子上。这个格子中的友方弈子会获得3法力回复。",
+            "icon": "TFT17_CarouselMarket_HexPaintbrush.TFT_Set17"
+          },
+          {
+            "key": "TFT17_Benefit_EmpoweredHex_Wind",
+            "name": "增速格",
+            "description": "将这个格子放在一个弈子上。这个格子中的友方弈子会获得30%攻击速度。",
+            "icon": "TFT17_CarouselMarket_HexPaintbrush.TFT_Set17"
+          },
+          {
+            "key": "TFT17_Benefit_EmpoweredHex_Wood",
+            "name": "宇宙格",
+            "description": "将这个格子放在一个弈子上。这个格子中的友方弈子获得10%最大生命值，并且每回合获得35永久生命值。",
+            "icon": "TFT17_CarouselMarket_HexPaintbrush.TFT_Set17"
+          },
+          {
+            "key": "TFT17_Benefit_EmpoweredHex_Electric",
+            "name": "风暴格",
+            "description": "将这个格子放在一个弈子上。这个格子中的友方弈子首次用技能命中一个敌人时，会使该敌人晕眩1.75秒。",
+            "icon": "TFT17_CarouselMarket_HexPaintbrush.TFT_Set17"
+          }
+        ],
+        "3": [
+          {
+            "key": "TFT17_Benefit_EmpoweredHex_Fire",
+            "name": "烈阳格",
+            "description": "将这个格子放在一个弈子上。这个格子中的友方弈子会在5秒里持续造成15%额外魔法伤害。这个伤害会在持续期间施加<TFTKeyword>重伤</TFTKeyword>和灼烧。",
+            "icon": "TFT17_CarouselMarket_HexPaintbrush.TFT_Set17"
+          },
+          {
+            "key": "TFT17_Benefit_EmpoweredHex_Ice",
+            "name": "冰晶格",
+            "description": "将这个格子放在一个弈子上。这个格子中的友方弈子在首次跌下40%生命值时，会被冻结1秒并治疗自身30%最大生命值。",
+            "icon": "TFT17_CarouselMarket_HexPaintbrush.TFT_Set17"
+          },
+          {
+            "key": "TFT17_Benefit_EmpoweredHex_Socialite",
+            "name": "星光格",
+            "description": "将这个格子放在一个弈子上。这个格子中的友方弈子会获得3法力回复。",
+            "icon": "TFT17_CarouselMarket_HexPaintbrush.TFT_Set17"
+          },
+          {
+            "key": "TFT17_Benefit_EmpoweredHex_Wind",
+            "name": "增速格",
+            "description": "将这个格子放在一个弈子上。这个格子中的友方弈子会获得30%攻击速度。",
+            "icon": "TFT17_CarouselMarket_HexPaintbrush.TFT_Set17"
+          },
+          {
+            "key": "TFT17_Benefit_EmpoweredHex_Electric",
+            "name": "风暴格",
+            "description": "将这个格子放在一个弈子上。这个格子中的友方弈子首次用技能命中一个敌人时，会使该敌人晕眩1.75秒。",
+            "icon": "TFT17_CarouselMarket_HexPaintbrush.TFT_Set17"
+          }
+        ],
+        "4": [
+          {
+            "key": "TFT17_Benefit_EmpoweredHex_Fire",
+            "name": "烈阳格",
+            "description": "将这个格子放在一个弈子上。这个格子中的友方弈子会在5秒里持续造成15%额外魔法伤害。这个伤害会在持续期间施加<TFTKeyword>重伤</TFTKeyword>和灼烧。",
+            "icon": "TFT17_CarouselMarket_HexPaintbrush.TFT_Set17"
+          },
+          {
+            "key": "TFT17_Benefit_EmpoweredHex_Ice",
+            "name": "冰晶格",
+            "description": "将这个格子放在一个弈子上。这个格子中的友方弈子在首次跌下40%生命值时，会被冻结1秒并治疗自身30%最大生命值。",
+            "icon": "TFT17_CarouselMarket_HexPaintbrush.TFT_Set17"
+          },
+          {
+            "key": "TFT17_Benefit_EmpoweredHex_Socialite",
+            "name": "星光格",
+            "description": "将这个格子放在一个弈子上。这个格子中的友方弈子会获得3法力回复。",
+            "icon": "TFT17_CarouselMarket_HexPaintbrush.TFT_Set17"
+          },
+          {
+            "key": "TFT17_Benefit_EmpoweredHex_Wind",
+            "name": "增速格",
+            "description": "将这个格子放在一个弈子上。这个格子中的友方弈子会获得30%攻击速度。",
+            "icon": "TFT17_CarouselMarket_HexPaintbrush.TFT_Set17"
+          },
+          {
+            "key": "TFT17_Benefit_EmpoweredHex_Electric",
+            "name": "风暴格",
+            "description": "将这个格子放在一个弈子上。这个格子中的友方弈子首次用技能命中一个敌人时，会使该敌人晕眩1.75秒。",
+            "icon": "TFT17_CarouselMarket_HexPaintbrush.TFT_Set17"
+          }
+        ]
+      },
+      "boon": "TFT17_Augment_YasuoGodAugment_PaintedPower"
+    },
+    {
+      "name": "伊芙琳",
+      "subtitle": "诱惑之神",
+      "image": "evelynnFace",
+      "offerings": {
+        "2": [
+          {
+            "key": "TFT17_Benefit_2star2cost",
+            "name": "2星2费弈子",
+            "description": "获得1个2星2费弈子。失去3小小英雄生命值。",
+            "icon": "DoubleUp_AssistArmory_Champ_2c"
+          },
+          {
+            "key": "TFT17_Benefit_BloodPact",
+            "name": "猩红契约",
+            "description": "获得8金币。每有一名玩家选择此项，失去2弈士生命值。",
+            "icon": "TFT17_CarouselMarket_BloodPact.TFT_Set17"
+          },
+          {
+            "key": "TFT17_Benefit_Steamroll",
+            "name": "碾压之势",
+            "description": "获得1个随机2费和1金币。在每次玩家对战后重复此效果，直至你输掉一次为止。",
+            "icon": "DoubleUp_AssistArmory_Champ_2c"
+          },
+          {
+            "key": "TFT17_Benefit_1star4cost",
+            "name": "4费弈子",
+            "description": "获得1个随机1星4费弈子。失去4小小英雄生命值。",
+            "icon": "DoubleUp_AssistArmory_Champ_4c"
+          },
+          {
+            "key": "TFT17_Benefit_FinalistGambit",
+            "name": "决赛圈胜负手",
+            "description": "获得3金币。如果你在前4名，获得30额外金币。",
+            "icon": "TFT17_CarouselMarket_FinalistGambit.TFT_17_2"
+          }
+        ],
+        "3": [
+          {
+            "key": "TFT17_Benefit_RandomEmblem",
+            "name": "随机纹章",
+            "description": "获得1个随机纹章。失去3小小英雄生命值。",
+            "icon": "TFT17_CarouselMarket_Sacrifice.TFT_Set17"
+          },
+          {
+            "key": "TFT17_Benefit_BloodPactPlus",
+            "name": "猩红契约+",
+            "description": "获得10金币。每有一名玩家选择此项，失去2弈士生命值。",
+            "icon": "TFT17_CarouselMarket_BloodPact.TFT_Set17"
+          },
+          {
+            "key": "TFT17_Benefit_SteamrollPlus",
+            "name": "碾压之势+",
+            "description": "获得1个随机3费和1金币。在每次玩家对战后重复此效果，直至你输掉一次为止。",
+            "icon": "DoubleUp_AssistArmory_Champ_3c"
+          },
+          {
+            "key": "TFT17_Benefit_2star3cost",
+            "name": "2星3费弈子",
+            "description": "获得1个随机2星3费弈子。失去3小小英雄生命值。",
+            "icon": "DoubleUp_AssistArmory_Champ_3c"
+          },
+          {
+            "key": "TFT17_Benefit_3star1cost",
+            "name": "3星1费弈子",
+            "description": "获得1个随机3星1费弈子。失去3小小英雄生命值。",
+            "icon": "DoubleUp_AssistArmory_Champ_1c.TFT_Set14"
+          },
+          {
+            "key": "TFT17_Benefit_Gold_Stage3_Eve",
+            "name": "12金币",
+            "description": "获得12金币。你无法购买弈子，持续2回合。",
+            "icon": "AssistGiveGold"
+          }
+        ],
+        "4": [
+          {
+            "key": "TFT17_Benefit_BloodPactPlusPlus",
+            "name": "猩红契约++",
+            "description": "获得13金币。每有一名玩家选择此项，失去1弈士生命值。",
+            "icon": "TFT17_CarouselMarket_BloodPact.TFT_Set17"
+          },
+          {
+            "key": "TFT17_Benefit_2star4cost",
+            "name": "2星4费",
+            "description": "获得1个随机2星4费弈子。失去3小小英雄生命值。",
+            "icon": "DoubleUp_AssistArmory_Champ_4c"
+          },
+          {
+            "key": "TFT17_Benefit_Gold_Stage4_Eve",
+            "name": "18金币",
+            "description": "获得18金币。你无法购买弈子，持续2回合。",
+            "icon": "AssistGiveGold"
+          },
+          {
+            "key": "TFT17_Benefit_RandomCompleted",
+            "name": "成装",
+            "description": "获得1个随机成装。失去5小小英雄生命值。",
+            "icon": "AssistRandomComponent"
+          },
+          {
+            "key": "TFT17_Benefit_1star5cost",
+            "name": "2个5费弈子",
+            "description": "获得2个随机1星5费弈子。失去1小小英雄生命值。",
+            "icon": "DoubleUp_AssistArmory_Champ_5c"
+          }
+        ]
+      },
+      "boon": "TFT17_Augment_EvelynnGodAugment"
+    },
+    {
+      "name": "索拉卡",
+      "subtitle": "众星之神",
+      "image": "sorakaFace",
+      "offerings": {
+        "2": [
+          {
+            "key": "TFT17_Benefit_Component_Belt_Soraka",
+            "name": "巨人腰带",
+            "description": "获得1个【巨人腰带】。",
+            "icon": "TFT_Item_GiantsBelt.TFT_Set13"
+          },
+          {
+            "key": "TFT17_Benefit_GroupHug",
+            "name": "在一起更好",
+            "description": "获得6小小英雄生命值。如果至少5个玩家选择此选项，则获得2金币。",
+            "icon": "TFT17_CarouselMarket_GroupHug.TFT_17_2"
+          },
+          {
+            "key": "TFT17_Benefit_SorakasEmbrace",
+            "name": "索拉卡的拥抱",
+            "description": "在战斗开始时，为在上一场战斗中第一个阵亡的那个友军提供500到900护盾值，基于当前阶段。",
+            "icon": "TFT17_CarouselMarket_SorakasEmbrace.TFT_17_2"
+          },
+          {
+            "key": "TFT17_Benefit_BlessingProsperity",
+            "name": "赐福：兴盛",
+            "description": "永久为一个弈子提供80生命值，你赚取的每1利息都会使这个数额提升4。",
+            "icon": "TFT17_CarouselMarket_BlessingProsperity.TFT_17_3"
+          }
+        ],
+        "3": [
+          {
+            "key": "TFT17_Benefit_Health_Minor",
+            "name": "12小小英雄生命值",
+            "description": "12小小英雄生命值",
+            "icon": "TFT17_CarouselMarket_PlayerHealth.TFT_Set17"
+          },
+          {
+            "key": "TFT17_Benefit_Component_Belt_Soraka",
+            "name": "巨人腰带",
+            "description": "获得1个【巨人腰带】。",
+            "icon": "TFT_Item_GiantsBelt.TFT_Set13"
+          },
+          {
+            "key": "TFT17_Benefit_ImplantSize",
+            "name": "赐福：体型",
+            "description": "永久使一个弈子的生命值提升350并且体型提升20%。<br><br><tftitemrules>[消耗品 - 这个装备会在使用后消失。]</tftitemrules>",
+            "icon": "TFT14_Consumable_SizeUp"
+          },
+          {
+            "key": "TFT17_Benefit_GroupHugPlus",
+            "name": "在一起更好+",
+            "description": "获得6小小英雄生命值。如果至少5个玩家选择此选项，则获得3金币。",
+            "icon": "TFT17_CarouselMarket_GroupHug.TFT_17_2"
+          },
+          {
+            "key": "TFT17_Benefit_SorakasEmbrace",
+            "name": "索拉卡的拥抱",
+            "description": "在战斗开始时，为在上一场战斗中第一个阵亡的那个友军提供500到900护盾值，基于当前阶段。",
+            "icon": "TFT17_CarouselMarket_SorakasEmbrace.TFT_17_2"
+          },
+          {
+            "key": "TFT17_Benefit_DivineEmpathy",
+            "name": "神圣共情",
+            "description": "在66和33玩家生命值时，获得一件随机的基础装备。",
+            "icon": "TFT17_CarouselMarket_DivineEmpathy.TFT_17_3"
+          },
+          {
+            "key": "TFT17_Benefit_BlessingProsperityPlus",
+            "name": "赐福：兴盛+",
+            "description": "永久为一个弈子提供100生命值，你赚取的每1利息都会使这个数额提升8。",
+            "icon": "TFT17_CarouselMarket_BlessingProsperity.TFT_17_3"
+          }
+        ],
+        "4": [
+          {
+            "key": "TFT17_Benefit_Health_Minor",
+            "name": "12小小英雄生命值",
+            "description": "12小小英雄生命值",
+            "icon": "TFT17_CarouselMarket_PlayerHealth.TFT_Set17"
+          },
+          {
+            "key": "TFT17_Benefit_Component_Belt_Soraka",
+            "name": "巨人腰带",
+            "description": "获得1个【巨人腰带】。",
+            "icon": "TFT_Item_GiantsBelt.TFT_Set13"
+          },
+          {
+            "key": "TFT17_Benefit_ImplantSize",
+            "name": "赐福：体型",
+            "description": "永久使一个弈子的生命值提升350并且体型提升20%。<br><br><tftitemrules>[消耗品 - 这个装备会在使用后消失。]</tftitemrules>",
+            "icon": "TFT14_Consumable_SizeUp"
+          },
+          {
+            "key": "TFT17_Benefit_GroupHugPlusStage4",
+            "name": "在一起更好+",
+            "description": "获得6小小英雄生命值。如果至少5个玩家选择此选项，则获得3金币。",
+            "icon": "TFT17_CarouselMarket_GroupHug.TFT_17_2"
+          },
+          {
+            "key": "TFT17_Benefit_SorakasEmbrace",
+            "name": "索拉卡的拥抱",
+            "description": "在战斗开始时，为在上一场战斗中第一个阵亡的那个友军提供500到900护盾值，基于当前阶段。",
+            "icon": "TFT17_CarouselMarket_SorakasEmbrace.TFT_17_2"
+          }
+        ]
+      },
+      "boon": "TFT17_Augment_SorakaGodAugment"
+    },
+    {
+      "name": "韦鲁斯",
+      "subtitle": "爱神",
+      "image": "varusFace",
+      "offerings": {
+        "2": [
+          {
+            "key": "TFT17_Benefit_ThreeCostChampion_Owned",
+            "name": "现有的3费弈子",
+            "description": "获得你拥有的一个3费弈子的复制品和2金币。<br><br><rules>如果你未拥有任何3费弈子，则随机获得一个。</rules>",
+            "icon": "DoubleUp_AssistArmory_Champ_3c"
+          },
+          {
+            "key": "TFT17_Benefit_Lovers",
+            "name": "恋人",
+            "description": "获得拥有一个相同羁绊的一个3费弈子和一个2费弈子。",
+            "icon": "TFT17_CarouselMarket_Lovers.TFT_Set17"
+          },
+          {
+            "key": "TFT17_Benefit_TinyDuplicator_2",
+            "name": "2个微型复制器",
+            "description": "用在一位1费弈子身上，即可生成一个该弈子的1星版本。",
+            "icon": "TFT_Consumable_ChampionDuplicator_I.TFT_Set13"
+          },
+          {
+            "key": "TFT17_Benefit_AllTierThreeShop",
+            "name": "3费商店",
+            "description": "你的下一次商店包含全3费弈子。你购买的第一个是免费的。",
+            "icon": "TFT17_CarouselMarket_AllThreeCostShop.TFT_Set17"
+          },
+          {
+            "key": "TFT17_Benefit_PenguPairs",
+            "name": "超级临别赠礼",
+            "description": "当你下一次选择羽饰骑士星神的赠礼时，获得该弈子的一个额外复制体和2金币。",
+            "icon": "TFT17_CarouselMarket_PenguPairs.TFT_17_2"
+          }
+        ],
+        "3": [
+          {
+            "key": "TFT17_Benefit_LesserDuplicator",
+            "name": "次级英雄复制器",
+            "description": "获得1个【次级英雄复制器】和3金币。",
+            "icon": "TFT_Consumable_ChampionDuplicator_III.TFT_Set13"
+          },
+          {
+            "key": "TFT17_Benefit_ThreeCostChampion_Owned",
+            "name": "现有的3费弈子",
+            "description": "获得你拥有的一个3费弈子的复制品和2金币。<br><br><rules>如果你未拥有任何3费弈子，则随机获得一个。</rules>",
+            "icon": "DoubleUp_AssistArmory_Champ_3c"
+          },
+          {
+            "key": "TFT17_Benefit_LoversPlus",
+            "name": "恋人+",
+            "description": "获得拥有一个相同羁绊的一个4费弈子和一个3费弈子。",
+            "icon": "TFT17_CarouselMarket_Lovers.TFT_Set17"
+          },
+          {
+            "key": "TFT17_Benefit_AllTierFourShop",
+            "name": "4费商店",
+            "description": "你的下一次商店包含全4费弈子。你购买的第一个是免费的。",
+            "icon": "TFT17_CarouselMarket_AllFourCostShop.TFT_Set17"
+          },
+          {
+            "key": "TFT17_Benefit_EphemeralRerolls",
+            "name": "短生刷新",
+            "description": "在每个回合开始时，如果你一次免费刷新都没有，就会获得一次免费刷新。",
+            "icon": "TFT17_CarouselMarket_EphemeralRerolls.TFT_17_2"
+          },
+          {
+            "key": "TFT17_Benefit_PenguPairs",
+            "name": "超级临别赠礼",
+            "description": "当你下一次选择羽饰骑士星神的赠礼时，获得该弈子的一个额外复制体和2金币。",
+            "icon": "TFT17_CarouselMarket_PenguPairs.TFT_17_2"
+          },
+          {
+            "key": "TFT17_Benefit_StarlightPlus",
+            "name": "升星缘分",
+            "description": "你的下一次商店全是2费弈子。你购买的第一个是免费的并且会升至2星。",
+            "icon": "TFT17_CarouselMarket_Starlight.TFT_17_2"
+          }
+        ],
+        "4": [
+          {
+            "key": "TFT17_Benefit_LoversPlusPlus",
+            "name": "恋人++",
+            "description": "获得拥有一个相同羁绊的一个5费弈子和一个4费弈子。",
+            "icon": "TFT17_CarouselMarket_Lovers.TFT_Set17"
+          },
+          {
+            "key": "TFT17_Benefit_FourCostChampion_Owned",
+            "name": "现有的4费弈子",
+            "description": "获得你拥有的一个4费弈子的复制品和3金币。<br><br><rules>如果你未拥有任何4费弈子，则随机获得一个。</rules>",
+            "icon": "DoubleUp_AssistArmory_Champ_3c"
+          },
+          {
+            "key": "TFT17_Benefit_LesserDuplicator_Stage4",
+            "name": "次级英雄复制器",
+            "description": "获得1个【次级英雄复制器】和5金币。",
+            "icon": "TFT_Consumable_ChampionDuplicator_III.TFT_Set13"
+          },
+          {
+            "key": "TFT17_Benefit_TinyDuplicator_5_Stage4",
+            "name": "复制器大礼包",
+            "description": "获得4个【微型英雄复制器】和1个【次级英雄复制器】。",
+            "icon": "TFT_Consumable_ChampionDuplicator_III.TFT_Set13"
+          },
+          {
+            "key": "TFT17_Benefit_PenguPairs",
+            "name": "超级临别赠礼",
+            "description": "当你下一次选择羽饰骑士星神的赠礼时，获得该弈子的一个额外复制体和2金币。",
+            "icon": "TFT17_CarouselMarket_PenguPairs.TFT_17_2"
+          }
+        ]
+      },
+      "boon": "TFT17_Augment_VarusGodAugment_BoonOfStars"
+    },
+    {
+      "name": "锤石",
+      "subtitle": "契约之神",
+      "image": "threshFace",
+      "offerings": {
+        "2": [
+          {
+            "key": "TFT17_Benefit_RandomLoot_Stage2",
+            "name": "神秘战利品",
+            "description": "会是什么呢？",
+            "icon": "TFT17_CarouselMarket_ThreshLoot.TFT_Set17"
+          },
+          {
+            "key": "TFT17_Benefit_RandomBoon_Stage2",
+            "name": "随机恩赐",
+            "description": "从*任一*星神处获得一个随机恩赐，以及2金币。",
+            "icon": "TFT17_CarouselMarket_ThreshRandomBoon.TFT_Set17"
+          },
+          {
+            "key": "TFT17_Benefit_Recombobulator_Stage2",
+            "name": "迷你变形重组器",
+            "description": "将你棋盘上的所有1费和2费弈子转化为随机的更高费弈子。",
+            "icon": "TFT17_CarouselMarket_Recombobulator.TFT_17_2"
+          }
+        ],
+        "3": [
+          {
+            "key": "TFT17_Benefit_RandomLoot_Stage3",
+            "name": "神秘战利品",
+            "description": "会是什么呢？",
+            "icon": "TFT17_CarouselMarket_ThreshLoot.TFT_Set17"
+          },
+          {
+            "key": "TFT17_Benefit_RandomBoon_Stage3",
+            "name": "随机恩赐",
+            "description": "从*任一*星神处获得一个随机恩赐，以及3金币。",
+            "icon": "TFT17_CarouselMarket_ThreshRandomBoon.TFT_Set17"
+          }
+        ],
+        "4": [
+          {
+            "key": "TFT17_Benefit_RandomLoot_Stage4",
+            "name": "神秘战利品",
+            "description": "会是什么呢？",
+            "icon": "TFT17_CarouselMarket_ThreshLoot.TFT_Set17"
+          },
+          {
+            "key": "TFT17_Benefit_RollTheBones",
+            "name": "掷骰赚金",
+            "description": "投掷3个骰子。获得相当于投掷结果总和的金币。",
+            "icon": "TFT17_CarouselMarket_RollTheBones.TFT_Set17"
+          },
+          {
+            "key": "TFT17_Benefit_RandomBoon_Stage4",
+            "name": "随机恩赐",
+            "description": "从*任一*星神处获得一个随机恩赐，以及5金币。",
+            "icon": "TFT17_CarouselMarket_ThreshRandomBoon.TFT_Set17"
+          }
+        ]
+      },
+      "boon": "TFT17_Augment_ThreshGodAugment"
+    },
+    {
+      "name": "奥瑞利安·索尔",
+      "subtitle": "造物之神",
+      "image": "asolFace",
+      "offerings": {
+        "2": [
+          {
+            "key": "TFT17_Benefit_AurelionSol_GoldQuest_Stage2",
+            "name": "财富探险",
+            "description": "当你积攒到50金币时，获得一个基础装备锻造器和4金币。",
+            "icon": "TFT17_CarouselMarket_DelayedGold.TFT_Set17"
+          },
+          {
+            "key": "TFT17_Benefit_AurelionSol_TraitQuest_Stage2",
+            "name": "羁绊探险",
+            "description": "在一场玩家对战中登场6个非单人羁绊后，获得1个随机【纹章】和1个【装备重铸器】。",
+            "icon": "TFT17_CarouselMarket_Sampler.TFT_Set17"
+          }
+        ],
+        "3": [
+          {
+            "key": "TFT17_Benefit_AurelionSol_StarQuest_Stage3",
+            "name": "星空探险",
+            "description": "下次你将一个弈子升星时，获得10金币。",
+            "icon": "TFT17_CarouselMarket_StarQuest.TFT_Set17"
+          },
+          {
+            "key": "TFT17_Benefit_AurelionSol_TraitQuest_Stage2",
+            "name": "羁绊探险",
+            "description": "在一场玩家对战中登场6个非单人羁绊后，获得1个随机【纹章】和1个【装备重铸器】。",
+            "icon": "TFT17_CarouselMarket_Sampler.TFT_Set17"
+          }
+        ],
+        "4": [
+          {
+            "key": "TFT17_Benefit_AurelionSol_LevelQuest_Stage4",
+            "name": "等级探险",
+            "description": "在你到达9级时，获得20金币。",
+            "icon": "TFT17_CarouselMarket_LevelQuest.TFT_Set17"
+          },
+          {
+            "key": "TFT17_Benefit_AurelionSol_LowHPQuest_Stage4",
+            "name": "低生命值探险",
+            "description": "你首次跌至30生命值时，获得21金币。",
+            "icon": "TFT17_CarouselMarket_LowHPQuest.TFT_Set17"
+          },
+          {
+            "key": "TFT17_Benefit_AurelionSol_RerollQuest_Stage4",
+            "name": "刷新探险",
+            "description": "在刷新商店15次之后，获得2个【基础装备锻造器】。",
+            "icon": "TFT17_CarouselMarket_RerollQuest.TFT_Set17"
+          }
+        ]
+      },
+      "boon": "TFT17_Augment_AurelionSolGodAugment"
+    }
+  ]
+}
