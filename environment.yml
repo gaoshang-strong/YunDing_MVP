@@ -17,5 +17,8 @@ dependencies:
   - numpy=2.4
   - opencv=5.0          # 图像处理 / 模板匹配（Linux 上为 headless 构建，处理逻辑通用）
   - python-mss=10.2     # 实时抓屏（Windows 运行用；Linux 开发可用 FileCapture 读 PNG）
-  - pillow=12           # 图像读写
+  - pillow=12           # 图像读写 + 仪表盘中文渲染（cv2 不支持 CJK）
   - requests=2.34       # 下载图标素材 / catalog
+  - pip
+  - pip:
+      - rapidocr-onnxruntime   # 决策卡文字通道 OCR（海克斯/神明选项识别）

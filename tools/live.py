@@ -72,6 +72,10 @@ def main() -> None:
         print(f"[snapshot] {frame.shape[1]}x{frame.shape[0]} -> {args.snapshot}")
         return
 
+    # 推荐数据：MetaTFT 评级表，每天第一次启动时抓一次（失败回退旧缓存，不阻塞感知）
+    from tft_mvp.reco import load_tiers
+    load_tiers()
+
     pipe = Pipeline()
     dash = Dashboard()
 

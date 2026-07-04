@@ -45,13 +45,17 @@ class ClockTrack:
         self.started_ts: int | None = None
         self._last_good_sr: tuple[int, int] | None = None  # 最近一次 ok 的 (stage, round)
         self._prev_cd: int | None = None                   # 上一帧倒计时（用于跳变检测）
+        self._last_dec_sig: tuple | None = None            # 已记录的决策签名（防重复事件）
         self.rounds.reset()
 
     # ---- 每帧更新 ------------------------------------------------------ #
-    def update(self, clock: dict, ts: int, marker: dict | None = None) -> dict:
-        """喂入一帧时钟读数（可带 PhaseMarker 结果），追加样本并派生事件，返回该样本。
+    def update(self, clock: dict, ts: int, marker: dict | None = None,
+               decision: dict | None = None) -> dict:
+        """喂入一帧时钟读数（可带 PhaseMarker / 决策识别结果），追加样本并派生事件。
 
         marker 的 scene / 紫色 / 蓝紫占比也逐帧记入样本，供离线校准海克斯/神明阈值。
+        decision（CardRecognizer 输出）在**锁定**时记一条 `decision` 事件（含选项 +
+        评级 + 中文 tag）；同一组选项只记一次，重掷出新选项组会再记一条。
         """
         if self.started_ts is None:
             self.started_ts = ts
@@ -70,9 +74,35 @@ class ClockTrack:
             sample["bluepurple"] = marker.get("bluepurple_full")
         self.samples.append(sample)
         self._detect(stage, rnd, cd, clock.get("sr_status"), ts)
+        self._note_decision(decision, ts)
         self.rounds.update(stage, rnd, cd, clock.get("sr_status"), ts)
         self._prev_cd = cd
         return sample
+
+    # ---- 决策识别记录（海克斯 / 神明选项 + 评级）------------------------ #
+    def _note_decision(self, decision: dict | None, ts: int) -> None:
+        if decision is None:            # 决策窗口关闭：允许下一个窗口重新记录
+            self._last_dec_sig = None
+            return
+        if not decision.get("locked"):  # 未锁定（投票中）不落事件，防坏读入档
+            return
+        opts = decision.get("options", [])
+        sig = (decision.get("type"),
+               tuple(o.get("api") or o.get("boon_key") for o in opts))
+        if sig == self._last_dec_sig:
+            return
+        self._last_dec_sig = sig
+        stage, rnd = self._last_good_sr or (None, None)
+        self._emit("decision", ts, stage, rnd,
+                   scene=decision.get("type"),
+                   options=[{
+                       "api": o.get("api") or o.get("god_augment"),
+                       "name": (o.get("name_zh")
+                                or f"{o.get('god')}·{o.get('boon_name')}"),
+                       "tier": o.get("tier"),
+                       "tags_zh": o.get("tags_zh"),
+                       "conf": o.get("confidence", o.get("god_confidence")),
+                   } for o in opts])
 
     def _detect(self, stage, rnd, cd, sr_status, ts) -> None:
         # 回合前进：sr 干净读且 (stage,round) 严格增大
