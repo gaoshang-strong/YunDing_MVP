@@ -35,13 +35,17 @@ class Pipeline:
         self.marker = PhaseMarker(self.mapper)  # 选择类浮层检测（海克斯 / 加载 / 神明介绍 / 神明祝福）
         # 决策卡识别（OCR + 评级表）：缺 rapidocr 等依赖时降级为 None，感知主链不受影响
         self.cards = None
+        self.cards_error: str | None = None
         if enable_cards:
             try:
                 from .reco import load_tiers
                 from .recognize.cards import CardRecognizer
                 self.cards = CardRecognizer(load_tiers())
             except Exception as e:  # noqa: BLE001
+                self.cards_error = str(e)
                 print(f"[pipeline] 决策卡识别不可用（{e}），decision 块将为空")
+        elif not enable_cards:
+            self.cards_error = "disabled"
         # 后续：self.scene = SceneClassifier(...); self.shop = ShopRecognizer(...)
 
     def reset(self) -> None:
@@ -71,6 +75,11 @@ class Pipeline:
                 "countdown": clock["countdown"],
             },
             "decision": decision,  # 选择类阶段的选项 + 评级/中文 tag（推荐引擎直接输入）
+            "_cards": {  # 决策卡识别器状态（UI 诊断用：区分「不可用」vs「识别中」）
+                "enabled": self.cards is not None,
+                "error": self.cards_error,
+                "debug": self.cards.debug if self.cards else None,
+            },
             "track": self.track.snapshot(),  # 时间轴 track（最近样本 + 事件 + 趋势）
             "_clock": clock,   # 原始（含置信度 / 状态），调试 / UI 用
             "_marker": marker,  # 浮层信号原始值（紫/蓝紫占比），调试 / 校准用

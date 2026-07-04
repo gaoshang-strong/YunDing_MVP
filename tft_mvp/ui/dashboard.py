@@ -97,8 +97,23 @@ class Dashboard:
         if dec:
             y = self._decision_section(img, dec, y)
         elif scene in ("augment_select", "god_boon"):
-            cv2.putText(img, "DECISION  ·  OCR READING ...", (28, y), F, 0.7, WARN, 2)
-            y += 46
+            info = state.get("_cards") or {}
+            if info.get("enabled") is False:  # 识别器没起来（缺 rapidocr 等）
+                cv2.putText(img, "DECISION  ·  OCR UNAVAILABLE", (28, y), F, 0.7, BAD, 2)
+                y += 30
+                err = str(info.get("error") or "rapidocr not installed?")[:72]
+                cv2.putText(img, err, (28, y), F, 0.5, MUTED, 1)
+                y += 30
+            else:  # 识别中：带诊断数字（跑了几次 / OCR 行数 / 聚出几列 / 耗时）
+                cv2.putText(img, "DECISION  ·  OCR READING ...", (28, y), F, 0.7, WARN, 2)
+                y += 30
+                dbg = info.get("debug") or {}
+                sub = (f"runs={dbg.get('runs', 0)}  lines={dbg.get('last_lines', '-')}  "
+                       f"cols={dbg.get('last_cols', '-')}  {dbg.get('last_ms', '-')}ms")
+                if dbg.get("error"):
+                    sub += f"  err={str(dbg['error'])[:40]}"
+                cv2.putText(img, sub, (28, y), F, 0.5, MUTED, 1)
+                y += 30
 
         # 详情区
         sr_status = clk.get("sr_status", "-")

@@ -249,6 +249,9 @@ class CardRecognizer:
         from rapidocr_onnxruntime import RapidOCR  # 缺依赖时在此抛出，由调用方降级
         self._ocr = RapidOCR()
         self.corpus = CardCorpus(tiers)
+        # 诊断（UI 展示）：跨 reset 保留，READING 卡住时一眼看出卡在哪一环
+        self.debug: dict = {"runs": 0, "last_lines": None, "last_cols": None,
+                            "last_ms": None, "error": None}
         self.reset()
 
     def reset(self) -> None:
@@ -286,21 +289,34 @@ class CardRecognizer:
 
     # ---- OCR + 分列 + 匹配 ----
     def _read_cards(self, frame: np.ndarray, scene: str) -> list[dict]:
+        t0 = time.time()
+        self.debug["runs"] += 1
+        if frame.ndim == 3 and frame.shape[2] == 4:  # 兜底：BGRA 抓屏
+            frame = cv2.cvtColor(frame, cv2.COLOR_BGRA2BGR)
         h, w = frame.shape[:2]
         if w > OCR_WIDTH:
             scale = OCR_WIDTH / w
             frame = cv2.resize(frame, (OCR_WIDTH, int(h * scale)))
             h, w = frame.shape[:2]
-        result, _ = self._ocr(frame)
-        if not result:
+        try:
+            result, _ = self._ocr(frame)
+        except Exception as e:  # noqa: BLE001  OCR 内部异常不拖垮 live 循环
+            self.debug.update(error=f"{type(e).__name__}: {e}",
+                              last_ms=int((time.time() - t0) * 1000))
             return []
         band = AUG_BAND if scene == "augment_select" else GOD_BAND
-        cols = self._split_columns(result, w, h, band)
+        cols = self._split_columns(result or [], w, h, band)
         expect = 3 if scene == "augment_select" else 2
+        self.debug.update(last_lines=len(result or []), last_cols=len(cols),
+                          error=None, last_ms=int((time.time() - t0) * 1000))
+        if len(cols) > expect:
+            # 悬停 tooltip / 邻近杂字多聚出列：按文本量取前 N，再按 x 排回原序
+            cols = sorted(cols, key=lambda c: -sum(len(t) for _, t in c[1]))[:expect]
+            cols.sort(key=lambda c: c[0])
         if len(cols) != expect:
             return []
         options = []
-        for i, col in enumerate(cols):
+        for i, (_x, col) in enumerate(cols):
             col.sort()
             if scene == "augment_select":
                 top_y = col[0][0]
@@ -316,8 +332,8 @@ class CardRecognizer:
         return options
 
     @staticmethod
-    def _split_columns(lines: list, w: int, h: int, band: dict) -> list[list]:
-        """卡片区文本按 x 区间间隙聚类成列（自适应 2/3/4 张卡）。"""
+    def _split_columns(lines: list, w: int, h: int, band: dict) -> list[tuple]:
+        """卡片区文本按 x 区间间隙聚类成列。返回 [(x_min, [(cy, text), ...]), ...]。"""
         x0, x1 = band["x"][0] * w, band["x"][1] * w
         y0, y1 = band["y"][0] * h, band["y"][1] * h
         boxes = []
@@ -333,5 +349,5 @@ class CardRecognizer:
                 cols[-1]["x_max"] = max(cols[-1]["x_max"], bx1)
                 cols[-1]["lines"].append((cy, text))
             else:
-                cols.append({"x_max": bx1, "lines": [(cy, text)]})
-        return [c["lines"] for c in cols]
+                cols.append({"x_min": bx0, "x_max": bx1, "lines": [(cy, text)]})
+        return [(c["x_min"], c["lines"]) for c in cols]
