@@ -20,5 +20,8 @@ dependencies:
   - pillow=12           # 图像读写 + 仪表盘中文渲染（cv2 不支持 CJK）
   - requests=2.34       # 下载图标素材 / catalog
   - pip
+  # 注意：pip 段只在 `micromamba create` 建新环境时自动安装；
+  # 已有环境更新后需手动补：micromamba run -n YunDing_MVP pip install rapidocr-onnxruntime==1.4.4
+  # （缺它时决策卡识别静默降级，仪表盘 DECISION 区显示 OCR UNAVAILABLE）
   - pip:
-      - rapidocr-onnxruntime   # 决策卡文字通道 OCR（海克斯/神明选项识别）
+      - rapidocr-onnxruntime==1.4.4   # 决策卡文字通道 OCR（海克斯/神明选项识别）
