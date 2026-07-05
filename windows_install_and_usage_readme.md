@@ -85,6 +85,16 @@ micromamba --version
 micromamba create -f environment.yml
 ```
 
+> **若报 `failed to execute pre/post link script for gdk-pixbuf`（事务整体回滚）**：Windows 上 conda-forge 的 `opencv=5.0` 会连带拉进 `ffmpeg → librsvg → gdk-pixbuf`，gdk-pixbuf 安装时要跑一个 post-link 脚本，路径含中文/空格、杀软拦截、micromamba 版本旧都可能让它挂掉。失败已自动回滚，无需清理，按序重试：
+> 1. 确认环境装在纯 ASCII 短路径下（按第 2 节装法即 `C:\micromamba`，本条自动满足）；
+> 2. 升级 micromamba（≥2.3）后重跑一次（偶发失败重跑就过）；
+> 3. **兜底方案**——绕开 conda 的 gdk-pixbuf 链，opencv 改用 pip 轮子（自带 GUI、无 link 脚本）：
+>    ```powershell
+>    micromamba create -n YunDing_MVP -c conda-forge python=3.11 numpy=2.4 python-mss=10.2 pillow=12 requests=2.34 pip
+>    micromamba run -n YunDing_MVP pip install opencv-python rapidocr-onnxruntime==1.4.4
+>    ```
+>    注意 pip 的 `opencv-python` 是 4.x（Linux 端为 5.0），本项目用到的 API（模板匹配 / imshow）两版一致，无影响。
+
 之后每条命令都用 `micromamba run -n YunDing_MVP python ...` 跑（不必手动 activate）。
 
 **已有环境、git pull 更新代码后**——注意 `environment.yml` 里的 **pip 段依赖不会自动补装**（micromamba 只在 create 时装 pip 段），新增依赖要手动装。当前需要的：
@@ -201,6 +211,7 @@ micromamba run -n YunDing_MVP python tools/live.py --game-monitor 1 --display-mo
 
 | 现象 | 多半原因 | 处理 |
 |---|---|---|
+| 建环境报 gdk-pixbuf link script 失败 | Windows 上 opencv 依赖链的已知坑 | 见第 3 节兜底方案（pip 装 opencv-python） |
 | 读数一直 `--` | 抓错屏 / 游戏不是全屏 / 比例非 16:9 | 确认 `--game-monitor` 对、游戏无边框全屏 |
 | 数字偶尔跳错 | 转场动画帧 | 正常，下一帧自动恢复（已防抖） |
 | 整体框都偏 | 屏幕比例非 16:9，或有标题栏 | 截图发回重新标定 ROI |
